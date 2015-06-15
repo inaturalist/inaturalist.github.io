@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Observations Wall</title>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.1/packery.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.min.js"></script>
+  <style type="text/css">
+    body {font-family: "Trebuchet MS", Helvetica; background-color: black;}
+    #grid {position: fixed !important;
+  width:100% !important;
+  height: 100% !important;}
+    .grid-item .obs-img {width: 100%; display: block;}
+    .grid-item .inner {padding:5px;position:relative;}
+    .grid-item {float:left; }
+
+    /* small screen */
+    /*body { font-size: 90%; }
+    .grid-item, .grid-sizer {width: 10%;}
+    .grid-item-medium {width: 20%;}
+    .grid-item-big {width: 30%;}
+    .blurb img{ max-width: 20px;  }*/
+
+    /* big screen */
+    body { font-size: 20%;}
+    .grid-item, .grid-sizer {width: 5%; min-height: 30px;}
+    .grid-item-medium {width: 10%;}
+    .grid-item-big {width: 20%;}
+    .blurb img{ max-width: 10px;  }
+
+    .blurb {position: absolute; left: 0px; bottom: 0px; width: 100%; color: white; white-space: nowrap;overflow:hidden;}
+    .blurb .blurbinner {margin: 5px; padding: 5px;background-color: rgba(0,0,0,0.3); width: auto; }
+    .blurb img {border-radius: 500%; vertical-align: middle;}
+    .blurb .species {float: right; max-width: 50%; overflow:hidden; display:none;}
+    .grid-item-medium .species, .grid-item-big .species { display: inline; }
+
+    .loading {position: absolute; top: 50%; left: 50%;width: 100px; height: 1em; margin-left: -50px; margin-top: -0.5em; color:white; font-size: 1000%;}
+  </style>
+</head>
+<body>
+  <div id="grid" class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+    <div class="loading">Loading...</div>
+  </div>
+  <script id="observation-template" type="text/x-handlebars-template">
+    <div class="observation grid-item {{gridClass}}">
+      <div class="inner">
+        <a href="{{uri}}"><img src="{{photos.0.medium_url}}" class="obs-img"/></a>
+        <div class="blurb">
+          <div class="blurbinner">
+            {{#if user.user_icon_url}}
+              <img src="{{user.user_icon_url}}"/>
+            {{/if}}
+            {{user_login}}
+            <span class="species">{{species_guess}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+  <script type="text/javascript">
+    var obsTemplateSource   = $("#observation-template").html()
+        obsTemplate         = Handlebars.compile(obsTemplateSource)
+    window.grid = $('#grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    })
+    function reloadObservations() {
+      $.getJSON('http://www.inaturalist.org/observations.json?created_at=today&has[]=photos&per_page=200', function(json) {
+        $('.loading').hide()
+        if (json.length == 0) { 
+          // console.log("[DEBUG] json was empty, skipping")
+          return 
+        }
+        if (window.lastObservationID == json[0].id) { 
+          // console.log("[DEBUG] no new observations skipping")
+          return
+        }
+        // console.log("[DEBUG] adding new obs")
+        window.lastObservationID = json[0].id
+        grid.masonry( 'remove', $('.grid-item') )
+        $.each(json, function() {
+          if (this.cached_votes_total > 2) {
+            this.gridClass = 'grid-item-big'
+          } else if (this.cached_votes_total > 0 && this.cached_votes_total < 2) {
+            this.gridClass = 'grid-item-medium'
+          } else {
+            this.gridClass = ''
+          }
+          var elt = $(obsTemplate(this))
+          $('#grid').append(elt)
+          window.grid.masonry('appended', elt)
+        })
+        grid.imagesLoaded().progress( function() {
+          grid.masonry('layout');
+        })
+      })
+    }
+    $(document).ready(function() {
+      reloadObservations()
+      setInterval(reloadObservations, 1000*60*5)
+    })
+  </script>
+</body>
+</html>

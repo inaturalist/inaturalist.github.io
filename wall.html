@@ -70,7 +70,7 @@
       percentPosition: true
     })
     function reloadObservations() {
-      $.getJSON('http://www.inaturalist.org/observations.json?created_at=today&has[]=photos&per_page=200', function(json) {
+      $.getJSON('http://www.inaturalist.org/observations.json?created_on=today&has[]=photos&per_page=200', function(json) {
         $('.loading').hide()
         if (json.length == 0) { 
           // console.log("[DEBUG] json was empty, skipping")

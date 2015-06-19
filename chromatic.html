@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- not super smart to use rawgit, but... -->
+    <script src="https://rawgit.com/crispymtn/chromatic.js/master/dist/chromatic.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://rawgit.com/crispymtn/chromatic.js/master/stylesheets/chromatic.css" media="screen" charset="utf-8">
+    <style media="screen">
+      body {
+        background: black;
+      }
+      #panel4k {
+        width: 100%;
+        margin: 5px auto;
+        background: black;
+        overflow: hidden;
+      }
+      #panel4k div {
+        /* this is the ideal height for the partitioning algorithm.
+           make it smaller, all the thumbs will get smaller. make it
+           bigger, all the thumbs will get bigger. */
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panel4k"></div>
+    <script charset="utf-8">
+      $(function(){
+        $.getJSON('http://www.inaturalist.org/observations.json?has[]=photos&per_page=200&page=2', function(json) {
+          if (json.length == 0) { 
+            console.log("[DEBUG] json was empty, skipping");
+            return;
+          }
+          if (window.lastObservationID == json[0].id) { 
+            console.log("[DEBUG] no new observations skipping");
+            return;
+          }
+          var photos = [];
+          $.each(json, function() {
+            var photo = {
+              /* aspect ratio goes here */
+              "small": this.photos[0].small_url,
+              "big": this.photos[0].large_url
+            };
+            photos.push(photo)
+          });
+          /* this would be a lot faster if we were able to pass the aspect ratio into chromatic.
+              as it is, chromatic needs to examine each photo, extract the aspect ratio, then run
+              the partition algorithm before it can begin any layout. */
+          $("#panel4k").chromatic(photos);
+        });
+      });
+    </script>
+  </body>
+</html>
+

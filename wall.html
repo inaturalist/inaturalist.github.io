@@ -30,6 +30,13 @@
     .grid-item-big {width: 20%;}
     .blurb img{ max-width: 10px;  }
 
+    /* really big screen */
+    /*body { font-size: 20%;}
+    .grid-item, .grid-sizer {width: 2.5%; min-height: 30px;}
+    .grid-item-medium {width: 5%;}
+    .grid-item-big {width: 10%;}
+    .blurb img{ max-width: 10px;  }*/
+
     .blurb {position: absolute; left: 0px; bottom: 0px; width: 100%; color: white; white-space: nowrap;overflow:hidden;}
     .blurb .blurbinner {margin: 5px; padding: 5px;background-color: rgba(0,0,0,0.3); width: auto; }
     .blurb img {border-radius: 500%; vertical-align: middle;}
@@ -48,7 +55,7 @@
   <script id="observation-template" type="text/x-handlebars-template">
     <div class="observation grid-item {{gridClass}}">
       <div class="inner">
-        <a href="{{uri}}"><img src="{{photos.0.medium_url}}" class="obs-img"/></a>
+        <a href="{{uri}}"><img src="{{_imgURL}}" class="obs-img"/></a>
         <div class="blurb">
           <div class="blurbinner">
             {{#if user.user_icon_url}}
@@ -67,10 +74,12 @@
     window.grid = $('#grid').masonry({
       itemSelector: '.grid-item',
       columnWidth: '.grid-sizer',
-      percentPosition: true
+      percentPosition: true,
+      transitionDuration: 0
     })
     function reloadObservations() {
-      $.getJSON('http://www.inaturalist.org/observations.json?created_on=today&has[]=photos&per_page=200', function(json) {
+      $.getJSON('http://www.inaturalist.org/observations.json?has[]=photos&per_page=200&page=2', function(json) {
+      // $.getJSON('http://www.inaturalist.org/observations.json?created_on=today&has[]=photos&per_page=200&order_by=votes&order=desc', function(json) {
         $('.loading').hide()
         if (json.length == 0) { 
           // console.log("[DEBUG] json was empty, skipping")
@@ -84,19 +93,28 @@
         window.lastObservationID = json[0].id
         grid.masonry( 'remove', $('.grid-item') )
         $.each(json, function() {
-          if (this.cached_votes_total > 2) {
+          if (this.cached_votes_total > 0) {
             this.gridClass = 'grid-item-big'
-          } else if (this.cached_votes_total > 0 && this.cached_votes_total < 2) {
+            this._imgURL = this.photos[0].large_url
+          } else if (this.comments_count > 0) {
             this.gridClass = 'grid-item-medium'
+            this._imgURL = this.photos[0].medium_url
           } else {
             this.gridClass = ''
+            this._imgURL = this.photos[0].small_url
           }
           var elt = $(obsTemplate(this))
           $('#grid').append(elt)
           window.grid.masonry('appended', elt)
         })
-        grid.imagesLoaded().progress( function() {
-          grid.masonry('layout');
+        // grid.imagesLoaded().progress( function(instance, image) {
+        //   // console.log("[DEBUG] $(image.img).parents('.observation'): ", $(image.img).parents('.observation').get(0))
+        //   console.log("[DEBUG] image: ", image)
+        //   window.grid.masonry('appended', $(image.img).parents('.observation').get(0))
+        //   grid.masonry('layout');
+        // })
+        grid.imagesLoaded(function() {
+          grid.masonry('layout')
         })
       })
     }

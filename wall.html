@@ -93,6 +93,9 @@
         window.lastObservationID = json[0].id
         grid.masonry( 'remove', $('.grid-item') )
         $.each(json, function() {
+          if (this.photos[0].small_url.match(/copyright-infringement/)) {
+            return
+          }
           if (this.cached_votes_total > 0) {
             this.gridClass = 'grid-item-big'
             this._imgURL = this.photos[0].large_url

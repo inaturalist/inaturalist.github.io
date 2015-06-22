@@ -93,7 +93,8 @@
         window.lastObservationID = json[0].id
         grid.masonry( 'remove', $('.grid-item') )
         $.each(json, function() {
-          if (this.photos[0].small_url.match(/copyright-infringement/)) {
+          if (this.photos[0].small_url.match(/copyright-infringement/) ||
+              this.photos[0].small_url.match(/attachment_defaults/)) {
             return
           }
           if (this.cached_votes_total > 0) {

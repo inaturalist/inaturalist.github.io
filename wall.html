@@ -117,13 +117,16 @@
         grid.imagesLoaded()
           .always(function() {
             console.log("[DEBUG] images loaded: ", Date())
-            grid.masonry('layout')
+            setTimeout(layoutMasonry, 1000*2)
             console.log("[DEBUG] masonry laid out: ", Date())
           })
           .fail(function(instance) {
             console.log("[DEBUG] failed: ", instance)
           })
       })
+    }
+    function layoutMasonry() {
+      grid.masonry('layout')
     }
     $(document).ready(function() {
       reloadObservations()

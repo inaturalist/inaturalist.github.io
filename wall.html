@@ -114,9 +114,15 @@
         //   window.grid.masonry('appended', $(image.img).parents('.observation').get(0))
         //   grid.masonry('layout');
         // })
-        grid.imagesLoaded(function() {
-          grid.masonry('layout')
-        })
+        grid.imagesLoaded()
+          .always(function() {
+            console.log("[DEBUG] images loaded: ", Date())
+            grid.masonry('layout')
+            console.log("[DEBUG] masonry laid out: ", Date())
+          })
+          .fail(function(instance) {
+            console.log("[DEBUG] failed: ", instance)
+          })
       })
     }
     $(document).ready(function() {

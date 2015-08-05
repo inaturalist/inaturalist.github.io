@@ -78,20 +78,17 @@
       transitionDuration: 0
     })
     function reloadObservations() {
-      $.getJSON('http://www.inaturalist.org/observations.json?has[]=photos&per_page=200&page=2', function(json) {
-      // $.getJSON('http://www.inaturalist.org/observations.json?created_on=today&has[]=photos&per_page=200&order_by=votes&order=desc', function(json) {
+      window.grid.masonry( 'remove', $('.grid-item') )
+      $('.grid-item').remove()
+      $('.loading').show()
+      $.getJSON('http://www.inaturalist.org/observations.json?has[]=photos&per_page=200', function(json) {
         $('.loading').hide()
         if (json.length == 0) { 
           // console.log("[DEBUG] json was empty, skipping")
           return 
         }
-        if (window.lastObservationID == json[0].id) { 
-          // console.log("[DEBUG] no new observations skipping")
-          return
-        }
         // console.log("[DEBUG] adding new obs")
         window.lastObservationID = json[0].id
-        grid.masonry( 'remove', $('.grid-item') )
         $.each(json, function() {
           if (this.photos[0].small_url.match(/copyright-infringement/) ||
               this.photos[0].small_url.match(/attachment_defaults/)) {

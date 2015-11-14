@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iNaturalist Observations Animated by Date of Creation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+      body { font-size: 8pt; font-family: Helvetica, sans-serif;}
+      #map, html, body {
+        width: 100%; height: 100%; padding: 0; margin: 0;
+      }
+      #torque-slider, 
+      #torque-time {
+          position:absolute;
+          left:40px;
+          width:300px;
+      }
+      #torque-time,
+      #colophon-control,
+      #torque-pause { font-size: 12pt;}
+      #torque-slider { bottom:19px; }
+      #torque-pause {
+          position:absolute;
+          bottom:10px;
+          left:10px;
+          z-index: 1000;
+          cursor: pointer;
+          color: white;
+      }
+      #torque-time {
+        text-align: center;
+        bottom: 30px;
+        color: white;
+        font-family: sans-serif;
+      }
+      #colophon-control {
+        color: white;
+        font-family: sans-serif;
+        position:absolute;
+        z-index: 1000;
+        cursor: pointer;
+        left:355px;
+        bottom: 10px;
+      }
+      .ui-slider .ui-slider-handle { 
+        width: 10px;
+        height: 10px;
+        top: -5px;
+        left: 5px;
+        border-radius: 10px;
+        border: 0 transparent;
+        background: white;
+      }
+      .ui-slider-horizontal .ui-slider-handle { margin-left: 0; }
+      .ui-slider-horizontal { 
+        height: 1px;
+        border-radius: 0;
+        border: 0 transparent;
+      }
+      #logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      #logo img { max-width: 150px; }
+
+      #logo {display: none;}
+      #torque-slider, 
+      #torque-time {
+          position:absolute;
+          left:50%;
+          margin-left: -150px;
+          bottom: 100px;
+      }
+      #torque-time { bottom: 110px; }
+      .ui-slider .ui-slider-handle { top: -4.5px;}
+      #frame { 
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border: 1px solid white;
+        z-index: 1000;
+        /*margin-left: -640px;
+        margin-top: -360px;
+        width: 1280px; 
+        height: 720px;*/
+        margin-left: -480px;
+        margin-top: -180px;
+        width: 960px; 
+        height: 540px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <!-- <div id="frame"></div> -->
+    <a id="logo" href="http://www.inaturalist.org">
+      <img src="http://static.inaturalist.org/wiki_page_attachments/403-original.png"/>
+    </a>
+    <div id="torque-slider"></div>
+    <a id="torque-pause"><i class="fa fa-pause"></i></a>
+    <div id="torque-time"></div>
+    <a id="colophon-control"><i class="fa fa-question-circle"></i></a>
+    <div id="colophon">
+      <p>
+        This map shows observation locations from <a href="http://www.inaturalist.org">iNaturalist.org</a>
+        animated by the date those observations were created (not when they
+        were observed), kind of a geographical story of how the iNat community
+        has grown over time.
+      </p>
+      <h4>Data</h4>
+      <p>
+
+        Observations were exported from the iNaturalist database in November 2015,
+        selecting only observations with locations observed after 2008-01-01
+        (around the time the site launched). Coordinates are all the public,
+        so geoprivacy has been maintained, and all coordinates were rounded to
+        3 places to stay within CartoDB's data storage limitations. This 
+        dataset can be accessed and used at
+        <a href="https://kueda.cartodb.com/tables/inaturalist_observation_by_date">https://kueda.cartodb.com/tables/inaturalist_observation_by_date</a>.
+
+      </p>
+      <h4>Tools</h4>
+      <p>
+
+        This map uses CartoDB's amazing <a href="https://cartodb.com/torque/">Torque</a>,
+        a tool for making animated time series maps, as well as the CartoDB
+        <a href="https://cartodb.com/basemaps/">Dark Matter basemap</a>. Both are 
+        available for free from CartoDB. The map interactivity uses 
+        <a href="http://leafletjs.com/">Leaflet</a>, and other controls use 
+        <a href="http://jqueryui.com/">jQuery UI</a>. Most of this code is simply 
+        a modification of CartoDB's own
+        <a href="https://github.com/CartoDB/torque/blob/master/examples/navy_leaflet.html">Torque example</a>.
+        Many thanks to CartoDB for providing all these free tools! Icons come from
+        <a href="http://fontawesome.io/icons/">Font Awesome</a>.
+
+      </p>
+    </div>
+
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="torque.full.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+    <script>
+      // define the torque layer style using cartocss
+      var CARTOCSS = [
+          'Map {',
+          '-torque-time-attribute: "created_on";',
+          '-torque-aggregation-function: "count(cartodb_id)";',
+          '-torque-frame-count: 800;',
+          '-torque-animation-duration: 60;',
+          '-torque-resolution: 1',
+          '}',
+          '#layer {',
+            'marker-width: 1; ',
+            'marker-fill: #FEE391; ',
+            '[value > 2] { marker-fill: #FEC44F; }',
+            '[value > 3] { marker-fill: #FE9929; }',
+            '[value > 4] { marker-fill: #EC7014; }',
+            '[value > 5] { marker-fill: #CC4C02; }',
+            '[value > 6] { marker-fill: #993404; }',
+            '[value > 7] { marker-fill: #662506; }',
+            '[frame-offset = 1] {',
+              'marker-width: 3;',
+              'marker-fill-opacity: 0.3;',
+            '}',
+            '[frame-offset = 2] { ',
+              'marker-width: 5;',
+              'marker-fill-opacity: 0.1;',
+            '}',
+          '}'
+      ].join('\n');
+
+        
+      var map = new L.Map('map', {
+        zoomControl: true,
+        center: [40, 0],
+        zoom: 3
+      });
+
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}@2x.png',{
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+      }).addTo(map);
+
+      var torqueLayer = new L.TorqueLayer({
+        user       : 'kueda',
+        table      : 'inaturalist_observation_by_date',
+        blendmode  : 'lighter',
+        cartocss: CARTOCSS,
+        attribution: '&copy; <a href="http://www.inaturalist.org">iNaturalist</a> contributors'
+      });
+      torqueLayer.error(function(err){
+        for(error in err){
+          console.warn(err[error]);
+        }
+      });
+      torqueLayer.addTo(map);
+      torqueLayer.play();
+
+      var torqueTime = $('#torque-time');
+      $("#torque-slider").slider({
+          min: 0,
+          max: torqueLayer.options.steps,
+          value: 0,
+          step: 1,
+          slide: function(event, ui){
+            var step = ui.value;
+            torqueLayer.setStep(step);
+          }
+      });
+      // each time time changes, move the slider
+      torqueLayer.on('change:time', function(changes) {
+        $("#torque-slider" ).slider({ value: changes.step });
+        var month_year = changes.time.toString().substr(4).split(' ');
+        torqueTime.text(month_year[0] + " " + month_year[2]);
+      });
+      // play-pause toggle
+      $("#torque-pause").click(function(){
+        console.log("[DEBUG] torqueLayer.isRunning(): ", torqueLayer.isRunning())
+        if (torqueLayer.isRunning()) {
+          torqueLayer.pause()
+          $(this).html('<i class="fa fa-play"></i>')
+        } else {
+          torqueLayer.play()
+          $(this).html('<i class="fa fa-pause"></i>')
+        }
+      });
+
+      $( "#colophon" ).dialog({
+        autoOpen: false,
+        title: 'About This Map',
+        width: '80%',
+        maxHeight: 600
+      });
+      $('#colophon-control').click(function() {
+        $( "#colophon" ).dialog('open');
+      })
+
+
+    </script>
+  </body>
+</html>

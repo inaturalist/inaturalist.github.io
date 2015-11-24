@@ -97,7 +97,7 @@
       window.grid.masonry( 'remove', $('.grid-item') )
       $('.grid-item').remove()
       $('.loading').show()
-      $.getJSON('http://www.inaturalist.org/observations.json?has[]=photos&per_page=200', function(json) {
+      $.getJSON('http://www.inaturalist.org/observations.json?has[]=photos&per_page=200&captive=0', function(json) {
         $('.loading').hide()
         if (json.length == 0) { 
           // console.log("[DEBUG] json was empty, skipping")

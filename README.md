@@ -18,3 +18,24 @@ SELECT date_trunc('week', observations.created_at) AS raw_date, to_char(date_tru
     ORDER BY 1
 ) TO STDOUT WITH CSV HEADER" > weekly_counts.csv
 ```
+
+After adding this aggregate function:
+
+```SQL
+    CREATE OR REPLACE FUNCTION _final_most(anyarray)
+      RETURNS anyelement AS
+    $BODY$
+        SELECT a
+        FROM unnest($1) a
+        GROUP BY 1 ORDER BY COUNT(1) DESC
+        LIMIT 1;
+    $BODY$
+      LANGUAGE 'sql' IMMUTABLE;
+    
+    CREATE AGGREGATE most(anyelement) (
+      SFUNC=array_append,
+      STYPE=anyarray,
+      FINALFUNC=_final_most,
+      INITCOND='{}'
+    );
+```

@@ -120,6 +120,7 @@
         $.each(observations, function() {
           if (!this.photos[0] ||
               !this.photos[0].url ||
+              !this.photos[0].original_dimensions ||
               this.photos[0].url.match(/copyright-infringement/) ||
               this.photos[0].url.match(/attachment_defaults/)) {
             return

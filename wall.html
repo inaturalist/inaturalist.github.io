@@ -23,9 +23,9 @@
     /* big screen */
     body { font-size: 20%;}
     .grid-item,
-    .grid-sizer {width: 60px; min-height: 30px;}
-    .grid-item-medium {width: 120px;}
-    .grid-item-big {width: 240px;}
+    .grid-sizer {width: 182px; min-height: 30px;}
+    .grid-item-medium {width: calc( 182px * 2 );}
+    .grid-item-big {width: calc( 182px * 4 );}
     .blurb img{ max-width: 10px;  }
 
     /* really big screen */
@@ -94,7 +94,7 @@
     function dimsForPhoto( photo, size ) {
       var originalWidth = photo.original_dimensions.width;
       var originalHeight = photo.original_dimensions.height;
-      var width = 60;
+      var width = 182;
       if ( size == "medium" ) {
         width = width * 2;
       } else if ( size == "large" ) {

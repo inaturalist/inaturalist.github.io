@@ -32,7 +32,7 @@ class App extends Component {
   }
   load100DayData( ) {
     this.getObservationsFrequency( );
-    setTimeout( e => this.load100DayData( ), 1000 * 60 * 60 );
+    setTimeout( e => this.load100DayData( ), 1000 * 60 * 60 * 24 );
   }
   getObservations( ) {
     const that = this;

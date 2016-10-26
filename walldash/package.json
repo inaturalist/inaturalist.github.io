@@ -2,7 +2,7 @@
   "name": "walldash",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://inaturalist.github.io/walldash",
+  "homepage": "http://inaturalist.github.io/walldash/build",
   "devDependencies": {
     "react-scripts": "0.6.1"
   },

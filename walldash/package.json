@@ -1,0 +1,27 @@
+{
+  "name": "walldash",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://inaturalist.github.io/walldash",
+  "devDependencies": {
+    "react-scripts": "0.6.1"
+  },
+  "dependencies": {
+    "c3": "^0.4.11",
+    "comma-number": "^1.1.0",
+    "inaturalistjs": "inaturalist/inaturalistjs",
+    "isomorphic-fetch": "^2.2.1",
+    "leaflet": "^1.0.1",
+    "leaflet-markercluster": "^0.2.0",
+    "lodash": "^4.16.3",
+    "moment": "^2.15.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

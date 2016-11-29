@@ -11,7 +11,6 @@
   padding: 10px;
   flex: 2;
   height: 80%;
-  overflow: hidden;
 }
 
 .charts {
@@ -26,16 +25,14 @@
 .RecentObservations .observations {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  margin: -2.5px;
 }
-.RecentObservations > a {
-  flex: 1;
-}
-.RecentObservations img {
-  width: auto;
-  height: 150px;
+.RecentObservations .observations > a {
+  flex-grow: 1;
+  display: inline-block;
   margin: 5px;
 }
+
 
 .charts .c3 line,
 .charts .c3 path {

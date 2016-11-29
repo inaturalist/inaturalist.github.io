@@ -6,20 +6,43 @@ const RecentObservations = ( { observations } ) => (
       { observations.map( o => {
         const p = o.photos[0];
         const size = "small";
-        if ( !p.dimensions( size ) || !p.dimensions( size ).width ) {
+        const dims = p.dimensions( );
+        if ( !dims || !dims.width ) {
           return;
+        }
+        let height = 150;
+        let width;
+        if ( dims ) {
+          width = height / dims.height * dims.width;
+        } else {
+          width = height;
+        }
+        let flexGrow = 1;
+        if ( o.faves_count > 0 ) {
+          height = height * 4;
+          width = width * 4;
+          flexGrow = 4;
+        } else if ( o.comments_count > 0 ) {
+          height = height * 2;
+          width = width * 2;
+          flexGrow = 2;
         }
         return (
           <a
             key={`recent-observations-${o.id}`}
             href={`http://www.inaturalist.org/observations/${o.id}`}
-          >
-            <img
-              src={p.photoUrl( size )}
-              width={p.dimensions( size ).width}
-              height={p.dimensions( size ).height}
-            />
-          </a>
+            width={width}
+            height={height}
+            style={{
+              width,
+              maxWidth: 2 * width,
+              minHeight: height,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundImage: `url(${p.photoUrl( size )})`,
+              flexGrow
+            }}
+          />
         );
       } ) }
     </div>

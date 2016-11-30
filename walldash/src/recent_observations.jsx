@@ -5,7 +5,7 @@ const RecentObservations = ( { observations } ) => (
     <div className="observations">
       { observations.map( o => {
         const p = o.photos[0];
-        const size = "small";
+        let size = "small";
         const dims = p.dimensions( );
         if ( !dims || !dims.width ) {
           return;
@@ -21,11 +21,13 @@ const RecentObservations = ( { observations } ) => (
         if ( o.faves_count > 0 ) {
           height = height * 4;
           width = width * 4;
-          flexGrow = 4;
+          flexGrow = flexGrow * 4;
+          size = "large";
         } else if ( o.comments_count > 0 ) {
           height = height * 2;
           width = width * 2;
-          flexGrow = 2;
+          flexGrow = flexGrow * 2;
+          size = "medium";
         }
         return (
           <a
@@ -34,8 +36,8 @@ const RecentObservations = ( { observations } ) => (
             width={width}
             height={height}
             style={{
-              width,
-              maxWidth: 2 * width,
+              minWidth: width,
+              maxWidth: 5 * width,
               minHeight: height,
               backgroundSize: "cover",
               backgroundPosition: "center",

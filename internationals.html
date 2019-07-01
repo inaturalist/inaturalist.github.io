@@ -100,7 +100,15 @@ $(document).ready(function() {
         }else{
           return d.rank+". "+d.place_name
         }
-      } );
+      })
+      .style("cursor","pointer")
+      .on("click", function(d){
+        if(!window.mobilecheck()){
+          var url = "https://www.inaturalist.org/observations?verifiable=true&place_id=";
+          url += d.place_id;
+          window.open(url,'_blank');
+        }
+      });
     
     var obs_text = svg.selectAll(".obs_text")
       .data(nodes)

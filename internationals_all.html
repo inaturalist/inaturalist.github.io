@@ -131,7 +131,22 @@ function renderGraph(error, nodes, flags) {
       }else{
         return d.rank+". "+d.place_name
       }
-    } );
+    } )
+    .style("cursor",function(d,i){
+      if(i<14){
+        return "pointer";
+      }else{
+        return null;
+      }
+    })
+    .on("click", function(d, i){
+      if(i<14){
+        if(!window.mobilecheck()){
+          var url = url_hash[i];
+          window.open(url,'_blank');
+        }
+      }
+    });
     
   var obs_text = svg.selectAll(".obs_text")
     .data(nodes)

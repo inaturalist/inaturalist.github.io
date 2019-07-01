@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title></title>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.line {
+  fill: none;
+  stroke: #e56b25;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: white;
+  stroke: #e56b25;
+}
+
+.focus text.rank {
+  fill: #e56b25;
+  font: 5px sans-serif;
+}
+
+.focus text.title {
+  font: 7px sans-serif;
+  font-weight: bold;
+}
+
+.focus text.obscount {
+  font: 7px sans-serif;
+}
+
+.focus .rect {
+  fill: white;
+  stroke: black;
+}
+
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script src="country_stats/jquery.ba-bbq.min.js"></script>
+<script>
+$(document).ready(function() {
+  const urlParams = $.deparam( window.location.search.replace( /^\?/, "" ) );
+  document.title = urlParams.name.toUpperCase()  + " growth";
+
+  var margin = {top: 20, right: 20, bottom: 30, left: 60},
+      width = 500 - margin.left - margin.right,
+      height = 200 - margin.top - margin.bottom;
+
+  var parseDate = d3.time.format("%d-%b-%y").parse,
+      bisectDate = d3.bisector(function(d) { return d.date; }).left,
+      formatValue = d3.format(",f"),
+      formatDate = d3.time.format("%b");
+
+  var x = d3.time.scale()
+      .range([0, width]);
+
+  var y = d3.scale.linear()
+      .range([height, 0]);
+
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom");
+
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left");
+
+  var line = d3.svg.line()
+      .x(function(d) { return x(d.date); })
+      .y(function(d) { return y(d.month_total); });
+
+  var svg = d3.select("body").append("svg")
+      .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  d3.json("country_stats/growth/growth_" + urlParams.name + ".json", function(error, data) {
+  
+    if (error) throw error;
+
+    data.forEach(function(d) {
+      d.date = new Date(d.month);
+      d.date.setDate(d.date.getDate() + 1);
+    });
+
+    data.sort(function(a, b) {
+      return a.date - b.date;
+    });
+    //data.pop(); #remove 'in progress' month
+    
+    x.domain([data[0].date, data[data.length - 1].date]);
+    y.domain(d3.extent(data, function(d) { return d.month_total; }));
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+      .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("No. observations / month");
+
+    svg.append("path")
+        .datum(data)
+        .attr("class", "line")
+        .attr("d", line);
+
+    maxy = d3.max(data, function(d) { return d.month_total; });
+    maxx = data.filter(function(d) { return d.month_total == maxy; })[0].date
+
+    var focus = svg.append("g")
+        .attr("class", "focus")
+        .style("display", "none");
+
+    focus.append("circle")
+        .attr("r", 4.5);
+
+    focus.append("rect")
+        .attr("class","rect")
+        .attr("x", 3)
+        .attr("y", 3)
+        .attr("width", 60)
+        .attr("height", 25);
+
+
+    focus.append("text")
+        .attr("class","title")
+        .attr("text-anchor", "left")
+        .attr("x",10)
+        .attr("y",10)
+        .attr("dy", ".35em");
+
+    focus.append("text")
+        .attr("class","obscount")
+        .attr("text-anchor", "left")
+        .attr("x",10)
+        .attr("y",18)
+        .attr("dy", ".35em");
+
+    svg.append("rect")
+        .attr("class", "overlay")
+        .attr("width", width)
+        .attr("height", height)
+        .on("mouseover", function() { focus.style("display", null); })
+        .on("mouseout", function() { focus.style("display", "none"); })
+        .on("mousemove", mousemove);
+
+    function mousemove() {
+      var x0 = x.invert(d3.mouse(this)[0]),
+          i = bisectDate(data, x0, 1),
+          d0 = data[i - 1],
+          d1 = data[i],
+          d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+      focus.attr("transform", "translate(" + x(d.date) + "," + y(d.month_total) + ")");
+      var text_title = focus.select("text.title")
+        text_title.text(formatDate(d.date));
+        
+      var text_obscount = focus.select("text.obscount")
+        text_obscount.text( formatValue(d.month_total) + " obs");
+        if(y(d.month_total)>125){
+          text_title.attr("y", (10-20) );
+          text_obscount.attr("y", (18-20) );
+          focus.select("rect.rect").attr("y", (3-20) );
+        }else{
+          text_title.attr("y", (10-0) );
+          text_obscount.attr("y", (18-0) );
+          focus.select("rect.rect").attr("y", (3-0) );
+        }
+        
+        if(x(d.date)>width/2){
+          text_title.attr("x", (-50) );
+          text_obscount.attr("x", (-50) );
+          focus.select("rect.rect").attr("x", (-60) );
+        }else{
+          text_title.attr("x", (20) );
+          text_obscount.attr("x", (20) );
+          focus.select("rect.rect").attr("x", (10) );
+        }
+
+    }
+  });
+});
+</script>

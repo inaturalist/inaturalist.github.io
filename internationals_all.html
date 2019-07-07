@@ -44,12 +44,13 @@ var url_hash = [
   "https://www.inaturalist.org/blog/25754-new-zealand-inaturalist-world-tour",
   "https://www.inaturalist.org/blog/25762-united-kingdom-inaturalist-world-tour",
   "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/25768-italy-inaturalist-world-tour"
+  "https://www.inaturalist.org/blog/25893-hong-kong-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/25934-russia-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/25956-colombia-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/25979-germany-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/25994-taiwan-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/26012-france-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/26016-ecuador-inaturalist-world-tour"
 ]
 
 var per_row = 7;
@@ -111,7 +112,7 @@ function renderGraph(error, nodes, flags) {
     .attr("r", function(d) { return z(d.obs_count) } )
     .attr("transform", function(d) { return "translate(" + x((d.rank-1)%per_row+1) + "," + (55+height/row_coef * Math.floor((d.rank-1)/per_row)) + ")"; })
     .style("filter", function(d, i) {
-      if (i > 13) {
+      if (i > 14) {
         return ("filter", "url(#desaturate)");
       } else {
         return "";
@@ -183,7 +184,7 @@ function renderGraph(error, nodes, flags) {
   	.on("mouseout",  removeTooltip)
     .on("click", function(d){
       if(!window.mobilecheck()){
-        var url = "https://www.inaturalist.org/observations?verifiable=any&view=observers&place_id=";
+        var url = "https://www.inaturalist.org/observations?verifiable=true&view=observers&place_id=";
         url += d.place_id;
         window.open(url,'_blank');
       }
@@ -241,7 +242,7 @@ function renderGraph(error, nodes, flags) {
   	.on("mouseout",  removeTooltip)
     .on("click", function(d){
       if(!window.mobilecheck()){
-        var url = "https://www.inaturalist.org/observations?verifiable=any&view=identifiers&place_id=";
+        var url = "https://www.inaturalist.org/observations?verifiable=true&view=identifiers&place_id=";
         url += d.place_id;
         window.open(url,'_blank');
       }
@@ -293,21 +294,21 @@ function renderGraph(error, nodes, flags) {
       return "url(internationals_all.html#iso-" + d.place_id + ")";
     })
     .style("filter", function(d, i) {
-      if (i > 13) {
+      if (i > 14) {
         return ("filter", "url(#desaturate)");
       } else {
         return "";
       }
     })
     .style("cursor",function(d,i){
-      if(i<14){
+      if(i<15){
         return "pointer";
       }else{
         return null;
       }
     })
     .on("click", function(d, i){
-      if(i<14){
+      if(i<15){
         if(!window.mobilecheck()){
           var url = url_hash[i];
           window.open(url,'_blank');

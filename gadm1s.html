@@ -84,6 +84,7 @@ $(document).ready(function() {
   var color = d3.scale.category10();
 
   var country_id = urlParams.name.toUpperCase();
+  var alt = urlParams.alt;
   if( country_id == "USA" ){
     var scale_fact = 1.2;
       width = 900,
@@ -109,14 +110,55 @@ $(document).ready(function() {
       width = 900,
       height = 900;
   }else if( country_id == "TWN" ){
-    var scale_fact = 1.05;
+    var scale_fact = 1.05,
       width = 900,
       height = 800;
+  }else if( country_id == "ECU" ){
+    var scale_fact = .5,
+      width = 900,
+      height = 800;
+  }else if( country_id == "MYS" ){
+    var scale_fact = 1,
+      width = 900,
+      height = 400;
+  }else if( country_id == "ESP" ){
+    var scale_fact = .6,
+      width = 900,
+      height = 800;
+  }else if( country_id == "PRT" ){
+    var scale_fact = .3,
+      width = 900,
+      height = 900;
+  }else if( country_id == "CRI" ){
+    var scale_fact = .61,
+      width = 900,
+      height = 500;
+  }else if( country_id == "IND" ){
+    var scale_fact = 1.05,
+      width = 900,
+      height = 700;
   }else{
-    var scale_fact = 1;
+    var scale_fact = 1,
       width = 900,
       height = 900; 
   }
+
+  if( alt == "true"){
+    if( country_id == "ECU" ){
+        var scale_fact = 1.1;
+          width = 900,
+          height = 250;
+    }else if( country_id == "ESP" ){
+        var scale_fact = 1.5,
+          width = 900,
+          height = 800;
+    }else if( country_id == "PRT" ){
+        var scale_fact = 1,
+          width = 900,
+          height = 800;
+    }
+  }
+
 
   var projection = d3.geo.orthographic()
     .translate([width / 2, height / 2])

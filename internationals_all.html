@@ -50,9 +50,14 @@ var url_hash = [
   "https://www.inaturalist.org/blog/25979-germany-inaturalist-world-tour",
   "https://www.inaturalist.org/blog/25994-taiwan-inaturalist-world-tour",
   "https://www.inaturalist.org/blog/26012-france-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/26016-ecuador-inaturalist-world-tour"
+  "https://www.inaturalist.org/blog/26016-ecuador-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/26068-malaysia-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/26072-brazil-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/26109-spain-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/26120-portugal-inaturalist-world-tour"
 ]
 
+var day = url_hash.length - 1
 var per_row = 7;
 var circ_rad = 5;
 var row_coef = 36.5;
@@ -112,7 +117,7 @@ function renderGraph(error, nodes, flags) {
     .attr("r", function(d) { return z(d.obs_count) } )
     .attr("transform", function(d) { return "translate(" + x((d.rank-1)%per_row+1) + "," + (55+height/row_coef * Math.floor((d.rank-1)/per_row)) + ")"; })
     .style("filter", function(d, i) {
-      if (i > 14) {
+      if (i > day) {
         return ("filter", "url(#desaturate)");
       } else {
         return "";
@@ -134,14 +139,14 @@ function renderGraph(error, nodes, flags) {
       }
     } )
     .style("cursor",function(d,i){
-      if(i<14){
+      if(i<day+1){
         return "pointer";
       }else{
         return null;
       }
     })
     .on("click", function(d, i){
-      if(i<14){
+      if(i<day+1){
         if(!window.mobilecheck()){
           var url = url_hash[i];
           window.open(url,'_blank');
@@ -170,7 +175,7 @@ function renderGraph(error, nodes, flags) {
   for(j = 0; j<5; j++){
     var its = svg.selectAll(".observer_"+j)
       .data(nodes)
-      .enter().append("g").filter(function(d,i){return i<14;})
+      .enter().append("g").filter(function(d,i){return i<(day+1);})
     .attr("transform", function(d) {
         if(d.observers.length >= (j+1)){
           return "translate(" + x((d.rank-1)%per_row + 1.35 - .175*(4-j)) + "," + (63+height/row_coef * Math.floor((d.rank-1)/per_row)) + ")"
@@ -228,7 +233,7 @@ function renderGraph(error, nodes, flags) {
   for(j = 0; j<5; j++){
     var its = svg.selectAll(".identifier_"+j)
       .data(nodes)
-      .enter().append("g").append("g").filter(function(d,i){return i<14;})
+      .enter().append("g").append("g").filter(function(d,i){return i<(day+1);})
       .attr("transform", function(d) {
         if(d.identifiers.length >= (j+1)){
           return "translate(" + x((d.rank-1)%per_row + 1.35 - .175*(4-j)) + "," + (75+height/row_coef * Math.floor((d.rank-1)/per_row)) + ")"
@@ -294,21 +299,21 @@ function renderGraph(error, nodes, flags) {
       return "url(internationals_all.html#iso-" + d.place_id + ")";
     })
     .style("filter", function(d, i) {
-      if (i > 14) {
+      if (i > day) {
         return ("filter", "url(#desaturate)");
       } else {
         return "";
       }
     })
     .style("cursor",function(d,i){
-      if(i<15){
+      if(i<(day+1)){
         return "pointer";
       }else{
         return null;
       }
     })
     .on("click", function(d, i){
-      if(i<15){
+      if(i<(day+1)){
         if(!window.mobilecheck()){
           var url = url_hash[i];
           window.open(url,'_blank');

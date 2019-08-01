@@ -199,6 +199,10 @@ $(document).ready(function() {
     var scale_fact = 1.1,
       width = 900,
       height = 900;
+  }else if( country_id == "AUT" ){
+    var scale_fact = 1.25,
+      width = 900,
+      height = 500;
   }else{
     var scale_fact = 1,
       width = 900,
@@ -218,7 +222,11 @@ $(document).ready(function() {
         var scale_fact = 1.5,
           width = 900,
           height = 400;
-        }
+    }else if( country_id == "CHL" ){
+      var scale_fact = 1,
+        width = 900,
+        height = 500;
+    }
   }
 
   var lus = 3;

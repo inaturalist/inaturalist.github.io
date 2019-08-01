@@ -105,7 +105,9 @@ $(document).ready(function() {
     data.sort(function(a, b) {
       return a.date - b.date;
     });
-    //data.pop(); #remove 'in progress' month
+    if(data.slice(-1)[0].month == "2019-08-01"){
+      data.pop(); //remove 'in progress' month
+    }
     
     x.domain([data[0].date, data[data.length - 1].date]);
     y.domain(d3.extent(data, function(d) { return d.month_total; }));

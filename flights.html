@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.land {
+  fill: #bcbcbc;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.arc {
+  fill: none;
+  stroke: #e46c41;
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-opacity: .75;
+}
+
+.mapdot_from, .mapdot_to {
+  opacity: .75;
+  fill: #e46c41;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script>
+
+
+var width = 960,
+    height = 500;
+
+var projection = d3.geo.equirectangular()
+    .scale(153)
+    .rotate([115, 0])
+    .translate([width / 2, height / 2])
+    .precision(.1);
+
+var geo_path = d3.geo.path()
+    .projection(projection);
+
+function transition(path) {
+  path.transition().duration(1000)
+        .attrTween("stroke-dasharray", tweenDash)
+        .styleTween("opacity", tweenOpacity)
+      .transition().delay(1050).duration(50)
+        .style("opacity", 0)
+        .remove();
+}
+
+function tweenDash() {
+  var l = this.getTotalLength(),
+      i = d3.interpolateString("0," + l, l + "," + l);
+  return function(t) { return i(t); };
+}
+
+function tweenOpacity() {
+  return function(t) { return 1; };
+}
+
+var svg3 = d3.select("body").append("svg")
+  .attr("viewBox", "0 0 " + width + " " + height)
+  .attr("preserveAspectRatio", "xMinYMin meet");
+
+var current_pairs = [];
+
+d3.json("world-50m.json", function(error, topology) {
+  if (error) throw error;
+
+  svg3.append("path")
+      .datum(topojson.feature(topology, topology.objects.land))
+      .attr("d", geo_path)
+      .attr("class", "land");
+
+  svg3.append("path")
+      .datum(topojson.mesh(topology, 
+                           topology.objects.countries, 
+                           function(a, b) { 
+                             return a !== b && (a.id / 1000 | 0) === (b.id / 1000 | 0); 
+                           }))
+      .attr("d", geo_path)
+      .attr("class", "boundary");
+
+  d3.csv("passenger_trips.csv?121", function(error, pairs) {
+    if (error) throw error;
+        
+    i = 0;
+    setInterval(function(){
+      var r = Math.random();
+      //var new_k = pairs.length-1;
+      //for (var k=0; k<pairs.length; k++){
+        //if (k == Math.round(r*pairs.length,0)){
+        ////if (r < Math.random()){//+pairs[k].cumsum_proportion) {
+          //new_k = k;
+          //break;
+          //}
+      //}
+      var new_pair = pairs[Math.round(r*pairs.length,0)]
+      //var new_pair = pairs[new_k];
+      new_pair.i = i;
+      current_pairs.push(new_pair);
+      if (current_pairs.length >= 50) { current_pairs.shift(); }
+
+      var linestring_data = [];
+      current_pairs.forEach(function(d){
+        linestring_data.push({type: "LineString", 
+                              coordinates: [[d.ORIGIN_Longitude, d.ORIGIN_Latitude], 
+                                            [d.DEST_Longitude, d.DEST_Latitude]],
+                              i: d.i})
+      })
+    
+      var arcs = svg3.selectAll(".arc")
+          .data(linestring_data, function(d){return d.i;});
+      arcs.enter().append("path")
+            .attr("class", "arc")
+            .style("opacity", 0)
+            .attr("d", geo_path)
+            .call(transition);
+    
+      var mapdot_from = svg3.selectAll(".mapdot_from")
+          .data(current_pairs, function(d){return d.i;});
+      mapdot_from.enter().append("circle")
+            .attr("class", "mapdot_from")
+            .attr("cx", function(d) { return projection([d.ORIGIN_Longitude, d.ORIGIN_Latitude])[0]; })
+            .attr("cy", function(d) { return projection([d.ORIGIN_Longitude, d.ORIGIN_Latitude])[1]; })
+            .attr("r", 2)
+            .transition().delay(1050).duration(50)
+              .style("opacity", 0)
+              .remove();
+    
+      var mapdot_to = svg3.selectAll(".mapdot_to")
+          .data(current_pairs, function(d){return d.i;});
+      mapdot_to.enter().append("circle")
+            .attr("class", "mapdot_to")
+            .style('opacity', 1e-6)
+            .attr("cx", function(d) { return projection([d.DEST_Longitude, d.DEST_Latitude])[0]; })
+            .attr("cy", function(d) { return projection([d.DEST_Longitude, d.DEST_Latitude])[1]; })
+            .attr("r", 2)
+            .transition().delay(500).duration(750)
+              .style('opacity', 1)
+            .transition().delay(1050).duration(50)
+              .style("opacity", 0)
+              .remove();
+      
+      i += 1;
+
+    }, 10);
+  
+  });
+  
+});
+
+</script>

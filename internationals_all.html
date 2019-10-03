@@ -130,7 +130,12 @@ var url_hash = [
   "https://www.inaturalist.org/posts/27699-nepal-inaturalist-world-tour",
   "https://www.inaturalist.org/blog/27724-morocco-inaturalist-world-tour",
   "https://www.inaturalist.org/blog/27779-malawi-inaturalist-world-tour",
-  "https://www.inaturalist.org/blog/27826-bahamas-inaturalist-world-tour"
+  "https://www.inaturalist.org/blog/27826-bahamas-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/27838-egypt-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/27847-ethiopia-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/27854-cambodia-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/27901-solomon-islands-inaturalist-world-tour",
+  "https://www.inaturalist.org/blog/27934-bonaire-sint-eustatius-and-saba-inaturalist-world-tour"  
 ]
 
 var day = url_hash.length - 1
@@ -307,7 +312,7 @@ function renderGraph(error, nodes, flags) {
   for(j = 0; j<5; j++){
     var its = svg.selectAll(".identifier_"+j)
       .data(nodes)
-      .enter().append("g").append("g").filter(function(d,i){return i<(day+1 && url_hash[i]!=null);})
+      .enter().append("g").append("g").filter(function(d,i){return i<(day+1) && url_hash[i]!=null;})
       .attr("transform", function(d) {
         if(d.identifiers.length >= (j+1)){
           return "translate(" + x((d.rank-1)%per_row + 1.35 - .175*(4-j)) + "," + (75+height/row_coef * Math.floor((d.rank-1)/per_row)) + ")"

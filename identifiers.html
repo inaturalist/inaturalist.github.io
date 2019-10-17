@@ -105,7 +105,7 @@ $(document).ready(function() {
     .html("");
 
   function renderGraph(error, nodes) {
-  
+    var nodes = nodes.filter(function(d) {return d.obs_count > 0})
     var max = d3.max(nodes.map(function(d){return d.obs_count}));
     var min = d3.min(nodes.map(function(d){return d.obs_count}));
     var z = d3.scale.log()

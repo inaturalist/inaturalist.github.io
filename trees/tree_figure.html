@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+  .node {
+    cursor: pointer;
+  }
+  
+  .node circle {
+    fill: #76AC1E;
+  }
+
+  .node text {
+    font: 10px sans-serif;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 5px;
+  }
+
+
+</style>
+<body>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script src="jquery.ba-bbq.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  const urlParams = $.deparam( window.location.search.replace( /^\?/, "" ) );
+  document.title = "tfr_" + urlParams.tfr_id.toUpperCase();
+
+var tfr_id = urlParams.tfr_id;
+  
+var concept_key = {
+    "no change": "#76AC1E",
+    "broadened": "#337AB6",
+    "narrowed": "#E46C41",
+    "no analogue": "#FFE600"
+  };
+
+
+var stratify = d3.stratify()
+    .id(function(d) { return d.name})
+    .parentId(function(d) { return d.parent});
+
+function format_name(d) {
+  if(d.data.rank == "species"){
+    var split_string = d.id.split(" ");
+    var first_word = split_string.shift();
+    split_string.unshift(first_word[0]+".");
+    return split_string.join(' ')    
+  }else if(d.data.rank == "subspecies" ){
+    var split_string = d.id.split(" ");
+    var first_word = split_string.shift();
+    var second_word = split_string.shift();
+    split_string.unshift(second_word[0]+".");
+    split_string.unshift(first_word[0]+".");
+    return split_string.join(' ')    
+  }else{
+    return d.id;
+  }
+}
+
+function truncate(d, cutoff) {
+     if(d.length > cutoff)
+         return d.substring(0,(cutoff-3))+'...';
+     else
+         return d;
+}
+    
+d3.json("trees/tfr_"+tfr_id+".json"+'?' + Math.floor(Math.random() * 1000), function(error, data) {
+  if (error) throw error;
+  // if it has splits
+  if(data.splits.length > 0){
+    // sort based on output taxa
+    var sorting = data.external_taxa.sort((a, b) => (a.name > b.name) ? -1 : 1),
+      data_internal_taxa = [];
+    data.internal_taxa.forEach(function(it){
+      match_found = false;
+      data.swaps.filter(function(swap) {
+        if(swap.input[0] == it.name){
+          if(data_internal_taxa.filter(function(t){return (t.name==it.name)}).length == 0){
+            it.ind = sorting.map(function(j) { return j.name }).indexOf(swap.output.name)
+            data_internal_taxa.push(it);
+            match_found = true;
+         }
+       }
+     })
+     if(match_found == false){
+       data.swaps.filter(function(swap) {
+         if(swap.input[0] && swap.input[0].substring(0, swap.input[0].lastIndexOf(" ")) == it.name){
+           if(data_internal_taxa.filter(function(t){return (t.name==it.name)}).length == 0){
+             it.ind = sorting.map(function(j) { return j.name }).indexOf(swap.output.name)
+             data_internal_taxa.push(it);
+             match_found = true;
+           }
+         }
+       })
+       if(match_found == false){      
+         if(data_internal_taxa.filter(function(t){return (t.name==it.name)}).length == 0){
+           it.ind = data.internal_taxa.map(function(j) { return j.name }).indexOf(it.name)
+           data_internal_taxa.push(it)
+         }
+       }
+     }
+   });
+  
+   var root_external = stratify(data.external_taxa),
+      root_internal = stratify(data_internal_taxa).sort(function(a, b){
+         var a1= a.data.ind, b1= b.data.ind;
+         if(a1== b1) return 0;
+         return a1> b1? 1: -1;
+       }),
+       num_rows = Math.max(root_external.descendants().length, root_internal.descendants().length);
+  }else{  
+    // sort based on input taxa
+    var sorting = data.internal_taxa.sort((a, b) => (a.name > b.name) ? -1 : 1),
+      data_external_taxa = [];
+    data.external_taxa.forEach(function(et){
+      match_found = false;
+      data.swaps.filter(function(swap) {
+        if(swap.output.name == et.name){
+          if(data_external_taxa.filter(function(t){return (t.name==et.name)}).length == 0){
+            et.ind = sorting.map(function(j) { return j.name }).indexOf(swap.input[0])
+            data_external_taxa.push(et);
+            match_found = true;
+          }
+        }
+      })
+      if(match_found == false){
+        data.swaps.filter(function(swap) {
+          if(swap.output.name.substring(0, swap.output.name.lastIndexOf(" ")) == et.name){
+            if(data_external_taxa.filter(function(t){return (t.name==et.name)}).length == 0){
+              et.ind = sorting.map(function(j) { return j.name }).indexOf(swap.input[0])
+              data_external_taxa.push(et);
+              match_found = true;
+            }
+          }
+        })
+        if(match_found == false){      
+          if(data_external_taxa.filter(function(t){return (t.name==et.name)}).length == 0){
+            et.ind = data.external_taxa.map(function(j) { return j.name }).indexOf(et.name)
+            data_external_taxa.push(et)
+          }
+        }
+      }
+    });
+    data_external_taxa.sort(function(a, b){
+      var a1= a.ind, b1= b.ind;
+      if(a1== b1) return 0;
+      return a1> b1? 1: -1;
+    });
+  
+    var root_internal = stratify(data.internal_taxa),
+      root_external = stratify(data_external_taxa).sort(function(a, b){
+        var a1= a.data.ind, b1= b.data.ind;
+        if(a1== b1) return 0;
+        return a1> b1? 1: -1;
+      }),
+      num_rows = Math.max(root_external.descendants().length, root_internal.descendants().length);
+  }
+
+  // set up the svg
+  var margin = {top: 1, right: 1, bottom: 1, left: 1},
+    width = 800 - margin.left - margin.right,
+    offset1 = 100,
+    offset2 = (width/2 + 75),
+    voffset2 = 20,
+    height = Math.max( ( num_rows * 12 ), 200) + voffset2 - margin.top - margin.bottom;
+
+  var svg = d3.select("body").append("svg") 
+    .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+    .attr("preserveAspectRatio", "xMinYMin meet");
+  
+  var tree = d3.cluster()
+    .size([height - voffset2, width/4.5]);
+  
+  // get the trees
+  tree(root_external);
+  tree(root_internal);
+  
+  // groups for the two background trees
+  var g = svg.append("g").attr("transform", "translate(" + offset1 + ",0)");
+  var g2 = svg.append("g").attr("transform", "translate(" + offset2 + "," + voffset2 + ")");
+  
+  var link = g.selectAll(".link")
+      .data(root_internal.descendants().slice(1))
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        return "M" + d.y + "," + d.x
+            + "C" + (d.parent.y + 50) + "," + d.x
+            + " " + (d.parent.y + 50) + "," + d.parent.x
+            + " " + d.parent.y + "," + d.parent.x;
+      }); 
+      
+      var trianglePoints = (width/2-35) + ' ' + (height/2+15) + ', ' + 
+                           (width/2-15) + ' ' + (height/2+10) + ', ' + 
+                           (width/2-35) + ' ' + (height/2+5);
+
+      svg.append('polyline')
+      .attr('points', trianglePoints);
+      
+  var link = g2.selectAll(".link")
+      .data(root_external.descendants().slice(1))
+    .enter().append("path")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        return "M" + d.y + "," + d.x
+            + "C" + (d.parent.y + 50) + "," + d.x
+            + " " + (d.parent.y + 50) + "," + d.parent.x
+            + " " + d.parent.y + "," + d.parent.x;
+      });
+
+  var node = g.selectAll(".node")
+        .data(root_internal.descendants())
+      .enter().append("g")
+        .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+        .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+  node.append("circle")
+      .attr("r", 4);
+      
+   var node2 = g2.selectAll(".node")
+      .data(root_external.descendants())
+    .enter().append("g")
+      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+  node2.append("circle")
+      .attr("r", 4);
+  
+  // group for the swaps and splits
+  var g_1 = svg.append("g");
+  
+  data.splits.forEach(function (item, index) {
+    var y2 = root_internal.descendants().filter(obj => { return obj.id === item.input })[0].x,
+        x2 = root_internal.descendants().filter(obj => { return obj.id === item.input })[0].y + offset1;
+    
+    item.output.forEach(function (output) {
+      var y1 = root_external.descendants().filter(obj => { return obj.id === output.name })[0].x + voffset2, 
+          x1 = root_external.descendants().filter(obj => { return obj.id === output.name })[0].y + offset2;
+          
+            
+      g_1.append("line")
+        .attr("y1", y1)
+        .attr("x1", x1)
+        .attr("y2", y2)
+        .attr("x2", x2)
+        .attr("stroke-width", 2)
+        .attr("stroke", "#E46C41")
+        .attr("class", "split_" + item.input.replace(/ /g,"_"))
+        .on("mouseover", function(d) {
+          d3.selectAll("." + "split_" + item.input.replace(/ /g,"_"))
+            .attr("stroke-width",5)
+        })
+        .on("mouseout", function(d) {
+          d3.selectAll("." + "split_" + item.input.replace(/ /g,"_"))
+            .attr("stroke-width",2)
+        });
+                    
+      if(output.status == "change"){
+        g_1.append("rect")
+          .attr("x", x1-4)
+          .attr("y", y1-4)
+          .attr("width", 8)
+          .attr("height", 8)
+          .style("fill", concept_key[output.concept]);
+      }else{
+        g_1.append("circle")
+          .attr("cx", x1)
+          .attr("cy", y1)
+          .attr("r", 4)
+        .style("fill", concept_key[output.concept]);
+      }
+    });
+      
+    g_1.append("circle")
+          .attr("cx", x2)
+          .attr("cy", y2)
+          .attr("r", 4)
+      .style("fill", "#76AC1E");
+      
+  });
+  
+  data.swaps.forEach(function (item, index) {
+    console.log(item.output)
+    var y1 = root_external.descendants().filter(obj => { return obj.id === item.output.name })[0].x + voffset2,
+        x1 = root_external.descendants().filter(obj => { return obj.id === item.output.name })[0].y + offset2;
+        
+    item.input.forEach(function (input) {
+      var y2 = root_internal.descendants().filter(obj => { return obj.id === input })[0].x,
+          x2 = root_internal.descendants().filter(obj => { return obj.id === input })[0].y + offset1;
+    
+      g_1.append("line")
+        .attr("y1", y1)
+        .attr("x1", x1)
+        .attr("y2", y2)
+        .attr("x2", x2)
+        .attr("stroke-width", item.input.length > 1 ? 2 : 1)
+        .attr("stroke", concept_key[item.input.length > 1 ? "broadened" : "no change"])
+        .attr("class", "swap_" + item.output.name.replace(/ /g,"_"))
+        .on("mouseover", function(d) {
+          d3.selectAll("." + "swap_" + item.output.name.replace(/ /g,"_"))
+            .attr("stroke-width",4)
+        })
+        .on("mouseout", function(d) {
+          d3.selectAll("." + "swap_" + item.output.name.replace(/ /g,"_"))
+            .attr("stroke-width",(item.input.length > 1 ? 2 : 1))
+        });
+    
+      g_1.append("circle")
+        .attr("cx", x1)
+        .attr("cy", y1)
+        .attr("r", 4)
+        .style("fill", "#86A81D");
+    })
+    
+    if(item.output.status == "change"){
+      g_1.append("rect")
+        .attr("x", x1-4)
+        .attr("y", y1-4)
+        .attr("width", 8)
+        .attr("height", 8)
+        .style("fill", concept_key[item.output.concept]);
+    }else{
+      g_1.append("circle")
+        .attr("cx", x1)
+        .attr("cy", y1)
+        .attr("r", 4)
+      .style("fill", concept_key[item.output.concept]);
+    }
+  });
+  
+  // group for the labels
+  var g_2 = svg.append("g").attr("transform", "translate(" + offset1 + ",0)");  
+  var g2_2 = svg.append("g").attr("transform", "translate(" + offset2 + "," + voffset2 + ")");
+ 
+  var node = g_2.selectAll(".node")
+      .data(root_internal.descendants())
+      .enter().append("g")
+      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+  node.append("text")
+      .attr("dy", 3)
+      .attr("x", function(d) { return d.children ? -8 : 8; })
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) { return truncate(format_name(d),17); })
+ 
+   var node2 = g2_2.selectAll(".node")
+      .data(root_external.descendants())
+      .enter().append("g")
+      .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+
+  node2.append("text")
+      .attr("dy", 3)
+      .attr("x", function(d) { return d.children ? -8 : 8; })
+      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+      .text(function(d) { return truncate(format_name(d),17); })
+
+});
+
+});
+</script>
+

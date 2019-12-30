@@ -1,0 +1,1 @@
+{"internal_taxa":[{"parent":null,"name":"Oreotrochilus","rank":"genus"}],"external_taxa":[{"parent":null,"name":"Oreotrochilus","rank":"genus"},{"name":"Oreotrochilus cyanolaemus","rank":"species","parent":"Oreotrochilus","id":956112,"status":"change"}],"splits":[],"swaps":[{"input":[],"output":{"name":"Oreotrochilus cyanolaemus","status":"change","concept":"no analogue"}}]}

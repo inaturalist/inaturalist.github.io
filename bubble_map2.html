@@ -68,7 +68,6 @@
 <script src="//d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/queue.v1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-<script src="country_stats/jquery.ba-bbq.min.js"></script>
 
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
 <script src="https://d3js.org/d3-geo.v2.min.js"></script>
@@ -128,7 +127,7 @@ $(document).ready(function() {
   function renderGraph(error, users) {
 
 
-  d3.json("country_stats/gadmin0_10s.json", function(error, collection) {
+  d3.json("gadmin0_10s.json", function(error, collection) {
     if (error) throw error;
     var path = d3.geo.path()
       .projection(projection).pointRadius(2);

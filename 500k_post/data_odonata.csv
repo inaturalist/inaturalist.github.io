@@ -24,7 +24,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 562058,Pericnemis melansoni,Pericnemis melansoni,,
 561909,Franciscagrion longispinum,Franciscagrion longispinum,-20.2442,-46.4468
 562053,Pericnemis dowi,Pericnemis dowi,1.0852,111.2419
-100201,Epipleoneura manauensis,Epipleoneura manauensis,51.7997,10.6667
+100201,Epipleoneura manauensis,Epipleoneura manauensis,0.908,-65.95
 100204,Epipleoneura tariana,Epipleoneura tariana,,
 100206,Epipleoneura williamsoni,Epipleoneura williamsoni,-23.9,-56.33
 562747,Progomphus racenisi,Progomphus racenisi,0.85,-65.97
@@ -161,7 +161,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 98223,Coeliccia brachysticta,Coeliccia brachysticta,,
 562244,Anaciaeschna moluccana,Anaciaeschna moluccana,-3.4,126.6667
 102486,Hemicordulia apoensis,Hemicordulia apoensis,,
-105076,Macrothemis idalia,Macrothemis idalia,43.237653,-8.383154
+105076,Macrothemis idalia,Macrothemis idalia,0.90908,-65.972355
 102496,Hemicordulia mumfordi,Hemicordulia mumfordi,,
 197749,Argia difficilis,Argia difficilis,4.07256,-73.58506
 518417,Porpax mezierei,Porpax mezierei,-1.61,13.91
@@ -423,7 +423,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 563079,Huonia aruana,Huonia aruana,-5.7667,134.2167
 563085,Huonia silvicola,Huonia silvicola,-1.89472,130.08361
 563106,Macrothemis calliste,Macrothemis calliste,,
-563116,Macrothemis newtoni,Macrothemis newtoni,-35.276222,149.178944
+563116,Macrothemis newtoni,Macrothemis newtoni,-3.152126,-60.08725
 563130,Micrathyria dido,Micrathyria dido,4.0761,-73.581043
 563137,Micrathyria pirassunungae,Micrathyria pirassunungae,,
 563146,Microtrigonia marsupialis,Microtrigonia marsupialis,-6.483,147.767
@@ -2148,7 +2148,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 105051,Macromia vangviengensis,Macromia vangviengensis,,
 114488,Trithemis nigra,Prãncipe Dropwing,1.639061,7.422503
 1580365,Anax tonga,Anax tonga,,
-110632,Progomphus serenus,Hispaniolan Sanddragon,-35.570132,148.979428
+110632,Progomphus serenus,Hispaniolan Sanddragon,19.1145,-70.6163
 105014,Macrogomphus seductus,Macrogomphus seductus,,
 563013,Brechmorhoga travassosi,Brechmorhoga travassosi,3.92404,-53.23477
 563011,Brechmorhoga innupta,Brechmorhoga innupta,,

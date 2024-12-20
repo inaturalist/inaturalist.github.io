@@ -390,7 +390,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 105414,Megalagrion orobates,Yellowface Kauai Damselfly,22.01266,-159.70488
 561083,Drepanosticta drusilla,Drepanosticta drusilla,1.0648,110.2837
 561638,Igneocnemis polilloensis,Igneocnemis polilloensis,,
-197668,Leptobasis buchholzi,Leptobasis buchholzi,26.375489,-81.604149
+197668,Leptobasis buchholzi,Leptobasis buchholzi,9.716667,-74.433333
 197306,Lestes secula,Scythe-tipped Spreadwing,19.3869,-101.492
 561653,Matticnemis doi,Matticnemis doi,6.0522,121.0022
 105728,Micrathyria divergens,Micrathyria divergens,,
@@ -480,7 +480,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 561386,Platycypha crocea,Platycypha crocea,-13.6937,17.0612
 561397,Rhinocypha pallidifrons,Rhinocypha pallidifrons,0.0667,99.9833
 561396,Rhinocypha moultoni,Rhinocypha moultoni,6.00731,116.54257
-561412,Stenocypha gracilis,Stenocypha gracilis,47.741138,8.791677
+561412,Stenocypha gracilis,Stenocypha gracilis,0.62145,10.39584
 561463,Pentaphlebia mangana,Pentaphlebia mangana,0.56,10.24
 561473,Bornargiolestes fuscus,Bornargiolestes fuscus,1.638,112.2216
 561479,Rhipidolestes laui,Rhipidolestes laui,,
@@ -1286,7 +1286,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 197181,Mnesarete hyalina,Mnesarete hyalina,,
 197273,Heteragrion obsoletum,Heteragrion obsoletum,,
 197271,Heteragrion palmichale,Heteragrion palmichale,,
-197423,Epipleoneura humeralis,Epipleoneura humeralis,51.7997,10.6667
+197423,Epipleoneura humeralis,Epipleoneura humeralis,-4.099055,-63.153521
 197458,Tuberculobasis cardinalis,Tuberculobasis cardinalis,,
 197513,Teinopodagrion caquetanum,Teinopodagrion caquetanum,1.48789,-75.7275
 563226,Paltothemis nicolae,Spot-winged Rock Skimmer,,
@@ -1507,7 +1507,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 562267,Cephalaeschna acanthifrons,Cephalaeschna acanthifrons,,
 562266,Castoraeschna tepuica,Castoraeschna tepuica,,
 562162,Teinobasis carolinensis,Teinobasis carolinensis,7.45079,151.85
-562167,Teinobasis cryptica,cryptic shadesprite,55.81609,9.91087
+562167,Teinobasis cryptica,cryptic shadesprite,1.45928,110.426384
 562171,Teinobasis dominula,Teinobasis dominula,-1.433,149.612
 562668,Perigomphus angularis,Perigomphus angularis,-1.950111,-77.863
 562190,Teinobasis luciae,Teinobasis luciae,-2.61,140.915
@@ -1797,7 +1797,7 @@ taxon_id,Name,Common name,Latitude,Longitude
 563004,Bironides liesthes,Bironides liesthes,-2.61,140.915
 563001,Antidythemis nigra,Antidythemis nigra,,
 563112,Macrothemis hosanai,Macrothemis hosanai,,
-563113,Macrothemis ludia,Macrothemis ludia,43.237653,-8.383154
+563113,Macrothemis ludia,Macrothemis ludia,10.368258,-66.668249
 563184,Oligoclada crocogaster,Oligoclada crocogaster,,
 1416557,Cephalaeschna biguttata,Cephalaeschna biguttata,,
 1444434,Perissolestes rupestris,Perissolestes rupestris,,

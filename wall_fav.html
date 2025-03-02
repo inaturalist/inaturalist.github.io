@@ -104,7 +104,7 @@
       window.grid.masonry( 'remove', $('.grid-item') )
       $('.grid-item').remove()
       $('.loading').show()
-      $.getJSON('https://api.inaturalist.org/v1/observations?photo_license=cc0&popular=true&verifiable=true&order_by=random&per_page=200', function(json) {
+      $.getJSON('https://api.inaturalist.org/v1/observations?photo_license=cc0&popular=true&verifiable=true&order_by=random&per_page=200&ttl=-1', function(json) {
         $('.loading').hide()
         var observations = json.results;
         if (observations.length == 0) { 

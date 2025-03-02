@@ -3,6 +3,7 @@
 <style>
 .land {
   fill: #999;
+  stroke: black; /* Ensure stroke is defined */
   stroke-opacity: 1;
 }
 
@@ -17,6 +18,7 @@
 }
 .flyers {
   stroke-width:1;
+  fill: none; /* Make sure fill is explicitly set */
   opacity: .6;
   stroke: darkred; 
 }
@@ -30,10 +32,47 @@
 </style>
 
 <body>
+  <button onclick="exportSVG()">Download SVG</button>
+</body>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/queue.v1.min.js"></script>
 <script src="https://d3js.org/topojson.v0.min.js"></script>
 <script>
+
+function inlineAllStyles() {
+  const svg = document.querySelector('svg');
+  
+  const styles = window.getComputedStyle(svg);
+
+  svg.querySelectorAll('*').forEach(element => {
+    const computedStyle = window.getComputedStyle(element);
+    for (let i = 0; i < computedStyle.length; i++) {
+      const property = computedStyle[i];
+      element.style[property] = computedStyle.getPropertyValue(property);
+    }
+  });
+}
+
+function exportSVG() {
+  inlineAllStyles();
+
+  const svg = document.querySelector('svg');
+  svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  svg.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+  svg.setAttribute("viewBox", `0 0 ${svg.getAttribute('width')} ${svg.getAttribute('height')}`);
+
+  const serializer = new XMLSerializer();
+  const source = serializer.serializeToString(svg);
+  const blob = new Blob([source], { type: "image/svg+xml;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "globe.svg";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 d3.select(window)
     .on("mousemove", mousemove)

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Observations Wall</title>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.1/packery.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+  <style type="text/css">
+    body {font-family: "Trebuchet MS", Helvetica; background-color: black;}
+    #grid {position: fixed !important;width:100% !important;height: 100% !important;}
+    .grid-item .obs-img {width: 100%; display: block;}
+    .grid-item .inner {padding:5px;position:relative;}
+    .grid-item {float:left; }
+
+    /* small screen */
+    /*body { font-size: 90%; }
+    .grid-item, .grid-sizer {width: 10%;}
+    .grid-item-medium {width: 20%;}
+    .grid-item-big {width: 30%;}
+    .blurb img{ max-width: 20px;  }*/
+
+    /* big screen */
+    body { font-size: 20%;}
+    .grid-item,
+    .grid-sizer {width: 182px; min-height: 30px;}
+    .grid-item-medium {width: 364px;}
+    .grid-item-big {width: 728px;}
+    .blurb img{ max-width: 10px;  }
+
+    /* really big screen */
+    /*body { font-size: 20%;}
+    .grid-item, .grid-sizer {width: 2.5%; min-height: 30px;}
+    .grid-item-medium {width: 5%;}
+    .grid-item-big {width: 10%;}
+    .blurb img{ max-width: 10px;  }*/
+
+    .blurb {position: absolute; left: 0px; bottom: 0px; width: 100%; color: white; white-space: nowrap;overflow:hidden;}
+    .blurb .blurbinner {margin: 5px; padding: 5px;background-color: rgba(0,0,0,0.3); width: auto; }
+    .blurb img {border-radius: 500%; vertical-align: middle;}
+    .blurb .species {float: right; max-width: 50%; overflow:hidden; display:none;}
+    .grid-item-medium .species, .grid-item-big .species { display: inline; }
+
+    .loading {position: absolute; top: 50%; left: 50%;width: 100px; height: 1em; margin-left: -50px; margin-top: -0.5em; color:white; font-size: 1000%;}
+    h1 {
+      position: absolute; 
+      left: 50%;
+      margin-left: -200px;
+      bottom: 50px;
+      width: 400px;
+      font-size: 1000%;
+      color: white;
+      background-color: black;
+      opacity: 0.7;
+      border-radius: 500px;
+      z-index: 1000;
+      padding: 20px 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Recent Observations</h1>
+  <div id="grid" class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+    <div class="loading">Loading...</div>
+  </div>
+  <script id="observation-template" type="text/x-handlebars-template">
+    <div class="observation grid-item {{gridClass}}">
+      <div class="inner">
+        <a href="{{uri}}"><img src="{{_imgURL}}" class="obs-img" width="{{photo_width}}" height="{{photo_height}}"/></a>
+        <div class="blurb">
+          <div class="blurbinner">
+            {{#if user_icon}}
+              <img src="{{user_icon}}"/>
+            {{/if}}
+            {{user.login}}
+            <span class="species">{{species_name}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+  <script type="text/javascript">
+    var obsTemplateSource   = $("#observation-template").html()
+        obsTemplate         = Handlebars.compile(obsTemplateSource)
+    window.grid = $('#grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      transitionDuration: 0
+    })
+    function dimsForPhoto( photo, size ) {
+      var originalWidth = photo.original_dimensions.width;
+      var originalHeight = photo.original_dimensions.height;
+      var width = 182;
+      if ( size == "medium" ) {
+        width = width * 2;
+      } else if ( size == "large" ) {
+        width = width * 4;
+      }
+      return {
+        width: width,
+        height: parseInt( ( width / originalWidth ) * originalHeight )
+      }
+    }
+    function reloadObservations() {
+      window.grid.masonry( 'remove', $('.grid-item') )
+      $('.grid-item').remove()
+      $('.loading').show()
+      $.getJSON('https://api.inaturalist.org/v1/observations?photo_license=cc0&popular=true&verifiable=true&order_by=random&per_page=200', function(json) {
+        $('.loading').hide()
+        var observations = json.results;
+        if (observations.length == 0) { 
+          // console.log("[DEBUG] json was empty, skipping")
+          return 
+        }
+        window.lastObservationID = observations[0].id
+        $.each(observations, function() {
+          if (!this.photos[0] ||
+              !this.photos[0].url ||
+              !this.photos[0].original_dimensions ||
+              this.photos[0].url.match(/copyright-infringement/) ||
+              this.photos[0].url.match(/attachment_defaults/)) {
+            return
+          }
+          var dims;
+          if (this.cached_votes_total > 0) {
+            this.gridClass = 'grid-item-big'
+            this._imgURL = this.photos[0].url.replace( /square/, "large" )
+            dims = dimsForPhoto( this.photos[0], "large" )
+          } else if (this.comments_count > 0) {
+            this.gridClass = 'grid-item-medium'
+            this._imgURL = this.photos[0].url.replace( /square/, "medium" )
+            dims = dimsForPhoto( this.photos[0], "medium" )
+          } else {
+            this.gridClass = ''
+            this._imgURL = this.photos[0].url.replace( /square/, "small" )
+            dims = dimsForPhoto( this.photos[0], "small" )
+          }
+          this.photo_width = dims.width;
+          this.photo_height = dims.height;
+          this.species_name = this.taxon ? this.taxon.preferred_common_name : this.species_guess
+          this.user_icon = this.user.icon && this.user.icon.match(/static/) ? this.user.icon : null;
+          var elt = $(obsTemplate(this))
+          $('#grid').append(elt)
+          window.grid.masonry('appended', elt)
+        })
+        layoutMasonry( );
+      })
+    }
+    function layoutMasonry() {
+      grid.masonry('layout')
+    }
+    $(document).ready(function() {
+      reloadObservations()
+      setInterval(reloadObservations, 1000*60*5)
+    })
+  </script>
+</body>
+</html>

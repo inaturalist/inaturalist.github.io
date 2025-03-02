@@ -148,9 +148,28 @@
     function layoutMasonry() {
       grid.masonry('layout')
     }
+    function fadeImagesToBlack() {
+    var images = $(".obs-img").toArray(); // Get all images as an array
+    images = images.sort(() => Math.random() - 0.5); // Shuffle array randomly
+
+    function fadeNext(index) {
+        if (index >= images.length) return; // Stop when all images are faded
+        $(images[index])
+            .fadeTo(2000, 0) // Fade to transparent over 2 seconds
+            .queue(function(next) {
+                $(this).css("filter", "brightness(0)"); // Make fully black
+                next();
+            });
+        setTimeout(() => fadeNext(index + 1), Math.random() * 2000 + 1000); // Random delay
+    }
+
+    fadeNext(0);
+}
+
     $(document).ready(function() {
       reloadObservations()
-      setInterval(reloadObservations, 1000*60*5)
+      // setInterval(reloadObservations, 1000*60*5)
+      setTimeout(fadeImagesToBlack, 5000);
     })
   </script>
 </body>

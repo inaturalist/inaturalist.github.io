@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Wildlife Locations Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    #map {
+      width: 100%;
+      height: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+  // Up to 16 visually distinct colors
+  const distinctColors = [
+    "#e6194b", "#3cb44b", "#ffe119", "#4363d8",
+    "#f58231", "#911eb4", "#46f0f0", "#f032e6",
+    "#bcf60c", "#fabebe", "#008080", "#e6beff",
+    "#9a6324", "#fffac8", "#800000", "#aaffc3"
+  ];
+
+  // Define colors for each group dynamically
+  const groupColors = {};
+  let colorIndex = 0;
+
+  // Function to create a custom Leaflet div icon
+  function getIcon(color) {
+    return L.divIcon({
+      className: '',
+      html: `<div style="width: 8px; height: 8px; background-color: ${color}; border-radius: 50%; border: 1px solid #fff;"></div>`
+    });
+  }
+
+// Initialize the map
+var map = L.map('map').setView([10,0], 2);
+
+// Add the OSM tile layer
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap contributors, © CARTO',
+  maxZoom: 18
+}).addTo(map);
+
+// Function to parse a CSV string into an array of objects
+function parseCSV(csvText) {
+  const lines = csvText.trim().split('\n');
+  const headers = lines[0].split(',');
+  
+  return lines.slice(1).map(line => {
+    const columns = line.split(',');
+    const obj = {};
+    headers.forEach((h, i) => {
+      obj[h.trim()] = columns[i]?.trim() || '';
+    });
+    return obj;
+  });
+}
+
+// Fetch and process the CSV
+// Get the group parameter from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const groupParam = urlParams.get('group') || 'plants';
+const csvFile = `${groupParam.charAt(0).toUpperCase() + groupParam.slice(1)}.csv?10`;
+
+// Fetch and process the CSV
+fetch(csvFile)
+  .then(response => response.text())
+  .then(csvText => {
+    const data = parseCSV(csvText);
+
+    data.forEach(item => {
+      const name = item['Name'] || 'Unknown species';
+      const lat = parseFloat(item['Latitude']);
+      const lng = parseFloat(item['Longitude']);
+      const taxonId = item['Taxon_id'];
+      const commonName = item['Common_name'];
+      const group = item['Group'] ? item['Group'].split(' - ')[0] : 'Other';
+      
+      // Assign a random color if the group is not already in the dictionary
+      if (!(group in groupColors)) {
+        groupColors[group] = distinctColors[colorIndex % distinctColors.length];
+        colorIndex++;
+      }
+      const color = groupColors[group];
+
+      // Determine formatted display name
+      const displayName = commonName ? `${commonName} (${name})` : name;
+
+      // Construct the popup HTML
+      let popupContent = `<div><b>${displayName}</b></div>`;
+      if (taxonId) {
+        const taxaLink = `https://www.inaturalist.org/taxa/${taxonId}`;
+        const obsLink = `https://www.inaturalist.org/observations?lat=${lat}&lng=${lng}&verifiable=true&radius=10`;
+        popupContent = `
+          <div>
+            <a href="${taxaLink}" target="_blank"><b>${displayName}</b></a><br>
+            <a href="${obsLink}" target="_blank"><i>(nearby observations)</i></a>
+          </div>
+        `;
+      }
+      
+
+      // Add a marker
+      if (!isNaN(lat) && !isNaN(lng)) {
+        const marker = L.marker([lat, lng], {icon: getIcon(color)}).addTo(map);
+        marker.bindPopup(popupContent);
+      }
+    });
+  })
+  .catch(err => {
+    console.error('Error fetching or parsing CSV:', err);
+  });
+</script>
+</body>
+</html>

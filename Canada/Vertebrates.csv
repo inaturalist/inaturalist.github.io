@@ -1,0 +1,922 @@
+Name,Common_name,Taxon_id,Latitude,Longitude,Group
+Albula vulpes,Bonefish,63718,41.083332,-58.9667,Fishes
+Amia calva,Ruddy Bowfin,58611,43.635821,-79.462844,Fishes
+Chlopsis bicolor,Atlantic Bicolored False Moray,131417,49.5,-119.6,Fishes
+Kaupichthys hyoproroides,Gray Reef False Moray,131416,39.9833,-65.6,Fishes
+Ariosoma anale,Longtrunk Conger,450440,45.0,-66.0,Fishes
+Ariosoma balearicum,Bandtooth Conger,120641,42.43333,-61.5,Fishes
+Conger oceanicus,American Conger,131408,49.5,-119.6,Fishes
+Heteroconger luteolus,Yellow Garden Eel,129565,49.5,-119.6,Fishes
+Paraconger caudilimbatus,Margintail Conger,131405,49.5,-119.6,Fishes
+Rhynchoconger flavus,,131407,42.0703,-65.9567,Fishes
+Uroconger syringinus,Threadtail Conger,179443,49.5,-119.6,Fishes
+Xenomystax atrarius,Twinpored Eel,194824,48.7967,-126.542,Fishes
+Derichthys serpentinus,Serpent eel,99206,49.5,-119.6,Fishes
+Nessorhamphus ingolfianus,spoonbill eel,54722,49.5,-119.6,Fishes
+Moringua edwardsi,Edwards' Spaghetti Eel,106155,41.25,-57.46667,Fishes
+Neoconger mucronatus,Ridged Spaghetti Eel,317246,42.1333,-65.5167,Fishes
+Anarchias similis,Pygmy Moray,131390,41.25,-57.46667,Fishes
+Avocettina infans,Closespine Snipe Eel,214689,53.3238,-133.2457,Fishes
+Labichthys carinatus,,459356,43.815833,-58.8889,Fishes
+Nemichthys curvirostris,Boxer Snipe Eel,54033,49.5,-119.6,Fishes
+Nemichthys larseni,Pale Snipe Eel,317242,49.5,-119.6,Fishes
+Nemichthys scolopaceus,Polygon-spotted snipe eel,67619,49.957202,-66.455301,Fishes
+Venefica ocella,,459393,42.910667,-62.0905,Fishes
+Venefica procera,,459394,42.910667,-62.0905,Fishes
+Venefica tentaculata,,114934,49.5,-119.6,Fishes
+Ahlia egmontis,Key Worm Eel,127647,49.5,-119.6,Fishes
+Apterichtus ansp,Academy Eel,316958,42.349998,-65.0167,Fishes
+Apterichtus kendalli,Western Atlantic Finless Eel,94473,49.5,-119.6,Fishes
+Callechelys muraena,Blotched Snake Eel,317020,49.5,-119.6,Fishes
+Gordiichthys leibyi,String Eel,220540,46.075,-61.50667,Fishes
+Myrophis platyrhynchus,Broadnose Worm Eel,317234,40.7,-65.005,Fishes
+Myrophis punctatus,Speckled Worm Eel,179538,49.5,-119.6,Fishes
+Ophichthus cruentifer,Margined Snake Eel,317257,49.5,-119.6,Fishes
+Ophichthus gomesii,Shrimp Eel,84530,49.5,-119.6,Fishes
+Ophichthus puncticeps,Palespotted Eel,226501,41.351665,-66.2417,Fishes
+Serrivomer beanii,Stout Sawpalate,459451,62.416111,-60.554167,Fishes
+Serrivomer jesperseni,Crossthroat Sawpalate,230857,49.5,-119.6,Fishes
+Serrivomer lanceolatoides,Short-tooth Sawpalate,112505,49.5,-119.6,Fishes
+Ilyophis brunneus,Muddy Cutthroat Eel,459354,42.628333,-62.011333,Fishes
+Simenchelys parasitica,Pugnose Eel,112583,42.845,-61.986667,Fishes
+Synaphobranchus affinis,Grey Cutthroat Eel,113563,49.5,-119.6,Fishes
+Synaphobranchus brevidorsalis,Shortdorsal Cutthroat Eel,621408,49.5,-119.6,Fishes
+Synaphobranchus kaupii,Northern Cutthroat Eel,113564,62.375,-60.518611,Fishes
+Argentina sialis,Pacific Argentine,94533,49.09348,-126.41689,Fishes
+Argentina silus,Atlantic Argentine,318007,44.230876,-66.223898,Fishes
+Argentina striata,Striated Argentine,316963,43.116665,-62.3667,Fishes
+Glossanodon leioglossus,,120616,41.349998,-59.0,Fishes
+Bathylagichthys greyae,Grey's Deepsea Smelt,459275,49.5,-119.6,Fishes
+Bathylagus euryops,Goiter Blacksmelt,459177,56.475,-58.26167,Fishes
+Bathylagus pacificus,Slender Blacksmelt,214887,48.3975,-127.996117,Fishes
+Dolicholagus longirostris,Longsnout Deepsea Smelt,317506,43.703889,-58.7069,Fishes
+Leuroglossus stilbius,California Smoothtongue,223606,49.5,-119.6,Fishes
+Lipolagus ochotensis,Fatty Deepsea Smelt,223925,48.4006,-127.996148,Fishes
+Melanolagus bericoides,Bigscale Deepsea Smelt,317215,49.5,-119.6,Fishes
+Pseudobathylagus milleri,Stout Blacksmelt,110941,49.5,-119.6,Fishes
+Nansenia candida,Bluethroat Argentine,225456,48.90813,-125.14042,Fishes
+Nansenia groenlandica,Large-eyed Argentine,459426,43.237778,-59.0006,Fishes
+Nansenia oblita,,459427,49.5,-119.6,Fishes
+Bathylychnops exilis,Javelin Spookfish,214888,49.5,-119.6,Fishes
+Dolichopteroides binocularis,,618794,41.7333,-57.6333,Fishes
+Macropinna microstoma,Pacific Barreleye,49886,48.445691,-126.333915,Fishes
+Atherinops affinis,Topsmelt Silverside,94801,49.5,-119.6,Fishes
+Alepisaurus brevirostris,Shortnose Lancetfish,450435,49.5,-119.6,Fishes
+Anotopterus nikparini,North Pacific Daggertooth,213733,53.394184,-136.963312,Fishes
+Anotopterus pharao,Daggertooth,213734,49.5,-119.6,Fishes
+Bathysaurus ferox,Deepsea Lizardfish,459301,42.839,-62.37,Fishes
+Chlorophthalmus agassizi,Shortnose Greeneye,120612,42.231833,-65.895,Fishes
+Parasudis truculenta,Longnose Greeneye,317279,42.516,-65.012667,Fishes
+Coccorella atlantica,Atlantic Sabretooth,317059,41.0,-61.5,Fishes
+Evermannella balbo,Balbo Sabretooth,459382,49.5,-119.6,Fishes
+Evermannella melanoderma,,459384,42.5,-61.5,Fishes
+Bathypterois dubius,Spiderfish,95485,49.5,-119.6,Fishes
+Bathypterois phenax,Blackfin Spiderfish,459350,49.5,-119.6,Fishes
+Bathypterois quadrifilis,,459351,49.5,-119.6,Fishes
+Bathypterois viridensis,,615570,49.5,-119.6,Fishes
+Bathytyphlops marionae,Marion's Spiderfish,459339,49.5,-119.6,Fishes
+Ahliesaurus berryi,,316928,41.150002,-59.0,Fishes
+Scopelosaurus adleri,,618288,53.1914,-132.999083,Fishes
+Scopelosaurus argenteus,,459448,40.7,-65.005,Fishes
+Scopelosaurus lepidus,Blackfin waryfish,459449,62.103889,-60.523611,Fishes
+Scopelosaurus mauli,Maul's Waryfish,317354,41.53333,-59.0,Fishes
+Scopelosaurus smithii,,459450,49.5,-119.6,Fishes
+Omosudis lowii,Hammerjaw,459428,42.723,-62.7815,Fishes
+Lestidiops affinis,Barracudina,317187,45.8348,-63.125,Fishes
+Lestidiops jayakari,Pacific Barracudina,317188,49.5,-119.6,Fishes
+Lestidiops ringens,Slender Barracudina,104468,49.5,-119.6,Fishes
+Magnisudis atlantica,Duckbill Barracudina,224382,42.662167,-62.368333,Fishes
+Paralepis brevirostris,,459299,43.216667,-59.0,Fishes
+Paralepis coregonoides,Sharpchin barracudina,317277,43.713,-58.736,Fishes
+Paralepis elongata,,459300,43.1215,-61.001667,Fishes
+Stemonosudis intermedia,,317390,41.53333,-59.0,Fishes
+Sudis hyalina,Pale Pike Smelt,317398,42.966667,-59.0,Fishes
+Uncisudis advena,,459396,41.066667,-61.6167,Fishes
+Benthalbella dentata,Northern Pearleye,215148,53.3386,-132.9836,Fishes
+Benthalbella infans,Childish Pearleye,316998,49.5,-119.6,Fishes
+Benthalbella linguidens,Longfin Pearleye,215149,49.5,-119.6,Fishes
+Scopelarchus analis,Shortfin Pearleye,317349,41.349998,-59.0,Fishes
+Scopelarchus michaelsarsi,Bigfin Pearleye,317351,49.5,-119.6,Fishes
+Saurida brasiliensis,Largescale Lizardfish,131422,42.628333,-62.011333,Fishes
+Saurida caribbaea,Shortjaw Lizardfish,131424,49.5,-119.6,Fishes
+Synodus foetens,Inshore Lizardfish,54440,49.5,-119.6,Fishes
+Synodus lucioceps,California Lizardfish,113700,49.5,-119.6,Fishes
+Synodus synodus,Red Lizardfish,131428,41.31667,-59.0,Fishes
+Trachinocephalus myops,Snakefish,131430,42.433334,-61.5,Fishes
+Opsanus tau,Oyster Toadfish,51372,49.5,-119.6,Fishes
+Cheilopogon furcatus,Spotfin Flyingfish,194832,49.5,-119.6,Fishes
+Cheilopogon melanurus,Atlantic Flyingfish,317047,44.5667,-64.0333,Fishes
+Hirundichthys affinis,Fourwing Flyingfish,120656,49.5,-119.6,Fishes
+Hirundichthys rondeletii,Blackwing Flyingfish,102883,44.45,-63.7842,Fishes
+Hemiramphus brasiliensis,Ballyhoo,179572,49.5,-119.6,Fishes
+Hyporhamphus meeki,American Halfbeak,179554,49.5,-119.6,Fishes
+Anoplogaster cornuta,Fangtooth,213729,49.5,-119.6,Fishes
+Beryx decadactylus,Imperador,215166,49.5,-119.6,Fishes
+Beryx splendens,Alfonsino,459205,41.0,-58.9667,Fishes
+Diretmichthys parini,Black Spinyfin,459378,49.5,-119.6,Fishes
+Diretmus argenteus,Discfish,317083,49.5,-119.6,Fishes
+Neoniphon vexillarium,Dusky Squirrelfish,1316833,49.5,-119.6,Fishes
+Ostichthys trachypoma,Bigeye Soldierfish,450439,49.5,-119.6,Fishes
+Sargocentron bullisi,Deepwater Squirrelfish,147129,49.5,-119.6,Fishes
+Gephyroberyx darwinii,Darwin's Roughy,220369,49.5,-119.6,Fishes
+Hoplostethus atlanticus,Orange Roughy,459402,62.394114,-62.431641,Fishes
+Hoplostethus mediterraneus,Blacktip Sawbelly,120620,48.4495,-61.6,Fishes
+Hoplostethus occidentalis,Atlantic Roughy,459403,49.5,-119.6,Fishes
+Carcharhinus limbatus,Common Blacktip Shark,55529,49.5,-119.6,Fishes
+Carcharhinus longimanus,Oceanic Whitetip Shark,96760,49.5,-119.6,Fishes
+Carcharhinus obscurus,Dusky Shark,96762,49.5,-119.6,Fishes
+Galeocerdo cuvier,Tiger Shark,52299,49.5,-119.6,Fishes
+Apristurus laurussonii,Flathead Catshark,94451,49.5,-119.6,Fishes
+Apristurus manis,Ghost Catshark,94455,49.5,-119.6,Fishes
+Apristurus melanoasper,Fleshynose Catshark,94456,42.88333,-61.71667,Fishes
+Apristurus microps,Smalleye Catshark,94457,62.200938,-59.726817,Fishes
+Apristurus profundorum,Deepwater Catshark,94463,42.6825,-64.165167,Fishes
+Apristurus riveri,Broadgill Catshark,94464,49.5,-119.6,Fishes
+Scyliorhinus retifer,Chain Catshark,112380,41.295,-66.221667,Fishes
+Sphyrna zygaena,Smooth Hammerhead,56765,44.979852,-65.806016,Fishes
+Mustelus canis,Dusky Smooth-hound,49961,44.79,-54.47,Fishes
+Barbourisia rufa,Redvelvet Whalefish,214859,49.5,-119.6,Fishes
+Cetostoma regani,Pink Flabby Whalefish,459341,43.421389,-59.4672,Fishes
+Gyrinomimus grahami,Graham's Flabby Whalefish,610000,50.05,-128.15,Fishes
+Rondeletia loricata,Common Redmouth Whalefish,459281,42.839,-62.37,Fishes
+Hydrolagus affinis,Small-eyed Rabbitfish,103026,49.5,-119.6,Fishes
+Harriotta raleighana,Bigspine Spookfish,102323,49.5,-119.6,Fishes
+Rhinochimaera atlantica,Knife-nosed Chimaera,111688,42.839,-62.37,Fishes
+Alosa mediocris,Hickory Shad,49224,45.047406,-67.024532,Fishes
+Etrumeus sadina,Red-eye Round Herring,613918,49.5,-119.6,Fishes
+Anchoa hepsetus,Striped Anchovy,146829,49.5,-119.6,Fishes
+Anchoa mitchilli,Bay Anchovy,94070,46.09167,-61.535,Fishes
+Engraulis eurystole,Silver Anchovy,179606,41.4475,-66.9997,Fishes
+Moxostoma hubbsi,Copper Redhorse,106213,49.5,-119.6,Fishes
+Erimystax x-punctatus,Gravel Chub,219464,49.5,-119.6,Fishes
+Hybognathus argyritis,Western Silvery Minnow,102977,49.5,-119.6,Fishes
+Hybognathus placitus,Plains Minnow,102981,49.5,-119.6,Fishes
+Notropis percobromus,Carmine Shiner,107246,49.5,-119.6,Fishes
+Opsopoeodus emiliae,Pugnose Minnow,107741,49.5,-119.6,Fishes
+Elops saurus,Ladyfish,51405,41.818611,-65.5589,Fishes
+Bregmaceros atlanticus,Antenna Codlet,96040,43.808333,-58.9375,Fishes
+Bregmaceros mcclellandi,Unicorn Codlet,194839,49.5,-119.6,Fishes
+Micromesistius poutassou,Blue Whiting,120702,51.726667,-53.743611,Fishes
+Trisopterus esmarkii,Norway Pout,320793,60.099998,-56.9167,Fishes
+Brosme brosme,Cusk,215458,43.164011,-66.012008,Fishes
+Gaidropsarus argentatus,Silver Rockling,459172,56.540278,-58.451389,Fishes
+Gaidropsarus ensis,Arctic Threebeard Rockling,459173,62.133889,-60.535278,Fishes
+Molva dypterygia,Blue Ling,120684,49.1215,-67.9348,Fishes
+Molva molva,European Ling,125291,49.5,-119.6,Fishes
+Cetonurus globiceps,Globehead Whiptail,459254,42.128889,-64.9161,Fishes
+Coelorinchus caelorhincus,Saddled Grenadier,120709,43.557833,-59.862,Fishes
+Coelorinchus occa,Swordsnout Grenadier,98256,43.01,-61.3236,Fishes
+Coryphaenoides acrolepis,Roughscale Grenadier,217626,53.00795,-132.896833,Fishes
+Coryphaenoides alateralis,,459209,49.5,-119.6,Fishes
+Coryphaenoides brevibarbis,Shortbeard grenadier,459181,49.5,-119.6,Fishes
+Coryphaenoides carapinus,Carapine Grenadier,459210,42.3745,-64.008167,Fishes
+Coryphaenoides cinereus,Popeye,217627,53.00795,-132.896833,Fishes
+Coryphaenoides filifer,Filamented rattail,217628,49.5,-119.6,Fishes
+Coryphaenoides guentheri,Günther's Grenadier,459182,62.881,-58.615,Fishes
+Coryphaenoides mediterraneus,Mediterranean grenadier,459212,49.5,-119.6,Fishes
+Coryphaenoides rupestris,Roundnose Grenadier,217631,49.5,-119.6,Fishes
+Coryphaenoides yaquinae,,217632,49.5,-119.6,Fishes
+Gadomus arcuatus,Doublethread Grenadier,459251,49.5,-119.6,Fishes
+Macrourus berglax,Onion eye,224368,61.973611,-60.571389,Fishes
+Malacocephalus occidentalis,Western Softhead Grenadier,105109,49.975634,-65.77931,Fishes
+Nezumia aequalis,Common Atlantic Grenadier,120607,43.557833,-59.862,Fishes
+Nezumia bairdii,Marlin-spike,225943,49.5,-119.6,Fishes
+Nezumia longebarbata,Bluntnose Grenadier,459250,43.843611,-58.3392,Fishes
+Nezumia sclerorhynchus,Bluntsnout Grenadier,120674,44.055278,-59.0522,Fishes
+Nezumia stelgidolepis,California Grenadier,194841,49.5,-119.6,Fishes
+Trachyrincus murrayi,Roughnose Grenadier,458047,62.176389,-60.466944,Fishes
+Trachyrincus scabrus,Roughsnout Grenadier,120675,49.5,-119.6,Fishes
+Melanonus zugmayeri,Arrowtail Cod,224591,49.5,-119.6,Fishes
+Merluccius albidus,Offshore Hake,224885,49.5,-119.6,Fishes
+Antimora microlepis,Pacific Flatnose,94219,53.13395,-132.731,Fishes
+Antimora rostrata,Violet Cod,194855,49.5,-119.6,Fishes
+Gadella imberbis,Beardless Codling,317107,49.5,-119.6,Fishes
+Guttigadus latifrons,,459353,43.843613,-58.3392,Fishes
+Halargyreus johnsonii,Slender Cod,220863,53.09865,-132.78435,Fishes
+Laemonema barbatulum,Shortbeard Codling,317178,45.617708,-57.440637,Fishes
+Laemonema goodebeanorum,,459357,49.5,-119.6,Fishes
+Laemonema melanurum,,459358,47.659352,-60.126815,Fishes
+Lepidion lepidion,Largeye Lepidion,104192,49.5,-119.6,Fishes
+Physiculus fulvus,Metallic Codling,179483,41.685833,-65.8489,Fishes
+Phycis chesteri,Longfin Hake,450418,49.5,-119.6,Fishes
+Gadomus longifilis,,617081,49.5,-119.6,Fishes
+Isurus paucus,Longfin Mako,103571,49.5,-119.6,Fishes
+Lampris guttatus,North Atlantic Opah,122916,49.05,-128.2,Fishes
+Regalecus glesne,Giant Oarfish,196745,49.5,-119.6,Fishes
+Stylephorus chordatus,Tube-Eye,317396,43.133335,-60.2833,Fishes
+Zu cristatus,Scalloped Ribbonfish,118609,44.0,-63.0,Fishes
+Fowlerichthys ocellatus,Ocellated Frogfish,559722,41.1333,-58.6333,Fishes
+Histrio histrio,Sargassumfish,127711,49.5,-119.6,Fishes
+Caulophryne jordani,Fanfin Angler,459352,63.419,-59.89,Fishes
+Ceratias uranoscopus,Stargazing Seadevil,64216,43.783433,-58.891317,Fishes
+Cryptopsaras couesii,Triplewart Seadevil,217839,49.5,-119.6,Fishes
+Chaunacops roseus,,611091,42.837,-63.122,Fishes
+Chaunax pictus,Painted Anglerfish,317044,49.5,-119.6,Fishes
+Chaunax stigmaeus,Redeye Gaper,450448,49.5,-119.6,Fishes
+Gigantactis longicirra,,220381,47.43684,-61.28367,Fishes
+Gigantactis macronema,,459385,42.516666,-63.25,Fishes
+Gigantactis vanhoeffeni,Cosmopolitan Whipnose,459386,43.731833,-58.764667,Fishes
+Himantolophus albinares,,459398,43.794367,-58.879683,Fishes
+Himantolophus groenlandicus,Atlantic Footballfish,317144,49.5,-119.6,Fishes
+Himantolophus mauli,,459399,44.1833,-45.95,Fishes
+Haplophryne mollis,Soft Leafvent Angler,459389,49.5,-119.6,Fishes
+Linophryne algibarbata,,459290,43.333333,-52.5,Fishes
+Linophryne bicornis,,459291,49.5,-119.6,Fishes
+Linophryne coronata,,459292,43.985556,-58.9764,Fishes
+Linophryne macrodon,,459293,49.5,-119.6,Fishes
+Melanocetus johnsonii,Humpback Blackdevil,64212,43.725117,-58.748617,Fishes
+Melanocetus murrayi,Deepsea Blackdevil,459411,43.731833,-58.764667,Fishes
+Dibranchus atlanticus,Atlantic Batfish,131450,42.734333,-64.0665,Fishes
+Chaenophryne longiceps,Longhead Dreamer,97132,43.847,-58.915667,Fishes
+Chaenophryne melanorhabdus,Smooth Dreamer,216580,49.5,-119.6,Fishes
+Danaphryne nigrifilis,,459289,41.116665,-61.3167,Fishes
+Dolopichthys allector,,459294,53.150002,-52.3167,Fishes
+Dolopichthys pullatus,Lobed Dreamer,459295,49.5,-119.6,Fishes
+Leptacanthichthys gracilispinis,,459288,43.847,-58.915667,Fishes
+Lophodolos acanthognathus,Whalehead Dreamer,61541,49.5,-119.6,Fishes
+Microlophichthys microlophus,,459422,49.5,-119.6,Fishes
+Oneirodes acanthias,Pacific Dreamer,107573,49.5,-119.6,Fishes
+Oneirodes bulbosus,Bulbous Dreamer,226423,49.5,-119.6,Fishes
+Oneirodes epithales,,107574,49.5,-119.6,Fishes
+Oneirodes eschrichtii,Cosmopolitan Dreamer,459430,43.731833,-58.764667,Fishes
+Oneirodes macrosteus,,459431,49.5,-119.6,Fishes
+Oneirodes thompsoni,Spiny Dreamer,226424,49.5,-119.6,Fishes
+Spiniphryne gladisfenae,Prickly dreamer,459446,43.847,-58.915667,Fishes
+Lasiognathus beebei,,459405,42.533333,-63.05,Fishes
+Lasiognathus intermedius,,459406,49.5,-119.6,Fishes
+Mugil cephalus,Sea Mullet,106222,41.183334,-59.0,Fishes
+Benthosema glaciale,Glacier Lanternfish,215151,49.5,-119.6,Fishes
+Benthosema suborbitale,Dimple Lanternfish,317001,41.4672,-66.1236,Fishes
+Bolinichthys indicus,Smoothcheek Lanternfish,459375,43.785067,-58.870883,Fishes
+Bolinichthys photothorax,Spurcheek Lanternfish,459376,49.5,-119.6,Fishes
+Bolinichthys supralateralis,Stubby Lanternfish,459377,43.785067,-58.870883,Fishes
+Centrobranchus nigroocellatus,Roundnose Lanternfish,317031,49.5,-119.6,Fishes
+Ceratoscopelus maderensis,Horned Lanternfish,216484,49.5,-119.6,Fishes
+Ceratoscopelus townsendi,Dogtooth Lanternfish,216485,49.5,-119.6,Fishes
+Ceratoscopelus warmingii,Warming's Lanternfish,317036,43.709167,-58.7156,Fishes
+Diaphus bertelseni,Bertelsen's Lanternfish,459362,40.983334,-59.0167,Fishes
+Diaphus brachycephalus,Shorthead Lanternfish,459363,49.5,-119.6,Fishes
+Diaphus dumerilii,,459364,49.5,-119.6,Fishes
+Diaphus effulgens,Headlight Lanternfish,459365,42.775833,-63.770833,Fishes
+Diaphus fragilis,Fragile Lanternfish,459344,49.5,-119.6,Fishes
+Diaphus garmani,Garman's Lanternfish,459371,39.7333,-56.9833,Fishes
+Diaphus holti,small lanternfish,99249,42.133335,-56.3667,Fishes
+Diaphus lucidus,Spotlight Lanternfish,459372,49.5,-119.6,Fishes
+Diaphus luetkeni,Luetken's Lanternfish,459373,41.09167,-63.55833,Fishes
+Diaphus metopoclampus,Bluntnose Lanternfish,459374,42.5,-61.5,Fishes
+Diaphus mollis,Soft Lanternfish,120701,49.5,-119.6,Fishes
+Diaphus perspicillatus,Flatface Lanternfish,459366,41.483334,-59.0167,Fishes
+Diaphus rafinesquii,White-spotted Lantern Fish,99250,49.5,-119.6,Fishes
+Diaphus roei,,459367,40.916668,-61.4833,Fishes
+Diaphus splendidus,Horned Lanternfish,459368,42.516666,-61.0333,Fishes
+Diaphus taaningi,,459369,41.41,-66.08,Fishes
+Diaphus termophilus,Warmwater Lanternfish,459370,49.5,-119.6,Fishes
+Diogenichthys atlanticus,Atlantic Lanternfish,194867,41.87389,-65.81,Fishes
+Electrona risso,Risso's Lanternfish,317089,49.5,-119.6,Fishes
+Gonichthys cocco,,317120,49.5,-119.6,Fishes
+Hygophum benoiti,,317152,43.62221,-59.69288,Fishes
+Hygophum hygomii,Hygom's Lanternfish,317153,49.5,-119.6,Fishes
+Hygophum macrochir,Largefin Lanternfish,317154,49.5,-119.6,Fishes
+Hygophum reinhardtii,Reinhardt's Lanternfish,317155,41.349998,-59.0,Fishes
+Hygophum taaningi,,317156,41.616665,-59.4333,Fishes
+Lampadena anomala,,459359,41.349998,-59.0,Fishes
+Lampadena chavesi,Chaves' Lanternfish,459361,40.983334,-59.0167,Fishes
+Lampadena luminosa,Luminous Lanternfish,317179,42.166668,-63.0,Fishes
+Lampadena speculigera,Mirror Lanternfish,222641,56.408333,-59.639444,Fishes
+Lampadena urophaos,Tail-light Lanternfish,317180,51.44,-130.7,Fishes
+Lampanyctus alatus,Winged Lanternfish,317181,49.5,-119.6,Fishes
+Lampanyctus crocodilus,Jewel Lanternfish,120704,56.355,-57.729722,Fishes
+Lampanyctus festivus,Festive Lanternfish,459277,43.803333,-58.8856,Fishes
+Lampanyctus intricarius,Intricate Lanternfish,120705,49.5,-119.6,Fishes
+Lampanyctus jordani,Brokenline Lanternfish,103967,49.5,-119.6,Fishes
+Lampanyctus macdonaldi,MacDonald's Lanternfish,120706,62.221944,-60.605556,Fishes
+Lampanyctus nobilis,Noble Lanternfish,317182,41.633335,-59.0167,Fishes
+Lampanyctus photonotus,,459278,42.552333,-63.194667,Fishes
+Lampanyctus pusillus,Pygmy Lanternfish,459279,49.5,-119.6,Fishes
+Lampanyctus tenuiformis,,459280,49.5,-119.6,Fishes
+Lepidophanes gaussi,,459407,41.5633,-65.9358,Fishes
+Lepidophanes guentheri,,459408,42.706,-64.140167,Fishes
+Lobianchia dofleini,Doflein's Lanternfish,120683,49.5,-119.6,Fishes
+Lobianchia gemellarii,Gemellar's Lanternfish,317196,49.5,-119.6,Fishes
+Loweina rara,Rare Lanternfish,317198,40.983334,-59.0167,Fishes
+Myctophum affine,Metallic Lanternfish,225371,49.5,-119.6,Fishes
+Myctophum nitidulum,Pearly-spotted Lanternfish,194864,49.5,-119.6,Fishes
+Myctophum punctatum,Spotted Lanternfish,225372,64.628946,-59.853863,Fishes
+Notolychnus valdiviae,Topside Lanternfish,317249,41.0,-59.0,Fishes
+Notoscopelus bolini,,459296,42.815167,-62.227333,Fishes
+Notoscopelus caudispinosus,Spinetail Lanternfish,459297,49.5,-119.6,Fishes
+Notoscopelus elongatus,,107195,48.747667,-62.008,Fishes
+Notoscopelus japonicus,Japanese Lanternfish,226035,49.5,-119.6,Fishes
+Notoscopelus kroyeri,Kroyer's Lanternfish,458048,49.5,-119.6,Fishes
+Notoscopelus resplendens,Patchwork Lanternfish,226037,41.977833,-65.746333,Fishes
+Protomyctophum arcticum,Arctic telescope,459215,56.0,-57.0,Fishes
+Protomyctophum crockeri,California Flashlightfish,228866,52.333333,-132.166667,Fishes
+Stenobrachius leucopsarus,Northern Lampfish,231540,49.5,-119.6,Fishes
+Stenobrachius nannochir,Garnet Lanternfish,231541,53.02235,-132.879516,Fishes
+Symbolophorus californiensis,Bigfin Lanternfish,232054,49.5,-119.6,Fishes
+Symbolophorus veranyi,Largescale Lanternfish,120660,43.785067,-58.870883,Fishes
+Taaningichthys bathyphilus,Deepwater Lanternfish,459444,49.5,-119.6,Fishes
+Taaningichthys minimus,,459445,42.6845,-61.660167,Fishes
+Tarletonbeania crenularis,Blue Lanternfish,232317,49.5,-119.6,Fishes
+Tarletonbeania taylori,Taillight Lanternfish,232318,49.5,-119.6,Fishes
+Neoscopelus macrolepidotus,Largescale Neoscopelid,225733,49.5,-119.6,Fishes
+Scopelengys tristis,,317352,49.5,-119.6,Fishes
+Pteroplatytrygon violacea,Pelagic Stingray,111212,49.5,-119.6,Fishes
+Eptatretus deani,Black Hagfish,100238,49.5,-119.6,Fishes
+Myxine glutinosa,Atlantic Hagfish,49096,42.268667,-66.529,Fishes
+Aldrovandia affinis,Rattailed Lizardfish,459199,42.723,-62.7815,Fishes
+Aldrovandia gracilis,gracile halosaur,459200,49.5,-119.6,Fishes
+Aldrovandia oleosa,Bahamas halosaur,459201,49.5,-119.6,Fishes
+Aldrovandia phalacra,Hawaiian halosaur,459202,43.1077,-51.4199,Fishes
+Halosauropsis macrochir,Abyssal halosaur,459387,42.6845,-61.660167,Fishes
+Halosaurus guentheri,Guenther's halosaur,459388,42.839,-62.37,Fishes
+Lipogenys gillii,Blackfin Tapirfish,459409,49.5,-119.6,Fishes
+Notacanthus bonaparte,Shortfin spiny eel,459418,41.583332,-59.8,Fishes
+Notacanthus chemnitzii,Snubnosed Spiny Eel,225999,49.5,-119.6,Fishes
+Polyacanthonotus challengeri,Longnose Tapirfish,228499,49.5,-119.6,Fishes
+Polyacanthonotus rissoanus,Smallmouth Spiny Eel,459214,49.5,-119.6,Fishes
+Bythites fuscus,Arctic brotula,459179,61.94,-61.27,Fishes
+Cataetyx laticeps,,459252,43.136,-60.658167,Fishes
+Cataetyx rubrirostris,,317025,49.5,-119.6,Fishes
+Echiodon dawsoni,Chain Pearlfish,218882,41.4492,-68.3664,Fishes
+Acanthonus armatus,Bony-eared Assfish,459198,52.9393,-132.7027,Fishes
+Barathrites parri,,459331,42.540278,-63.4503,Fishes
+Barathrodemus manatinus,,459332,42.4625,-62.4164,Fishes
+Bassogigas gillii,,459334,42.552333,-63.194667,Fishes
+Bassozetus zenkevitchi,,618653,50.59,-129.79,Fishes
+Brotula barbata,Bearded Brotula,131431,44.0,-63.0,Fishes
+Cherublemma emmelas,,317048,49.5,-119.6,Fishes
+Dicrolene introniger,,459345,42.723,-62.7815,Fishes
+Lepophidium profundorum,Fawn Cusk-eel,154439,49.5,-119.6,Fishes
+Monomitopus agassizii,,106031,42.954722,-61.4928,Fishes
+Ophidion selenops,Mooneye Cusk-eel,317259,41.421665,-66.0725,Fishes
+Porogadus catena,,618772,49.5,-119.6,Fishes
+Spectrunculus crassus,,618788,49.5,-119.6,Fishes
+Spectrunculus grandis,Giant cusk-eel,231272,49.5,-119.6,Fishes
+Thalassobathia pelagica,Pelagic Brotula,113969,49.5,-119.6,Fishes
+Alepocephalus agassizii,Agassiz's Smoothhead,459174,42.7885,-62.963333,Fishes
+Alepocephalus bairdii,Baird's Smoothhead,459175,62.59706,-61.420898,Fishes
+Alepocephalus tenebrosus,California Slickhead,212957,49.5,-119.6,Fishes
+Bajacalifornia megalops,Bigeye Slickhead,459176,63.639,-60.098,Fishes
+Bathytroctes microlepis,Smallscale Smoothhead,459338,42.529167,-63.184,Fishes
+Einara edentula,,459330,42.66,-63.98,Fishes
+Narcetes stomias,Blackhead Slickhead,317526,49.5,-119.6,Fishes
+Photostylus pycnopterus,Starry Slickhead,459434,49.5,-119.6,Fishes
+Rinoctes nasutus,,459443,49.5,-119.6,Fishes
+Rouleina attrita,Softskin Slickhead,459452,49.5,-119.6,Fishes
+Rouleina maderensis,Madeiran Slickhead,459453,43.136,-60.658167,Fishes
+Talismania bifurcata,Threadfin Slickhead,113755,54.183366,-133.870116,Fishes
+Xenodermichthys copei,Bluntsnout Slickhead,317453,49.5,-119.6,Fishes
+Allosmerus elongatus,Whitebait Smelt,213065,48.74202,-125.39625,Fishes
+Hypomesus olidus,Pond Smelt,103143,49.5,-119.6,Fishes
+Osmerus dentex,Pacific Rainbow Smelt,187939,52.632233,-129.366633,Fishes
+Spirinchus starksi,Night Smelt,117567,49.5,-119.6,Fishes
+Holtbyrnia anomala,Bighead searsid,459401,63.227,-59.851,Fishes
+Holtbyrnia latifrons,Streaklight Tubeshoulder,221430,49.5,-119.6,Fishes
+Holtbyrnia macrops,Teardrop Tubeshoulder,221431,58.040278,-59.906944,Fishes
+Maulisia argipalla,Pitted Tubeshoulder,224478,49.5,-119.6,Fishes
+Maulisia mauli,Maul's Tubeshoulder,530665,49.5,-119.6,Fishes
+Maulisia microlepis,Smallscale Tubeshoulder,459390,49.5,-119.6,Fishes
+Mentodus rostratus,,459421,47.5,-43.0,Fishes
+Normichthys operosus,Multipore Searsid,459417,49.5,-119.6,Fishes
+Platytroctes apus,Legless Tubeshoulder,459436,42.735833,-61.7122,Fishes
+Sagamichthys abei,Shining Tubeshoulder,111922,48.576985,-125.84257,Fishes
+Acanthurus bahianus,Brazilian Ocean Surgeonfish,1032318,41.08333,-58.96667,Fishes
+Parascombrops spinosus,Keelcheek Bass,786139,49.5,-119.6,Fishes
+Ammodytes dubius,Northern Sand Lance,213403,47.197,-55.078,Fishes
+Anarhichas denticulatus,Northern Wolffish,213518,62.133889,-60.535278,Fishes
+Anarhichas orientalis,Bering Wolffish,213521,49.5,-119.6,Fishes
+Apogon maculatus,Flamefish,131487,42.5167,-64.6333,Fishes
+Apogon pseudomaculatus,Twospot Cardinalfish,147102,42.66667,-61.5,Fishes
+Ariomma bondi,Silver-rag,316965,49.5,-119.6,Fishes
+Ariomma regulus,Spotted Driftfish,316966,49.5,-119.6,Fishes
+Neobathyclupea argentea,,1316367,49.705849,-61.486991,Fishes
+Bathymaster caeruleofasciatus,Alaskan Ronquil,214889,53.306925,-135.659231,Fishes
+Bathymaster signatus,Searcher,214891,49.2774,-127.01718,Fishes
+Hypsoblennius hentz,Feather Blenny,179553,49.5,-119.6,Fishes
+Parablennius marmoreus,Seaweed Blenny,49933,42.933333,-62.533333,Fishes
+Pterycombus brama,Atlantic Fanfish,458050,48.525667,-59.750167,Fishes
+Taractes asper,Flathead Pomfret,232312,49.5,-119.6,Fishes
+Taractichthys longipinnis,Bigscale Pomfret,317418,40.5,-65.5,Fishes
+Callionymus bairdi,Lancer Dragonet,96458,49.5,-119.6,Fishes
+Antigonia capros,Robust Deepsea Boarfish,64596,49.5,-119.6,Fishes
+Antigonia combatia,Shortspine Boarfish,64591,49.5,-119.6,Fishes
+Decapterus macarellus,Mackerel Scad,121225,41.09167,-63.55833,Fishes
+Decapterus tabl,Rough-ear Scad,123660,49.5,-119.6,Fishes
+Selar boops,Oxeye Scad,424880,49.5,-119.6,Fishes
+Seriola lalandi,Yellowtail Kingfish,51550,49.5,-119.6,Fishes
+Trachinotus blochii,Snubnose Dart,180751,43.714707,-65.912688,Fishes
+Caristius fasciatus,,609941,49.5,-119.6,Fishes
+Caristius macropus,Manefish,216126,43.76,-58.825,Fishes
+Paracaristius maderensis,,317534,49.5,-119.6,Fishes
+Micropterus salmoides,Florida Bass,49587,41.93174,-82.51308,Fishes
+Centrolophus niger,Rudderfish,450428,44.6333,-63.9667,Fishes
+Hyperoglyphe perciformis,Barrelfish,103081,49.5,-119.6,Fishes
+Schedophilus medusophagus,Brown Ruff,120621,41.216667,-61.75,Fishes
+Chiasmodon niger,Black Swallower,317049,56.44,-58.344722,Fishes
+Dysalotus alcocki,,459346,49.5,-119.6,Fishes
+Kali indica,Indian kali,459355,49.5,-119.6,Fishes
+Pseudoscopelus altipinnis,,459441,41.583332,-63.9,Fishes
+Pseudoscopelus scriptus,,459442,49.5,-119.6,Fishes
+Coryphaena equiselis,Pompano Dolphinfish,122918,49.5,-119.6,Fishes
+Echeneis naucrates,Sharksucker,48844,49.5,-119.6,Fishes
+Remora australis,Whalesucker,48840,44.051917,-60.688472,Fishes
+Remora brachyptera,Spearfish Remora,111585,43.950001,-59.9167,Fishes
+Remora osteochir,Marlinsucker,194898,49.5,-119.6,Fishes
+Remora remora,Common Remora,120697,49.5,-119.6,Fishes
+Epigonus telescopus,Black Deepsea Cardinalfish,459381,49.5,-119.6,Fishes
+Diplospinus multistriatus,Striped Escolar,317082,49.5,-119.6,Fishes
+Lepidocybium flavobrunneum,Escolar,194677,49.5,-119.6,Fishes
+Nealotus tripes,Black Snake Mackerel,194884,46.651587,-57.91632,Fishes
+Neoepinnula orientalis,Sackfish,459257,49.5,-119.6,Fishes
+Nesiarchus nasutus,Black Gemfish,225824,41.083332,-58.9667,Fishes
+Ruvettus pretiosus,Oilfish,194885,43.366667,-60.533333,Fishes
+Gobionellus oceanicus,Highfin Goby,179584,44.3758,-64.3103,Fishes
+Howella atlantica,,459404,49.5,-119.6,Fishes
+Howella sherborni,Sherborn's Pelagic Bass,317150,43.286667,-58.9986,Fishes
+Icosteus aenigmaticus,Ragfish,222157,49.0075,-123.423,Fishes
+Kajikia albida,Atlantic White Marlin,187571,49.5,-119.6,Fishes
+Makaira nigricans,Blue Marlin,147455,49.5,-119.6,Fishes
+Kyphosus sectatrix,Bermuda Chub,131523,49.5,-119.6,Fishes
+Medialuna californiensis,Halfmoon,105388,49.5,-119.6,Fishes
+Lobotes surinamensis,Atlantic Tripletail,120694,49.5,-119.6,Fishes
+Pristipomoides aquilonaris,Wenchman,131527,43.890278,-66.2861,Fishes
+Rhomboplites aurorubens,Vermilion Snapper,126872,43.324,-79.83,Fishes
+Luvarus imperialis,Louvar,120654,41.67,-62.47,Fishes
+Lycodes beringi,Bering eelpout,622183,49.5,-119.6,Fishes
+Caulolatilus princeps,Ocean Whitefish,49168,49.5,-119.6,Fishes
+Lopholatilus chamaeleonticeps,Great Northern Tilefish,224123,49.5,-119.6,Fishes
+Cubiceps capensis,Cape Cubehead,452415,40.966667,-63.5,Fishes
+Cubiceps gracilis,Longfin Cigarfish,459211,49.5,-119.6,Fishes
+Cubiceps pauciradiatus,Longfin Cubehead,194906,44.0,-63.0,Fishes
+Nomeus gronovii,Bluebottle-fish,194905,49.5,-119.6,Fishes
+Psenes maculatus,Silver Driftfish,317322,42.166668,-60.7833,Fishes
+Psenes pellucidus,Bluefin Driftfish,194902,49.5,-119.6,Fishes
+Pentaceros wheeleri,Slender Armorhead,517020,49.5,-119.6,Fishes
+Polyprion americanus,Atlantic Wreckfish,110001,48.119999,-52.8631,Fishes
+Stegastes leucostictus,Beaugregory,180708,49.5,-119.6,Fishes
+Pomatomus saltatrix,Bluefish,50984,41.878269,-66.78627,Fishes
+Cookeolus japonicus,Longfin Bigeye,194900,49.5,-119.6,Fishes
+Priacanthus arenatus,Atlantic Bigeye,179478,49.5,-119.6,Fishes
+Rachycentron canadum,Cobia,131491,43.25,-62.1333,Fishes
+Atractoscion nobilis,White Seabass,94840,49.5,-119.6,Fishes
+Cynoscion regalis,Weakfish,154500,49.5,-119.6,Fishes
+Genyonemus lineatus,White Croaker,101346,49.5,-119.6,Fishes
+Micropogonias undulatus,Atlantic Croaker,146600,46.09,-61.535,Fishes
+Pogonias cromis,Black Drum,57814,49.5,-119.6,Fishes
+Seriphus politus,Queenfish,112485,49.5,-119.6,Fishes
+Acanthocybium solandri,Wahoo,47257,40.7,-58.78,Fishes
+Auxis rochei,Bullet Tuna,118677,47.129906,-55.76136,Fishes
+Katsuwonus pelamis,Skipjack Tuna,56943,40.8756,-66.7869,Fishes
+Sarda chiliensis,Eastern Pacific Bonito,188252,49.5,-119.6,Fishes
+Scomber colias,Atlantic Chub Mackerel,69841,47.516963,-61.875576,Fishes
+Scomber japonicus,Pacific Chub Mackerel,69840,49.5,-119.6,Fishes
+Scomberomorus maculatus,Atlantic Spanish Mackerel,179471,49.5,-119.6,Fishes
+Thunnus albacares,Yellowfin Tuna,69675,41.64283,-66.6487,Fishes
+Thunnus atlanticus,Blackfin Tuna,114123,49.5,-119.6,Fishes
+Thunnus obesus,Bigeye Tuna,114125,49.5,-119.6,Fishes
+Thunnus orientalis,Pacific Bluefin Tuna,188560,49.5,-119.6,Fishes
+Scombrolabrax heterolepis,Longfin Escolar,317346,49.5,-119.6,Fishes
+Scytalina cerdale,Graveldiver,230744,48.555306,-124.449734,Fishes
+Baldwinella aureorubens,Streamer Bass,620559,41.68,-61.96,Fishes
+Baldwinella vivanus,Red Barbier,620560,41.25,-57.46667,Fishes
+Archosargus probatocephalus,Sheepshead,49750,49.5,-119.6,Fishes
+Sphyraena argentea,Pacific Barracuda,47262,49.116667,-99.133333,Fishes
+Sphyraena guachancho,Guachanche Barracuda,47250,46.055,-61.48333,Fishes
+Acantholumpenus mackayi,Blackline Prickleback,212217,69.444886,-132.847328,Fishes
+Anisarchus medius,Stout Eelblenny,213639,50.128667,-65.810667,Fishes
+Bryozoichthys marjorius,Pearly Prickleback,215492,54.26405,-133.799066,Fishes
+Chirolophis ascanii,Atlantic Warbonnet,216741,49.5,-119.6,Fishes
+Chirolophis tarsodes,Matcheek Warbonnet,216744,54.0667,-131.833,Fishes
+Lumpenopsis hypochroma,Y-Prickleback,459287,50.858692,-129.080259,Fishes
+Tetragonurus atlanticus,Bigeye Squaretail,317419,41.466667,-63.0,Fishes
+Tetragonurus cuvieri,Smalleye Squaretail,120703,49.5,-119.6,Fishes
+Lagocephalus lagocephalus,Ocean Puffer,120635,49.5,-119.6,Fishes
+Sphoeroides pachygaster,Blunthead Puffer,49268,43.285,-63.7667,Fishes
+Aphanopus arigato,,621633,49.5,-119.6,Fishes
+Aphanopus carbo,Black Scabbardfish,213895,49.5,-119.6,Fishes
+Benthodesmus pacificus,North Pacific Frostfish,215150,48.3167,-123.533,Fishes
+Benthodesmus simonyi,North Atlantic Frostfish,316999,49.5,-119.6,Fishes
+Benthodesmus tenuis,Scabbard Fish,194890,42.764444,-63.4544,Fishes
+Bothrocara brunneum,Twoline Eelpout,215324,49.5,-119.6,Fishes
+Bothrocara molle,Soft Eelpout,215325,49.5,-119.6,Fishes
+Derepodichthys alepidotus,Cuskpout,218248,49.03143,-123.29183,Fishes
+Gymnelus knipowitschi,,1315120,69.9,-129.5,Fishes
+Gymnelus retrodorsalis,Aurora Pout,450430,71.324,-117.161,Fishes
+Lycenchelys camchatica,Kamchatka Eelpout,224169,49.5,-119.6,Fishes
+Lycenchelys jordani,Shortjaw Eelpout,224171,49.5,-119.6,Fishes
+Lycenchelys kolthoffi,Checkered wolf eel,459186,61.229801,-64.110598,Fishes
+Lycenchelys micropora,Manytoothed Eelpout,224172,49.19243,-126.6966,Fishes
+Lycenchelys muraena,Moray wolf eel,459187,66.29,-58.4235,Fishes
+Lycenchelys paxillus,Common Wolf Eel,224173,56.355,-57.729722,Fishes
+Lycenchelys sarsii,Sars' Wolf Eel,459185,66.71415,-58.52453,Fishes
+Lycodapus dermatinus,Looseskin Eelpout,224176,53.65785,-133.2879,Fishes
+Lycodapus endemoscotus,Deepwater Slipskin,224177,53.22915,-133.184916,Fishes
+Lycodapus fierasfer,Blackmouth Eelpout,224178,53.99935,-133.77855,Fishes
+Lycodapus pachysoma,Stout Slipskin,224180,50.05,-128.15,Fishes
+Lycodapus parviceps,Smallhead Eelpout,224181,48.98,-124.907,Fishes
+Lycodes adolfi,Adolf's eelpout,459188,72.21797,-71.259,Fishes
+Lycodes esmarkii,Esmark's Eelpout,224186,49.5,-119.6,Fishes
+Lycodes eudipleurostictus,Doubleline Eelpout,459190,49.5,-119.6,Fishes
+Lycodes frigidus,glacial eelpout,459191,49.5,-119.6,Fishes
+Lycodes jugoricus,Shulupaoluk,104882,70.6125,-129.935,Fishes
+Lycodes luetkenii,Lütken's eelpout,459192,49.5,-119.6,Fishes
+Lycodes marisalbi,White Sea Eelpout,224188,70.8492,-134.682,Fishes
+Lycodes mcallisteri,McAllister's eelpout,459193,49.5,-119.6,Fishes
+Lycodes paamiuti,Paamiut eelpout,104883,61.132392,-64.2278,Fishes
+Lycodes polaris,Canadian Eelpout,224192,76.400072,-78.410762,Fishes
+Lycodes reticulatus,Arctic Eelpout,224193,57.879722,-59.936944,Fishes
+Lycodes rossi,Threespot Eelpout,224194,49.5,-119.6,Fishes
+Lycodes sagittarius,Archer Eelpout,224195,70.966,-134.866,Fishes
+Lycodes seminudus,Longear Eelpout,224196,49.5,-119.6,Fishes
+Lycodes squamiventer,Scalebelly eelpout,622209,69.4312,-118.682,Fishes
+Lycodes terraenovae,Atlantic Eelpout,224197,49.5,-119.6,Fishes
+Lycodes turneri,Polar Eelpout,224198,54.8733,-59.0,Fishes
+Lycodonus mirabilis,Chevron scutepout,459189,69.528,-65.173,Fishes
+Melanostigma pammelas,Pacific Soft Pout,224814,54.4863,-130.53806,Fishes
+Pachycara bulbiceps,Snubnose Eelpout,226831,49.5,-119.6,Fishes
+Pachycara crassiceps,,459276,42.449444,-63.5772,Fishes
+Pachycara gymninium,Nakedneck Eelpout,226832,49.5,-119.6,Fishes
+Pachycara lepinium,Scalyneck Eelpout,226833,51.85,-131.19,Fishes
+Lethenteron alaskense,Alaskan Brook Lamprey,223533,49.5,-119.6,Fishes
+Trinectes maculatus,Hogchoker,56047,46.075,-61.50667,Fishes
+Bothus ocellatus,Eyed Flounder,131521,41.53333,-59.0,Fishes
+Engyophrys senta,Spiny Flounder,179604,49.5,-119.6,Fishes
+Monolene antillarum,Slim Flounder,450445,43.2292,-61.1917,Fishes
+Monolene sessilicauda,Deepwater Flounder,317226,49.5,-119.6,Fishes
+Trichopsetta orbisulcus,,459392,43.2667,-61.05,Fishes
+Trichopsetta ventralis,Sash Flounder,131520,49.5,-119.6,Fishes
+Symphurus billykrietei,Chocolatebanded Tonguefish,317402,46.74,-58.3,Fishes
+Symphurus minor,Largescale Tongefish,450413,42.35,-65.0167,Fishes
+Citharichthys arctifrons,Gulf Stream Flounder,217049,49.5,-119.6,Fishes
+Citharichthys cornutus,Horned Whiff,179629,49.5,-119.6,Fishes
+Citharichthys gymnorhinus,Anglefin Whiff,97893,41.25,-57.46667,Fishes
+Citharichthys spilopterus,Bay Whiff,179630,41.8372,-65.5789,Fishes
+Cyclopsetta fimbriata,Spotfin Flounder,179631,40.8756,-66.7869,Fishes
+Etropus crossotus,Fringed Flounder,179601,46.075,-61.51,Fishes
+Etropus microstomus,Smallmouth Flounder,219594,42.780333,-63.985333,Fishes
+Paralichthys dentatus,Summer Flounder,53744,49.5,-119.6,Fishes
+Paralichthys oblongus,Fourspot Flounder,1316528,49.5,-119.6,Fishes
+Syacium micrurum,Channel Flounder,317399,42.15,-65.4333,Fishes
+Clidoderma asperrimum,Roughscale Sole,217196,49.5,-119.6,Fishes
+Hippoglossoides robustus,Bering Flounder,221383,70.1046,-125.018,Fishes
+Poecilopsetta beanii,Deepwater Dab,317514,44.0,-63.0,Fishes
+Polymixia lowei,Beardfish,317310,49.5,-119.6,Fishes
+Bathyraja abyssicola,Abyssal Skate,95487,51.39995,-131.01402,Fishes
+Bathyraja aleutica,Aleutian Skate,95490,53.293089,-133.134093,Fishes
+Bathyraja interrupta,Bering Skate,95500,49.5,-119.6,Fishes
+Bathyraja lindbergi,Commander Skate,95504,49.5,-119.6,Fishes
+Bathyraja minispinosa,Whitebrow Skate,95513,53.301185,-133.116849,Fishes
+Bathyraja richardsoni,Richardson's Skate,95520,49.5,-119.6,Fishes
+Bathyraja spinicauda,Spinytail Skate,95526,62.15249,-60.593274,Fishes
+Bathyraja trachura,Roughtail Skate,95530,49.5,-119.6,Fishes
+Amblyraja jenseni,Shorttail Skate,93837,49.5,-119.6,Fishes
+Fenestraja plutonia,Pluto Skate,100917,49.5,-119.6,Fishes
+Leucoraja garmani,Rosette Skate,104535,49.5,-119.6,Fishes
+Malacoraja senta,Smooth Skate,105124,56.291436,-59.317463,Fishes
+Malacoraja spinacidermis,Soft Skate,105125,49.5,-119.6,Fishes
+Rajella bathyphila,Abyssal Skate,111539,44.207833,-58.061833,Fishes
+Rajella bigelowi,Bigelow's Skate,111540,49.5,-119.6,Fishes
+Rajella fyllae,Round Skate,111545,49.5,-119.6,Fishes
+Rajella lintea,Sailray,435315,49.5,-119.6,Fishes
+Rostroraja eglanteria,Clearnose Skate,1032432,49.5,-119.6,Fishes
+Cyema atrum,Deepwater Eel,317068,49.5,-119.6,Fishes
+Neocyema erythrosoma,,459423,43.809444,-58.9222,Fishes
+Eurypharynx pelecanoides,Gulper Eel,317098,49.5,-119.6,Fishes
+Saccopharynx ampullaceus,Pelican-fish,459219,49.5,-119.6,Fishes
+Coregonus johannae,Deepwater Cisco,98458,45.7,-78.383333,Fishes
+Coregonus kiyi,Kiyi,98459,49.5,-119.6,Fishes
+Coregonus laurettae,Bering Cisco,217590,64.0667,-139.417,Fishes
+Coregonus nigripinnis,Blackfin Cisco,98470,49.5,-119.6,Fishes
+Coregonus nipigon,Nipigon Cisco,217591,49.5,-119.6,Fishes
+Coregonus reighardi,Shortnose Cisco,98480,45.891352,-81.527344,Fishes
+Coregonus sardinella,,1596902,49.5,-119.6,Fishes
+Coregonus zenithicus,Shortjaw Cisco,98491,49.5,-119.6,Fishes
+Stenodus leucichthys,Beloribitsa,113155,49.5,-119.6,Fishes
+Bathyagonus alascanus,Gray Starsnout,214883,49.06967,-126.54546,Fishes
+Bathyagonus infraspinatus,Spinycheek Starsnout,214884,49.5,-119.6,Fishes
+Chesnonia verrucosa,Warty Poacher,117525,48.92088,-125.62145,Fishes
+Hypsagonus quadricornis,Fourhorn Poacher,222105,48.69613,-123.35398,Fishes
+Sarritor frenatus,Sawback Poacher,607884,49.5,-119.6,Fishes
+Xeneretmus leiops,Smootheye Poacher,233755,49.398616,-127.232066,Fishes
+Xeneretmus triacanthus,Bluespotted Poacher,233757,49.32302,-123.71133,Fishes
+Erilepis zonifer,Skilfish,219463,49.5,-119.6,Fishes
+Artediellus scaber,Hamecon,214214,49.5,-119.6,Fishes
+Cottus confusus,Shorthead Sculpin,98564,49.072222,-117.271389,Fishes
+Gymnocanthus galeatus,Armorhead Sculpin,220716,49.5,-119.6,Fishes
+Icelinus burchami,Dusky Sculpin,222141,49.5,-119.6,Fishes
+Icelus bicornis,Twohorn Sculpin,222147,61.567892,-64.120545,Fishes
+Icelus spiniger,Thorny Sculpin,222151,49.5,-119.6,Fishes
+Radulinus asprellus,Slim Sculpin,229751,49.11355,-126.47653,Fishes
+Radulinus boleoides,Darter Sculpin,229752,49.5,-119.6,Fishes
+Triglops murrayi,Moustache Sculpin,232945,49.5,-119.6,Fishes
+Triglops nybelini,Bigeye Sculpin,232946,49.5,-119.6,Fishes
+Zesticelus profundorum,,459220,49.5,-119.6,Fishes
+Aptocyclus ventricosus,Smooth Lumpsucker,214055,54.273066,-133.358916,Fishes
+Eumicrotremus derjugini,Leatherfin Lumpsucker,219757,49.5,-119.6,Fishes
+Nautichthys robustus,Shortmast Sculpin,225463,48.82,-125.15,Fishes
+Hexagrammos octogrammus,Masked Greenling,221355,49.5,-119.6,Fishes
+Pleurogrammus monopterygius,Atka Mackerel,228388,49.5,-119.6,Fishes
+Acantholiparis caecus,,212215,49.5,-119.6,Fishes
+Acantholiparis opercularis,Spiny Snailfish,212216,52.4,-132.2,Fishes
+Careproctus attenuatus,,615776,50.72,-129.41,Fishes
+Careproctus bowersianus,,615780,49.5,-119.6,Fishes
+Careproctus canus,,615781,49.5,-119.6,Fishes
+Careproctus colletti,,459223,49.5,-119.6,Fishes
+Careproctus cypselurus,Falcate Snailfish,216112,52.777683,-132.4849,Fishes
+Careproctus furcellus,Emarginate Snailfish,450438,53.686783,-133.3282,Fishes
+Careproctus melanurus,Blacktail Snailfish,216115,53.31244,-133.09191,Fishes
+Careproctus micropus,,459224,67.093,-59.533,Fishes
+Careproctus oregonensis,Smallfin Snailfish,216116,49.5,-119.6,Fishes
+Careproctus ranula,Scotian Snailfish,216118,44.886167,-58.682333,Fishes
+Elassodiscus caudatus,Blackbelly Snailfish,218962,49.5,-119.6,Fishes
+Elassodiscus tremebundus,,459226,49.5,-119.6,Fishes
+Liparis coheni,Gulf Snailfish,223891,45.3905,-65.192833,Fishes
+Liparis gibbus,Variegated snailfish,223895,49.5,-119.6,Fishes
+Liparis inquilinus,Inquiline Snailfish,223897,41.703,-66.330167,Fishes
+Liparis liparis,Common Seasnail,187630,49.5,-119.6,Fishes
+Liparis rutteri,Ringtail Snailfish,117540,49.5,-119.6,Fishes
+Lipariscus nanus,Pygmy Snailfish,172631,49.03143,-123.29183,Fishes
+Osteodiscus cascadiae,Bigtail Snailfish,226707,50.908333,-130.916667,Fishes
+Paraliparis bathybius,Black Seasnail,459237,68.566667,-63.616667,Fishes
+Paraliparis calidus,Lowfin Snailfish,227029,47.885,-60.64,Fishes
+Paraliparis cephalus,Swellhead Snailfish,227030,53.218516,-132.8652,Fishes
+Paraliparis copei,Blacksnout Seasnail,187997,47.883333,-60.281333,Fishes
+Paraliparis dactylosus,,615968,50.56,-129.25,Fishes
+Paraliparis garmani,Pouty Snailfish,459238,64.835,-58.015,Fishes
+Paraliparis holomelas,,615987,49.5,-119.6,Fishes
+Paraliparis hystrix,,446352,49.5,-119.6,Fishes
+Paraliparis latifrons,Bigpored Snailfish,227032,49.5,-119.6,Fishes
+Paraliparis melanobranchus,Phantom Snailfish,227033,52.4,-132.2,Fishes
+Paraliparis paucidens,Toothless Snailfish,227034,53.967266,-133.8262,Fishes
+Paraliparis pectoralis,,459239,49.5,-119.6,Fishes
+Paraliparis rosaceus,Pink Snailfish,227035,48.752933,-126.4634,Fishes
+Paraliparis ulochir,Broadfin Snailfish,317278,48.965,-126.639833,Fishes
+Paraliparis vaillanti,,459240,68.566667,-63.616667,Fishes
+Psednos groenlandicus,Greenland dwarf snailfish,459229,49.5,-119.6,Fishes
+Psednos harteli,Hartel's Dwarf Snailfish,188119,40.75,-65.05,Fishes
+Psednos melanocephalus,Black-headed Dwarf Snailfish,459230,49.5,-119.6,Fishes
+Rhinoliparis attenuatus,Slim Snailfish,172633,49.5,-119.6,Fishes
+Rhodichthys regina,Threadfin Seasnail,459217,49.5,-119.6,Fishes
+Peristedion gracile,Slender Searobin,317287,49.5,-119.6,Fishes
+Peristedion miniatum,Armored Searobin,450416,43.848279,-66.848145,Fishes
+Cottunculus thomsonii,Pallid Sculpin,459180,49.5,-119.6,Fishes
+Malacocottus zonurus,Darkfin Sculpin,224388,48.787066,-126.53295,Fishes
+Psychrolutes phrictus,Blob Sculpin,229294,51.40148,-131.01388,Fishes
+Scorpaena calcarata,Smoothhead Scorpionfish,317356,42.9333,-62.8833,Fishes
+Helicolenus dactylopterus,Blackbelly Rosefish,118629,49.5,-119.6,Fishes
+Sebastes aurora,Aurora Rockfish,64456,48.801316,-126.59145,Fishes
+Sebastes chlorostictus,Greenspotted Rockfish,64469,51.322012,-129.041293,Fishes
+Sebastes crameri,Darkblotched Rockfish,64462,49.0468,-126.44268,Fishes
+Sebastes goodei,Chilipepper,64460,48.78655,-126.263266,Fishes
+Sebastes jordani,Shortbelly Rockfish,64464,49.4748,-127.15397,Fishes
+Sebastes melanostomus,Blackgill Rockfish,64447,49.5,-119.6,Fishes
+Sebastes rastrelliger,Grass Rockfish,64446,49.5,-119.6,Fishes
+Sebastes reedi,Yellowmouth Rockfish,230759,48.4099,-126.032166,Fishes
+Sebastes rufus,Bank Rockfish,230760,49.341733,-127.218,Fishes
+Sebastes variegatus,Harlequin Rockfish,230763,53.7455,-133.297233,Fishes
+Sebastes wilsoni,Pygmy Rockfish,117523,49.5,-119.6,Fishes
+Sebastolobus altivelis,Longspine Thornyhead,230765,49.5,-119.6,Fishes
+Ectreposebastes imus,,194912,43.299446,-61.1686,Fishes
+Prionotus alatus,Spiny Searobin,317313,49.5,-119.6,Fishes
+Dalatias licha,Kitefin Shark,51322,49.5,-119.6,Fishes
+Squaliolus laticaudus,Spined Pygmy Shark,112996,49.5,-119.6,Fishes
+Centroscyllium fabricii,Black Dogfish,96968,62.375,-60.518611,Fishes
+Etmopterus gracilispinis,Broad-banded Lantern Shark,100582,49.5,-119.6,Fishes
+Etmopterus princeps,Great Lantern Shark,100590,42.845,-61.986667,Fishes
+Centroscymnus coelolepis,Portuguese Dogfish,59796,49.5,-119.6,Fishes
+Etmopterus spinax,Velvet Belly Lantern Shark,100597,49.5,-119.6,Fishes
+Melamphaes longivelis,Eyebrow Bigscale,459410,49.5,-119.6,Fishes
+Melamphaes polylepis,,459413,41.099998,-63.15,Fishes
+Melamphaes simus,,317213,49.5,-119.6,Fishes
+Melamphaes suborbitalis,Shoulderspine Bigscale,459415,42.3745,-64.008167,Fishes
+Melamphaes typhlops,,459416,43.216667,-59.0,Fishes
+Poromitra capito,,459236,49.5,-119.6,Fishes
+Poromitra crassiceps,Crested Bigscale,228654,49.5,-119.6,Fishes
+Poromitra megalops,,459439,49.5,-119.6,Fishes
+Poromitra nigriceps,,459440,54.254916,-133.9738,Fishes
+Scopeloberyx opisthopterus,,112338,49.5,-119.6,Fishes
+Scopeloberyx robustus,,459455,49.5,-119.6,Fishes
+Scopelogadus beanii,Bean's Bigscale,459447,49.5,-119.6,Fishes
+Scopelogadus mizolepis,Ragged Bigscale,230667,43.42,-59.47,Fishes
+Melamphaes lugubris,Highsnout Ridgehead,224548,48.47,-126.39,Fishes
+Cyclothone acclinidens,Bent-tooth Bristlemouth,317065,49.5,-119.6,Fishes
+Cyclothone alba,Pale Bristlemouth,317066,49.5,-119.6,Fishes
+Cyclothone atraria,Yellow Bristlemouth,217973,49.051,-130.734,Fishes
+Cyclothone braueri,Brauer's Bristlemouth,317067,49.5,-119.6,Fishes
+Cyclothone microdon,Smalltooth Bristlemouth,217974,49.5,-119.6,Fishes
+Cyclothone pallida,Tanned Bristlemouth,217975,49.5,-119.6,Fishes
+Cyclothone pseudopallida,Slender Bristlemouth,217976,44.81167,-55.00933,Fishes
+Cyclothone signata,Showy Bristlemouth,217977,49.051,-130.734,Fishes
+Diplophos taenia,Pacific Portholefish,317081,42.36667,-60.91667,Fishes
+Gonostoma atlanticum,Atlantic Fangjaw,120685,43.81,-58.94,Fishes
+Gonostoma denudatum,,120687,42.133335,-56.3667,Fishes
+Manducus maderensis,,459232,43.405833,-60.346333,Fishes
+Margrethia obtusirostra,Bighead Portholefish,317209,49.5,-119.6,Fishes
+Sigmops bathyphilus,Deepsea Fangjaw,530144,49.5,-119.6,Fishes
+Sigmops elongatus,Elongate Fangjaw,530145,49.5,-119.6,Fishes
+Ichthyococcus elongatus,Slim Lightfish,222154,49.5,-119.6,Fishes
+Ichthyococcus ovatus,Ovate Lightfish,120679,43.785067,-58.870883,Fishes
+Pollichthys mauli,Stareye Lightfish,228498,40.983334,-59.0167,Fishes
+Polymetme thaeocoryla,,459298,49.5,-119.6,Fishes
+Vinciguerria attenuata,Slender Lightfish,317449,43.237778,-59.0006,Fishes
+Vinciguerria nimbaria,Narooma Lightfish,317451,42.651667,-64.068833,Fishes
+Vinciguerria poweriae,Power's Lightfish,317452,49.5,-119.6,Fishes
+Argyropelecus aculeatus,Atlantic Silver Hatchetfish,459327,42.845,-61.986667,Fishes
+Argyropelecus affinis,Pacific Hatchetfish,316964,49.5,-119.6,Fishes
+Argyropelecus gigas,Giant Hatchetfish,459328,49.5,-119.6,Fishes
+Argyropelecus hemigymnus,Half-naked Hatchetfish,94608,43.856133,-58.922317,Fishes
+Argyropelecus lychnus,Tropical Hatchetfish,214145,42.933333,-61.6333,Fishes
+Argyropelecus olfersii,Silver hatchetfish,459329,49.5,-119.6,Fishes
+Danaphos oculatus,Bottlelight,218128,49.5,-119.6,Fishes
+Polyipnus asteroides,,459326,42.387167,-67.166167,Fishes
+Polyipnus clarus,Slope Hatchetfish,109976,56.408611,-58.129444,Fishes
+Sternoptyx diaphana,Oblique Hatchetfish,317393,49.5,-119.6,Fishes
+Sternoptyx pseudobscura,Highlight Hatchetfish,231719,49.5,-119.6,Fishes
+Valenciennellus tripunctulatus,Constellationfish,317438,49.5,-119.6,Fishes
+Aristostomias grimaldii,,459234,49.5,-119.6,Fishes
+Aristostomias lunifer,,459244,42.183334,-60.5333,Fishes
+Aristostomias polydactylus,,459245,49.5,-119.6,Fishes
+Aristostomias scintillans,Shining Loosejaw,214189,49.5,-119.6,Fishes
+Aristostomias tittmanni,Loosejaw,459246,43.2125,-59.9975,Fishes
+Astronesthes gemmifer,Snaggletooth,459318,43.2333,-57.1833,Fishes
+Astronesthes leucopogon,,459319,43.1,-55.9167,Fishes
+Astronesthes macropogon,,459320,49.5,-119.6,Fishes
+Astronesthes micropogon,,459321,44.0,-63.0,Fishes
+Astronesthes richardsoni,Snaggletooth,94761,61.555833,-60.7475,Fishes
+Astronesthes similus,,459323,41.166668,-59.0,Fishes
+Bathophilus brevis,,316985,49.5,-119.6,Fishes
+Bathophilus flemingi,Highfin Dragonfish,214882,53.183333,-133.098,Fishes
+Bathophilus longipinnis,Longfin Dragonfish,459282,49.5,-119.6,Fishes
+Bathophilus pawneei,Pawnee Dragonfish,459284,49.5,-119.6,Fishes
+Bathophilus vaillanti,,459285,49.5,-119.6,Fishes
+Borostomias antarcticus,Antarctic Snaggletooth,459178,50.176667,-48.471667,Fishes
+Chauliodus danae,Dana Viperfish,459227,42.549999,-61.2,Fishes
+Chauliodus macouni,Pacific Viperfish,216648,49.5,-119.6,Fishes
+Chauliodus sloani,Sloane's Viperfish,120645,49.5,-119.6,Fishes
+Chirostomias pliopterus,,459206,49.5,-119.6,Fishes
+Echiostoma barbatum,Threadfin Dragonfish,459324,41.349998,-59.0,Fishes
+Eustomias achirus,Proud Dragonfish,459247,49.5,-119.6,Fishes
+Eustomias arborifer,,459248,41.67,-62.47,Fishes
+Eustomias borealis,,459260,39.8667,-63.7833,Fishes
+Eustomias braueri,,459261,49.5,-119.6,Fishes
+Eustomias brevibarbatus,,459262,41.67,-62.47,Fishes
+Eustomias dubius,Saint Croix Dragonfish,459263,41.616665,-59.8,Fishes
+Eustomias enbarbatus,Barbate Dragonfish,459264,42.77,-63.75,Fishes
+Eustomias filifer,,459265,49.5,-119.6,Fishes
+Eustomias fissibarbis,,459266,44.176666,-58.1967,Fishes
+Eustomias jimcraddocki,,459267,40.17333,-65.005,Fishes
+Eustomias lipochirus,,459268,49.5,-119.6,Fishes
+Eustomias longibarba,Great Dragonfish,459269,41.67,-62.47,Fishes
+Eustomias obscurus,,459270,49.5,-119.6,Fishes
+Eustomias polyaster,,459271,40.966667,-61.3333,Fishes
+Eustomias satterleei,Twinray Dragonfish,459272,39.5,-65.0833,Fishes
+Eustomias schmidti,Schmidt's Dragonfish,459273,42.5,-61.5,Fishes
+Eustomias silvescens,,459274,49.5,-119.6,Fishes
+Eustomias simplex,,621300,49.5,-119.6,Fishes
+Flagellostomias boureei,Longbarb Dragonfish,317105,43.45985,-48.5472,Fishes
+Grammatostomias dentatus,Torpedo Dragonfish,459303,42.783333,-64.333333,Fishes
+Grammatostomias flagellibarba,Long-barbelled Dragonfish,459304,41.349998,-59.0,Fishes
+Idiacanthus antrostomus,Pacific Blackdragon,222181,49.5,-119.6,Fishes
+Idiacanthus fasciola,Serpent Black Dragonfish,317168,49.5,-119.6,Fishes
+Leptostomias gladiator,scaleless dragonfish,459305,43.934167,-58.9828,Fishes
+Leptostomias haplocaulus,,459306,41.466667,-59.6667,Fishes
+Leptostomias longibarba,,459307,41.633335,-59.0167,Fishes
+Malacosteus niger,Black Loosejaw,224389,58.040278,-59.906944,Fishes
+Melanostomias bartonbeani,Scaleless black dragonfish,459308,45.0172,-48.47215,Fishes
+Melanostomias biseriatus,,459309,49.5,-119.6,Fishes
+Melanostomias tentaculatus,Tentacle Dragonfish,459310,49.5,-119.6,Fishes
+Melanostomias valdiviae,Valdivia Dragonfish,459311,41.549999,-58.95,Fishes
+Neonesthes capensis,Cape Snaggletooth,459235,49.5,-119.6,Fishes
+Opostomias mitsuii,Pitgum Lanternfish,226517,49.5,-119.6,Fishes
+Pachystomias microdon,Smalltooth Dragonfish,459286,43.06595,-51.36445,Fishes
+Photonectes braueri,Brauer's Dragonfish,459312,49.5,-119.6,Fishes
+Photonectes margarita,,459313,49.5,-119.6,Fishes
+Photonectes parvimanus,Fleshyfin Dragonfish,459314,40.2833,-59.2333,Fishes
+Photostomias guernei,Deepsea Loosejaw,459315,43.770867,-58.846167,Fishes
+Rhadinesthes decimus,,459216,49.5,-119.6,Fishes
+Stomias affinis,Honeycomb Scaly Dragonfish,459241,49.5,-119.6,Fishes
+Stomias boa,Boa Dragonfish,775942,49.5,-119.6,Fishes
+Stomias brevibarbatus,Shortbarbel Dragonfish,459242,41.549999,-58.95,Fishes
+Stomias longibarbatus,Longbarb Scaly Dragonfish,459243,43.181833,-62.473333,Fishes
+Tactostoma macropus,Longfin Dragonfish,232246,54.369861,-133.551783,Fishes
+Trigonolampa miriceps,Threelight Dragonfish,459231,45.8348,-63.125,Fishes
+Fistularia tabacaria,Atlantic Bluespotted Cornetfish,47242,49.5,-119.6,Fishes
+Bryx dunckeri,Pugnose Pipefish,450417,49.5,-119.6,Fishes
+Syngnathus pelagicus,Sargassum Pipefish,179451,41.67,-62.47,Fishes
+Syngnathus springeri,Bull Pipefish,450450,49.5,-119.6,Fishes
+Canthidermis sufflamen,Oceanic Triggerfish,131526,43.0,-62.0,Fishes
+Aluterus scriptus,Scrawled Filefish,49498,49.5,-119.6,Fishes
+Monacanthus ciliatus,Fringed Filefish,131515,49.5,-119.6,Fishes
+Lactophrys trigonus,Buffalo Trunkfish,131513,49.5,-119.6,Fishes
+Lactophrys triqueter,Smooth Trunkfish,577603,42.3667,-65.0167,Fishes
+Tetronarce nobiliana,Atlantic Torpedo,607541,44.526977,-63.949175,Fishes
+Grammicolepis brachiusculus,Thorny Tinselfish,317124,49.5,-119.6,Fishes
+Xenolepidichthys dalgleishi,Spotted Tinselfish,317455,49.5,-119.6,Fishes
+Allocyttus folletti,Oxeye Oreo,213014,49.5,-119.6,Fishes
+Neocyttus helgae,False Boarfish,459221,49.5,-119.6,Fishes
+Zenopsis conchifer,Buckler Dory,622017,43.2985,-61.046833,Fishes
+Zenion hololepis,Dwarf Dory,317473,49.5,-119.6,Fishes
+Phrynosoma douglasii,Pygmy Short-horned Lizard,36316,50.03333,-110.68333,Reptiles
+Actinemys marmorata,Western Pond Turtle,73592,49.5,-119.6,Reptiles
+Clemmys guttata,Spotted Turtle,50000,49.5,-119.6,Reptiles
+Glyptemys insculpta,Wood Turtle,39865,49.5,-119.6,Reptiles
+Buteo albonotatus,Zone-tailed Hawk,5180,44.238895,-66.385056,Birds
+Dendrocygna bicolor,Fulvous Whistling-Duck,6899,45.46035,-73.27864,Birds
+Sibirionetta formosa,Baikal Teal,558428,48.91339,-125.00477,Birds
+Somateria fischeri,Spectacled Eider,7029,49.5,-119.6,Birds
+Apus pacificus,Pacific Swift,202491,60.231865,-132.91603,Birds
+Streptoprocne zonaris,White-collared Swift,6597,42.295376,-81.857155,Birds
+Colibri thalassinus,Mexican Violetear,508366,47.987938,-67.13925,Birds
+Eugenes fulgens,Rivoli's Hummingbird,559084,49.5,-119.6,Birds
+Antrostomus arizonae,Mexican Whip-poor-will,199831,49.5,-119.6,Birds
+Gymnogyps californianus,California Condor,4778,49.5,-119.6,Birds
+Aethia cristatella,Crested Auklet,4542,69.57644,-138.84738,Birds
+Aethia psittacula,Parakeet Auklet,4543,48.843803,-126.40689,Birds
+Aethia pusilla,Least Auklet,4544,69.35,-133.683,Birds
+Brachyramphus perdix,Long-billed Murrelet,4530,48.28439,-123.68164,Birds
+Pinguinus impennis,Great Auk,4540,49.75,-53.182222,Birds
+Synthliboramphus hypoleucus,Guadalupe Murrelet,201284,48.843803,-126.40689,Birds
+Synthliboramphus scrippsi,Scripps's Murrelet,199915,50.05763,-127.77342,Birds
+Larus dominicanus,Kelp Gull,4388,44.60776,-63.492607,Birds
+Onychoprion aleuticus,Aleutian Tern,144528,54.05,-132.21667,Birds
+Onychoprion anaethetus,Bridled Tern,144527,45.96195,-60.803703,Birds
+Onychoprion fuscatus,Sooty Tern,144525,44.00235,-64.66678,Birds
+Calidris falcinellus,Broad-billed Sandpiper,339594,49.5,-119.6,Birds
+Calidris tenuirostris,Great Knot,3852,49.5,-119.6,Birds
+Lymnocryptes minimus,Jack Snipe,3911,47.020832,-52.889317,Birds
+Numenius madagascariensis,Far Eastern Curlew,3898,60.97335,-135.10641,Birds
+Numenius tahitiensis,Bristle-thighed Curlew,3909,54.0225,-132.1425,Birds
+Numenius tenuirostris,Slender-billed Curlew,3899,42.88585,-78.964806,Birds
+Scolopax rusticola,Eurasian Woodcock,3931,49.5,-119.6,Birds
+Tringa nebularia,Common Greenshank,3878,47.67897,-53.236916,Birds
+Tringa totanus,Common Redshank,3879,46.7933,-53.641174,Birds
+Columbina inca,Inca Dove,3544,48.609703,-93.39586,Birds
+Crotophaga ani,Smooth-billed Ani,1971,49.5,-119.6,Birds
+Crex crex,Corn Crake,443,47.535774,-52.89931,Birds
+Fulica atra,Eurasian Coot,482,49.5,-119.6,Birds
+Laterallus jamaicensis,Black Rail,316,45.17,-67.3,Birds
+Cardinalis sinuatus,Pyrrhuloxia,9081,49.5,-119.6,Birds
+Passerina versicolor,Varied Bunting,10228,42.54842,-80.04833,Birds
+Emberiza aureola,Yellow-breasted Bunting,9212,49.5,-119.6,Birds
+Emberiza leucocephalos,Pine Bunting,9210,48.441635,-123.29881,Birds
+Emberiza pusilla,Little Bunting,9197,49.5,-119.6,Birds
+Chloris sinica,Oriental Greenfinch,145361,49.5,-119.6,Birds
+Icterus parisorum,Scott's Oriole,9318,44.29193,-80.995255,Birds
+Molothrus aeneus,Bronzed Cowbird,10369,43.835583,-66.11498,Birds
+Molothrus bonariensis,Shiny Cowbird,10371,47.36721,-70.03909,Birds
+Toxostoma bendirei,Bendire's Thrasher,14891,52.793934,-118.00989,Birds
+Calliope calliope,Siberian Rubythroat,145064,43.566307,-79.8434,Birds
+Larvivora cyane,Siberian Blue Robin,145060,49.5,-119.6,Birds
+Saxicola torquatus,African Stonechat,55371,49.5,-119.6,Birds
+Poecile cinctus,Siberian Tit,144822,68.410835,-140.7105,Birds
+Setophaga graciae,Grace's Warbler,145253,41.9554,-82.514,Birds
+Ammospiza caudacuta,Saltmarsh Sparrow,793289,43.441578,-65.59018,Birds
+Artemisiospiza belli,Bell's Sparrow,344926,44.249443,-66.368835,Birds
+Peucaea aestivalis,Bachman's Sparrow,73172,41.9554,-82.514,Birds
+Phylloscopus examinandus,Kamchatka Leaf Warbler,367656,49.5,-119.6,Birds
+Vireo flavoviridis,Yellow-green Vireo,17367,49.302967,-123.143265,Birds
+Phaethon rubricauda,Red-tailed Tropicbird,4320,48.43333,-123.36667,Birds
+Thalassarche chlororhynchos,Atlantic Yellow-nosed Albatross,1506786,61.591557,-60.349902,Birds
+Thalassarche melanophris,Black-browed Albatross,144433,48.03251,-64.48658,Birds
+Hydrobates castro,Band-rumped Storm-Petrel,1289617,49.5,-119.6,Birds
+Calonectris diomedea,Scopoli's shearwater,509656,43.30007,-66.364861,Birds
+Calonectris leucomelas,Streaked Shearwater,4189,49.5,-119.6,Birds
+Pterodroma cahow,Bermuda Petrel,4036,41.25,-66.248,Birds
+Pterodroma feae,Fea's Petrel,4055,46.682426,-55.552456,Birds
+Pterodroma hasitata,Black-capped Petrel,4029,45.769814,-60.94093,Birds
+Pterodroma inexpectata,Mottled Petrel,4037,49.447624,-132.73396,Birds
+Pterodroma sandwichensis,Hawaiian Petrel,4061,50.720222,-129.48093,Birds
+Pterodroma ultima,Murphy's Petrel,4048,50.294224,-128.64009,Birds
+Puffinus baroli,Barolo Shearwater,144441,40.4946,-66.2199,Birds
+Puffinus lherminieri,Sargasso Shearwater,201450,45.769814,-60.94093,Birds
+Sula dactylatra,Masked Booby,3788,50.936295,-128.310381,Birds
+Sula granti,Nazca Booby,56768,51.568768,-129.28085,Birds
+Sula sula,Red-footed Booby,3793,42.3004,-61.1237,Birds
+Eubalaena japonica,North Pacific Right Whale,41569,54.110943,-133.527832,Mammals
+Cephalorhynchus heavisidii,Heaviside's Dolphin,41517,49.5,-119.6,Mammals
+Globicephala macrorhynchus,Short-finned Pilot Whale,41532,49.5,-119.6,Mammals
+Pseudorca crassidens,False Killer Whale,41539,49.5,-119.6,Mammals
+Kogia sima,Dwarf Sperm Whale,41465,41.22485,-64.99765,Mammals
+Berardius bairdii,Baird's Beaked Whale,41426,49.438833,-128.603167,Mammals
+Mesoplodon bidens,North Atlantic Beaked Whale,41413,43.8386,-59.0726,Mammals
+Mesoplodon carlhubbsi,Hubbs' Beaked Whale,41406,50.6367,-128.865,Mammals
+Mesoplodon densirostris,Dense-beaked Whale,41408,49.5,-119.6,Mammals
+Mesoplodon mirus,True's Beaked Whale,41411,41.402257,-65.68858,Mammals
+Mesoplodon stejnegeri,Bering Sea Beaked Whale,41410,49.5,-119.6,Mammals
+Phoca largha,Spotted Seal,41714,49.5,-119.6,Mammals
+Nyctinomops macrotis,Big Free-tailed Bat,41315,49.5,-119.6,Mammals
+Tadarida brasiliensis,Mexican Free-tailed Bat,41301,49.5,-119.6,Mammals
+Myotis sodalis,Indiana Bat,40350,49.5,-119.6,Mammals
+Nycticeius humeralis,Evening Bat,40569,49.5,-119.6,Mammals
+Parastrellus hesperus,Canyon Bat,183164,49.5,-119.6,Mammals
+Cryptotis parvus,North American Least Shrew,46841,42.55,-80.1667,Mammals
+Sorex dispar,Gray Long-tailed Shrew,46407,49.5,-119.6,Mammals
+Sorex merriami,Merriam's Shrew,46510,49.5,-119.6,Mammals
+Sorex minutissimus,Eurasian Least Shrew,46454,66.88678,-136.33443,Mammals
+Sorex preblei,Preble's Shrew,46365,49.5,-119.6,Mammals
+Sorex rohweri,Olympic Shrew,75088,49.140857,-122.927489,Mammals
+Sorex tundrensis,Tundra Shrew,46488,49.5,-119.6,Mammals
+Sorex ugyunak,Barren Ground Shrew,46368,49.5,-119.6,Mammals
+Dicrostonyx nunatakensis,Ogilvie Collared Lemming,45694,64.66686,-138.76442,Mammals
+Geomys bursarius,Plains Pocket Gopher,44059,49.5,-119.6,Mammals

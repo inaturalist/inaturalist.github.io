@@ -65,15 +65,6 @@
     <div class="observation grid-item {{gridClass}}">
       <div class="inner">
         <a href="{{uri}}"><img src="{{_imgURL}}" class="obs-img" width="{{photo_width}}" height="{{photo_height}}"/></a>
-        <div class="blurb">
-          <div class="blurbinner">
-            {{#if user_icon}}
-              <img src="{{user_icon}}"/>
-            {{/if}}
-            {{user.login}}
-            <span class="species">{{species_name}}</span>
-          </div>
-        </div>
       </div>
     </div>
   </script>
@@ -104,7 +95,7 @@
       window.grid.masonry( 'remove', $('.grid-item') )
       $('.grid-item').remove()
       $('.loading').show()
-      $.getJSON('https://api.inaturalist.org/v1/observations?photo_license=cc0&popular=true&verifiable=true&order_by=random&per_page=200&ttl=-1', function(json) {
+      $.getJSON('https://api.inaturalist.org/v1/observations?photo_license=cc0&popular=true&verifiable=true&order_by=random&per_page=60&ttl=-1', function(json) {
         $('.loading').hide()
         var observations = json.results;
         if (observations.length == 0) { 
@@ -160,7 +151,7 @@
                 $(this).css("filter", "brightness(0)"); // Make fully black
                 next();
             });
-        setTimeout(() => fadeNext(index + 1), Math.random() * 2000 + 1000); // Random delay
+        setTimeout(() => fadeNext(index + 1), Math.random() * 500); // Random delay
     }
 
     fadeNext(0);
@@ -169,7 +160,7 @@
     $(document).ready(function() {
       reloadObservations()
       // setInterval(reloadObservations, 1000*60*5)
-      setTimeout(fadeImagesToBlack, 5000);
+      setTimeout(fadeImagesToBlack, 10000);
     })
   </script>
 </body>

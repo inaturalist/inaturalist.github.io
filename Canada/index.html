@@ -12,6 +12,26 @@
       margin: 20px auto;
       border: 1px solid #ccc;
     }
+    .legend {
+      background: white;
+      padding: 10px;
+      font-size: 12px;
+      line-height: 14px;
+      color: #333;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .legend div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .legend-box {
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+      border: 1px solid #999;
+    }
   </style>
 </head>
 <body>
@@ -19,7 +39,6 @@
 <div id="map"></div>
 
 <script>
-  // Up to 16 visually distinct colors
   const distinctColors = [
     "#e6194b", "#3cb44b", "#ffe119", "#4363d8",
     "#f58231", "#911eb4", "#46f0f0", "#f032e6",
@@ -27,11 +46,9 @@
     "#9a6324", "#fffac8", "#800000", "#aaffc3"
   ];
 
-  // Define colors for each group dynamically
   const groupColors = {};
   let colorIndex = 0;
 
-  // Function to create a custom Leaflet div icon
   function getIcon(color) {
     return L.divIcon({
       className: '',
@@ -39,84 +56,96 @@
     });
   }
 
-// Initialize the map
-var map = L.map('map').setView([56.1304, -106.3468], 3);
+  const map = L.map('map').setView([56.1304, -106.3468], 3);
 
-// Add the OSM tile layer
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap contributors, © CARTO',
-  maxZoom: 18
-}).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors, © CARTO',
+    maxZoom: 18
+  }).addTo(map);
 
-// Function to parse a CSV string into an array of objects
-function parseCSV(csvText) {
-  const lines = csvText.trim().split('\n');
-  const headers = lines[0].split(',');
-  
-  return lines.slice(1).map(line => {
-    const columns = line.split(',');
-    const obj = {};
-    headers.forEach((h, i) => {
-      obj[h.trim()] = columns[i]?.trim() || '';
+  function parseCSV(csvText) {
+    const lines = csvText.trim().split('\n');
+    const headers = lines[0].split(',');
+
+    return lines.slice(1).map(line => {
+      const columns = line.split(',');
+      const obj = {};
+      headers.forEach((h, i) => {
+        obj[h.trim()] = columns[i]?.trim() || '';
+      });
+      return obj;
     });
-    return obj;
-  });
-}
+  }
 
-// Fetch and process the CSV
-// Get the group parameter from the URL
-const urlParams = new URLSearchParams(window.location.search);
-const groupParam = urlParams.get('group') || 'plants';
-const csvFile = `${groupParam.charAt(0).toUpperCase() + groupParam.slice(1)}.csv?10`;
+  const urlParams = new URLSearchParams(window.location.search);
+  const groupParam = urlParams.get('group') || 'plants';
+  const csvFile = `${groupParam.charAt(0).toUpperCase() + groupParam.slice(1)}.csv`;
 
-// Fetch and process the CSV
-fetch(csvFile)
-  .then(response => response.text())
-  .then(csvText => {
-    const data = parseCSV(csvText);
+  fetch(csvFile)
+    .then(response => response.text())
+    .then(csvText => {
+      const data = parseCSV(csvText);
+      const legendGroups = new Set();
 
-    data.forEach(item => {
-      const name = item['Name'] || 'Unknown species';
-      const lat = parseFloat(item['Latitude']);
-      const lng = parseFloat(item['Longitude']);
-      const taxonId = item['Taxon_id'];
-      const commonName = item['Common_name'];
-      const group = item['Group'] ? item['Group'].split(' - ')[0] : 'Other';
-      
-      // Assign a random color if the group is not already in the dictionary
-      if (!(group in groupColors)) {
-        groupColors[group] = distinctColors[colorIndex % distinctColors.length];
-        colorIndex++;
-      }
-      const color = groupColors[group];
+      data.forEach(item => {
+        const name = item['Name'] || 'Unknown species';
+        const lat = parseFloat(item['Latitude']);
+        const lng = parseFloat(item['Longitude']);
+        const taxonId = item['Taxon_id'];
+        const commonName = item['Common_name'];
+        const group = item['Group'] ? item['Group'].split(' - ')[0] : 'Other';
 
-      // Determine formatted display name
-      const displayName = commonName ? `${commonName} (${name})` : name;
+        if (!(group in groupColors)) {
+          groupColors[group] = distinctColors[colorIndex % distinctColors.length];
+          colorIndex++;
+        }
 
-      // Construct the popup HTML
-      let popupContent = `<div><b>${displayName}</b></div>`;
-      if (taxonId) {
-        const taxaLink = `https://www.inaturalist.org/taxa/${taxonId}`;
-        const obsLink = `https://www.inaturalist.org/observations?lat=${lat}&lng=${lng}&verifiable=true&radius=10`;
-        popupContent = `
-          <div>
-            <a href="${taxaLink}" target="_blank"><b>${displayName}</b></a><br>
-            <a href="${obsLink}" target="_blank"><i>(nearby observations)</i></a>
-          </div>
-        `;
-      }
-      
+        const color = groupColors[group];
+        legendGroups.add(group);
 
-      // Add a marker
-      if (!isNaN(lat) && !isNaN(lng)) {
-        const marker = L.marker([lat, lng], {icon: getIcon(color)}).addTo(map);
-        marker.bindPopup(popupContent);
-      }
+        const displayName = commonName ? `${commonName} (${name})` : name;
+
+        let popupContent = `<div><b>${displayName}</b></div>`;
+        if (taxonId) {
+          const taxaLink = `https://www.inaturalist.org/taxa/${taxonId}`;
+          const obsLink = `https://www.inaturalist.org/observations?lat=${lat}&lng=${lng}&verifiable=true&radius=10`;
+          popupContent = `
+            <div>
+              <a href="${taxaLink}" target="_blank"><b>${displayName}</b></a><br>
+              <a href="${obsLink}" target="_blank"><i>(nearby observations)</i></a>
+            </div>
+          `;
+        }
+
+        if (!isNaN(lat) && !isNaN(lng)) {
+          const marker = L.marker([lat, lng], {icon: getIcon(color)}).addTo(map);
+          marker.bindPopup(popupContent);
+        }
+      });
+
+      // Create and add the legend control
+      const legend = L.control({ position: 'bottomright' });
+
+      legend.onAdd = function () {
+        const div = L.DomUtil.create('div', 'legend');
+        div.innerHTML = '<strong>Groups</strong><br>';
+
+        Object.entries(groupColors).forEach(([group, color]) => {
+          div.innerHTML += `
+            <div>
+              <span class="legend-box" style="background:${color}"></span> ${group}
+            </div>
+          `;
+        });
+
+        return div;
+      };
+
+      legend.addTo(map);
+    })
+    .catch(err => {
+      console.error('Error fetching or parsing CSV:', err);
     });
-  })
-  .catch(err => {
-    console.error('Error fetching or parsing CSV:', err);
-  });
 </script>
 </body>
 </html>

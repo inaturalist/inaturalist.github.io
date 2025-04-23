@@ -5,7 +5,7 @@ Auletta krautteri,,,52.44,-129.667,Sponges
 Axinella arctica,Arctic Horny Sponge,459691,67.9677,-59.4844,Sponges
 Phakellia ventilabrum,,459807,55.5911,-77.2585,Sponges
 Halicnemia patera,,459754,49.5,-119.6,Sponges
-Leuconia usa,,459803,68.4167,-77.0,Sponges
+Leuconia usa,,459803,68.4167,-77,Sponges
 Leucopsila stilifera,,,49.5,-119.6,Sponges
 Biemna variantia,,459727,49.5,-119.6,Sponges
 Halisarca dujardinii,Yellow Gelatine Sponge,459707,44.48522,-63.53436,Sponges
@@ -90,7 +90,7 @@ Mycale hispida,,459818,50.630556,-127.158333,Sponges
 Mycale macginitiei,,459821,52.1,-131.21,Sponges
 Mycale richardsoni,,459822,50.8575,-127.645,Sponges
 Ectyonopsis hartmani,,459799,49.5,-119.6,Sponges
-Myxilla acribria,,,68.4167,-77.0,Sponges
+Myxilla acribria,,,68.4167,-77,Sponges
 Myxilla behringensis,,459824,49.5,-119.6,Sponges
 Myxilla brunnea,,,49.5,-119.6,Sponges
 Plocamiancora igzo,,459809,52.1,-131.23,Sponges
@@ -113,7 +113,7 @@ Trachyteleia hispida,,459719,49.643333,-64.815278,Sponges
 Weberella bursa,,794933,60.778611,-63.953333,Sponges
 Chonelasma oreia,,886906,53.50694,-136.02975,Sponges
 Corvomeyenia everetti,Mount Everett Pond Sponge,217621,48.4167,-54.05,Sponges
-Anheteromeyenia argyrosperma,,213623,47.0,-80.05,Sponges
+Anheteromeyenia argyrosperma,,213623,47,-80.05,Sponges
 Duosclera mackayi,,218792,45.4,-66.166667,Sponges
 Ephydatia fluviatilis,River Sponge,459737,44.628,-64.0592,Sponges
 Heteromeyenia baileyi,,221331,44.3615,-64.333,Sponges
@@ -261,17 +261,17 @@ Cystobranchus meyeri,,,49.5,-119.6,Leeches
 Cystobranchus salmositicus,,,49.5,-119.6,Leeches
 Heptacyclus brunneus,,1521642,49.5,-119.6,Leeches
 Heptacyclus viridus,,,49.5,-119.6,Leeches
-Janusion diminuta,,1521583,49.0,-123.0,Leeches
+Janusion diminuta,,1521583,49,-123,Leeches
 Johanssonia arctica,,1541628,49.5,-119.6,Leeches
 Notostomum cyclostomum,Striped Sea-leech,700281,53.1241,-129.5313,Leeches
 Notostomum laeve,,1068855,49.5,-119.6,Leeches
 Oceanobdella microstoma,,,47.55,-53.0167,Leeches
 Oceanobdella pallida,,,53.51,-130.873,Leeches
 Oceanobdella sexoculata,,,49.5,-119.6,Leeches
-Ostreobdella papillata,,,49.0,-123.0,Leeches
+Ostreobdella papillata,,,49,-123,Leeches
 Oxytonostoma typica,,,49.5,-119.6,Leeches
-Piscicola punctata,,,50.9667,-110.0,Leeches
-Platybdella anarrhichae,,,44.9333,-67.0,Leeches
+Piscicola punctata,,,50.9667,-110,Leeches
+Platybdella anarrhichae,,,44.9333,-67,Leeches
 Arctiostrotus vancouverensis,,1612318,49.5,-119.6,Earthworms
 Bimastos lawrenceae,,1378425,49.5,-119.6,Earthworms
 Bimastos parvus,American barkworm,1378429,43.795,-79.124,Earthworms
@@ -290,7 +290,6 @@ Aniulus paludicolens,,213690,42.9833,-81.2333,Myriapods
 Bollmaniulus hewitti,,,49.5,-119.6,Myriapods
 Bollmaniulus spenceri,,,50.6667,-120.333,Myriapods
 Oriulus venustus,,226611,53.55,-113.467,Myriapods
-Parajulus perditus,,,49.25,-115.1,Myriapods
 Zygethobius columbiensis,,,53.563968,-113.818713,Myriapods
 Bothropolys columbiensis,,1419201,49.91425,-116.9155,Myriapods
 Ethopolys spectans,,1153093,49.7492,-124.587,Myriapods
@@ -360,7 +359,7 @@ Crangon alba,Stout Crangon,459502,48.914367,-125.4232,Decapods
 Crangon dalli,Ridged Crangon,459503,48.91298,-125.47432,Decapods
 Mesocrangon intermedia,Northern Spinyhead,459486,52.07975,-131.5302,Decapods
 Metacrangon acclivis,Forked Spinyhead,459489,49.783333,-127.566667,Decapods
-Metacrangon agassizii,,459609,42.0,-63.0,Decapods
+Metacrangon agassizii,,459609,42,-63,Decapods
 Metacrangon spinosissima,Southern Spinyhead,459611,48.96342,-126.39725,Decapods
 Metacrangon variabilis,Deepsea Spinyhead,459612,54.3355,-133.277166,Decapods
 Neocrangon abyssorum,Abyssal Crangon,459622,50.023056,-128.845,Decapods
@@ -725,7 +724,7 @@ Pentamera rigida,,873894,52.4935,-131.402167,Sea cucumbers
 Pentamera trachyplaca,,227426,48.34,-123.713333,Sea cucumbers
 Thyone benti,,293152,49.5,-119.6,Sea cucumbers
 Psolidium panamense,,1161920,49.710278,-127.953889,Sea cucumbers
-Psolus peronii,,1161865,58.75,-94.0,Sea cucumbers
+Psolus peronii,,1161865,58.75,-94,Sea cucumbers
 Havelockia scabra,,1161799,45.002193,-55.222507,Sea cucumbers
 Ypsilothuria bitentaculata,,349519,50.570556,-129.244444,Sea cucumbers
 Amperima naresi,,1162406,53.807171,-133.839904,Sea cucumbers

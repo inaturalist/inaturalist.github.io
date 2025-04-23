@@ -3,7 +3,6 @@ Sagittaria montevidensis,Aztec arrowhead,1506725,49.5,-119.6,Vascular plants
 Elodea bifoliata,two-leaf waterweed,76792,49.5,-119.6,Vascular plants
 Angelica venenosa,hairy angelica,158382,49.5,-119.6,Vascular plants
 Thaspium barbinode,Hairy-jointed Meadow-parsnip,169669,42.216644,-81.918091,Vascular plants
-Panax quinquefolius,American ginseng,116333,45.387562,-75.814316,Vascular plants
 Sisyrinchium fuscatum,Coastal Plain Blue-eyed Grass,169019,49.5,-119.6,Vascular plants
 Platanthera ciliaris,orange-fringed orchid,167016,49.5,-119.6,Vascular plants
 Artemisia comata,,,49.5,-119.6,Vascular plants
@@ -19,7 +18,6 @@ Solidago jejunifolia,long-petioled showy goldenrod,1147345,49.207167,-96.943194,
 Symphyotrichum hendersonii,Henderson's aster,79300,49.029167,-116.930278,Vascular plants
 Downingia elegans,Californian Lobelia,76681,49.156667,-116.6275,Vascular plants
 Amsinckia lycopsoides,tarweed fiddleneck,58048,49.386472,-119.583056,Vascular plants
-Andersonglossum virginianum,wild comfrey,769248,46.263451,-83.846946,Vascular plants
 Cryptantha watsonii,Watson's Cryptantha,76535,49.233333,-119.8,Vascular plants
 Eritrichium arctisibiricum,,769769,69.16464,-140.17076,Vascular plants
 Eritrichium grandiflorum,,769788,67.003611,-140.849107,Vascular plants
@@ -38,9 +36,8 @@ Draba caswellii,Caswell's Draba,453721,49.5,-119.6,Vascular plants
 Draba chamissonis,Cape Thompson Whitlow-grass,162013,53.266667,-132.233333,Vascular plants
 Draba franktonii,Frankton's Draba,458743,49.5,-119.6,Vascular plants
 Draba kluanei,Kluane Draba,162035,49.5,-119.6,Vascular plants
-Draba murrayi,Murray's Whitlow-grass,162043,65.0,-141.0,Vascular plants
+Draba murrayi,Murray's Whitlow-grass,162043,65,-141,Vascular plants
 Draba puvirnituqii,Puvirnituq Mountain Draba,458953,49.5,-119.6,Vascular plants
-Draba ruaxes,coast mountain draba,162061,49.5,-119.6,Vascular plants
 Draba thompsonii,Thompson's draba,458744,59.005278,-125.5025,Vascular plants
 Rorippa alpina,alpine yellowcress,167956,49.22211,-121.92245,Vascular plants
 Rorippa calycina,Persistent-sepal Yellowcress,167959,49.5,-119.6,Vascular plants
@@ -51,10 +48,9 @@ Chenopodium hians,gaping goosefoot,76276,49.5,-119.6,Vascular plants
 Chenopodium nitens,,607145,49.5,-119.6,Vascular plants
 Corispermum pacificum,pacific bugseed,160913,49.21,-123.19,Vascular plants
 Oxybasis chenopodioides,Low Goosefoot,896905,49.5,-119.6,Vascular plants
-Cerastium fischerianum,Fischer's Chickweed,160336,52.7,-132.0,Vascular plants
+Cerastium fischerianum,Fischer's Chickweed,160336,52.7,-132,Vascular plants
 Silene hitchguirei,mountain campion,543203,53.562311,-118.519652,Vascular plants
 Silene sorensenis,Sorensen's Catchfly,168980,49.5,-119.6,Vascular plants
-Calandrinia ciliata,fringed redmaids,489239,48.45565,-123.32592,Vascular plants
 Montia diffusa,Diffuse Montia,78120,49.26075,-124.405056,Vascular plants
 Polygonum humifusum,Alaska Knotweed,452707,69.2668,-132.956,Vascular plants
 Polygonum oxyspermum,Sharp-fruited Knotweed,204386,46.136441,-61.4645,Vascular plants
@@ -66,7 +62,6 @@ Collomia tenella,slender collomia,76418,49.410139,-120.565917,Vascular plants
 Gilia sinuata,rosy gilia,77276,49.5,-119.6,Vascular plants
 Navarretia divaricata,mountain navarretia,52941,49.06666,-117.82,Vascular plants
 Navarretia leucocephala,whitehead navarretia,60227,49.009722,-107.555139,Vascular plants
-Phlox alaskensis,,,68.47603,-138.2518,Vascular plants
 Phlox pilosa,prairie phlox,127020,42.685993,-82.401339,Vascular plants
 Polemonium elegans,Elegant Polemonium,167160,49.01595,-121.22711,Vascular plants
 Astragalus filipes,basalt milkvetch,75643,49.5,-119.6,Vascular plants
@@ -187,13 +182,13 @@ Cuscuta indecora,pretty dodder,76547,49.5,-119.6,Vascular plants
 Cuscuta pentagona,Five Angled Dodder,161280,45.419815,-72.554635,Vascular plants
 Andreaea heinemannii,Heinemann's Andreaea Moss,158340,59.583893,-136.477027,Bryophytes
 Andreaea mutabilis,Changeable Rock-moss,158342,49.5,-119.6,Bryophytes
-Andreaea schofieldiana,Schofield's Rock Moss,158347,49.4,-123.0,Bryophytes
+Andreaea schofieldiana,Schofield's Rock Moss,158347,49.4,-123,Bryophytes
 Andreaea sinuosa,,158348,53.2,-132.4,Bryophytes
 Andreaeobryum macrosporum,Bigspore Arctic Granite Moss,155992,51.830556,-121.476667,Bryophytes
 Archidium ohioense,,158568,49.5,-119.6,Bryophytes
 Philonotis yezoana,,166675,49.5,-119.6,Bryophytes
 Philonotis tomentella,,967856,49.735655,-125.349311,Bryophytes
-Bryum oblongum,,159550,64.0,-111.2,Bryophytes
+Bryum oblongum,,159550,64,-111.2,Bryophytes
 Gemmabryum demaretianum,,,45.587176,-78.373503,Bryophytes
 Gemmabryum gemmiferum,,,49.5,-119.6,Bryophytes
 Gemmabryum tenuisetum,,,47.066667,-70.8,Bryophytes
@@ -218,19 +213,19 @@ Pohlia bolanderi,,167127,57.054533,-122.868367,Bryophytes
 Pohlia brevinervis,,167128,81.35,-76.5,Bryophytes
 Pohlia camptotrachela,,167130,49.5,-119.6,Bryophytes
 Pohlia cardotii,Cardot's Nodding Moss,167131,55.94,-129.99,Bryophytes
-Pohlia columbica,,167132,52.9,-132.0,Bryophytes
+Pohlia columbica,,167132,52.9,-132,Bryophytes
 Pohlia crudoides,Pipe Nodding Moss,167134,49.5,-119.6,Bryophytes
 Pohlia erecta,Erect Nodding Moss,167137,49.7,-121.9,Bryophytes
 Pohlia filum,,167138,50.12,-122.95,Bryophytes
 Pohlia longicolla,Long-necked Nodding Moss,167141,49.5,-119.6,Bryophytes
 Pohlia ludwigii,Ludwig's Thread-moss,167142,56.17,-130.051,Bryophytes
 Pohlia obtusifolia,Bluntleaf Threadmoss,167143,62.42771,-77.03268,Bryophytes
-Pohlia tundrae,Tundra Thread Moss,167149,49.9,-123.0,Bryophytes
+Pohlia tundrae,Tundra Thread Moss,167149,49.9,-123,Bryophytes
 Pohlia vexans,,167150,59.701,-133.357,Bryophytes
 Cinclidium arcticum,Arctic Cinclidium Moss,160579,62.4118234,-77.9208149,Bryophytes
 Cinclidium latifolium,Wideleaf Cinclidium Moss,160580,49.5,-119.6,Bryophytes
 Plagiomnium curvatulum,,,49.5,-119.6,Bryophytes
-Rhizomnium andrewsianum,,167804,64.0,-111.2,Bryophytes
+Rhizomnium andrewsianum,,167804,64,-111.2,Bryophytes
 Buxbaumia minakatae,Minakata's Hump-backed Elves Moss,159611,47.3683,-53.4478,Bryophytes
 Haplomitrium hookeri,Hooker's Flapwort,157444,49.5,-119.6,Bryophytes
 Bruchia flexuosa,bruchia moss,159488,49.5,-119.6,Bryophytes
@@ -257,7 +252,7 @@ Fissidens arcticus,,162996,49.5,-119.6,Bryophytes
 Fissidens sublimbatus,,163023,49.5,-119.6,Bryophytes
 Encalypta mutica,,162308,51.592,-119.744,Bryophytes
 Encalypta spathulata,,162312,49.17,-123.94,Bryophytes
-Funaria flavicans,funaria moss,163125,45.52,-77.0,Bryophytes
+Funaria flavicans,funaria moss,163125,45.52,-77,Bryophytes
 Funaria microstoma,,163127,49.5,-119.6,Bryophytes
 Funaria polaris,,163129,69.183333,-104.7,Bryophytes
 Physcomitrium collenchymatum,,166847,49.5,-119.6,Bryophytes
@@ -267,7 +262,7 @@ Codriophorus ryszardii,,,49.669493,-123.138277,Bryophytes
 Coscinodon arctolimnius,,160936,49.5,-119.6,Bryophytes
 Coscinodon hartzii,,160939,62.9331011,-130.1517471,Bryophytes
 Coscinodon yukonensis,,160940,49.5,-119.6,Bryophytes
-Grimmia anomala,,123911,51.0,-55.0,Bryophytes
+Grimmia anomala,,123911,51,-55,Bryophytes
 Grimmia atrata,Copper Grimmia,163377,59.01077,-69.71388,Bryophytes
 Grimmia caespiticia,,446732,49.5,-119.6,Bryophytes
 Grimmia crinitoleucophaea,Variegated Grimmia,163381,49.5,-119.6,Bryophytes
@@ -287,7 +282,7 @@ Schistidium relictum,,963251,49.5,-119.6,Bryophytes
 Schistidium robustum,Robust Bloom Moss,168585,57.58012,-69.97026,Bryophytes
 Schistidium strictum,Upright Brown Grimmia,168586,49.28,-122.85,Bryophytes
 Schistidium venetum,Bluish Bloom Moss,168591,49.05,-117.04,Bryophytes
-Campylostelium saxicola,Rock-loving Swan-necked Moss,159805,46.9,-65.0,Bryophytes
+Campylostelium saxicola,Rock-loving Swan-necked Moss,159805,46.9,-65,Bryophytes
 Brachydontium olympicum,Olympic Brachydontium Moss,156319,49.6,-123.1,Bryophytes
 Seligeria calcarea,Chalk Rock-bristle,168781,48.49338,-64.16791,Bryophytes
 Seligeria oelandica,Irish Bristle Moss,168786,49.5,-119.6,Bryophytes
@@ -392,8 +387,8 @@ Solenostoma sphaerocarpum,Round-fruited Flapwort,1132105,49.5,-119.6,Bryophytes
 Orthotrichum alpestre,,165943,49.5,-119.6,Bryophytes
 Orthotrichum elegans,,,58.619157,-93.829498,Bryophytes
 Orthotrichum hallii,,165955,49.6,-119.7,Bryophytes
-Orthotrichum pallens,Pale Bristle Moss,165962,55.0,-115.0,Bryophytes
-Orthotrichum rivulare,River Bristle-moss,165969,50.57,-127.0,Bryophytes
+Orthotrichum pallens,Pale Bristle Moss,165962,55,-115,Bryophytes
+Orthotrichum rivulare,River Bristle-moss,165969,50.57,-127,Bryophytes
 Ulota curvifolia,,170061,49.19666,-66.22833,Bryophytes
 Ulota drummondii,Drummond's Pincushion Moss,170062,49.5,-119.6,Bryophytes
 Zygodon gracilis,Slender Yoke-moss,170455,49.5,-119.6,Bryophytes
@@ -437,7 +432,7 @@ Tortula subulata,Awl-leaved Screw-moss,169831,49.5,-119.6,Bryophytes
 Tortula systylia,Systylous Screw Moss,607135,58.35116,-69.61694,Bryophytes
 Trichostomum brachydontium,Variable Crisp-moss,169941,49.5,-119.6,Bryophytes
 Trichostomum spirale,,818549,45.0836,-74.1156,Bryophytes
-Pseudoditrichum mirabile,Great Bear Lake Moss,156447,66.0,-118.0,Bryophytes
+Pseudoditrichum mirabile,Great Bear Lake Moss,156447,66,-118,Bryophytes
 Scouleria marginata,Margined Streamside Moss,168695,49.5,-119.6,Bryophytes
 Sphagnum andersonianum,Anderson's Sphagnum,169198,49.5,-119.6,Bryophytes
 Sphagnum aongstroemii,Aongstroem's Peat Moss,169200,43.324906,-79.798921,Bryophytes
@@ -456,7 +451,7 @@ Sphagnum perfoliatum,Glossy Peatmoss,452716,49.5,-119.6,Bryophytes
 Sphagnum steerei,Steere's Peat Moss,169235,49.5,-119.6,Bryophytes
 Sphagnum tescorum,,458745,60.0392648,-77.2803852,Bryophytes
 Sphagnum trinitense,Trinity sphagnum,169237,43.60111,-65.5725,Bryophytes
-Sphagnum tundrae,Tundra Peat Moss,169238,68.1662,-137.0,Bryophytes
+Sphagnum tundrae,Tundra Peat Moss,169238,68.1662,-137,Bryophytes
 Sphagnum venustum,,169239,49.5,-119.6,Bryophytes
 Sphagnum viride,,,48.663333,-58.196667,Bryophytes
 Sphagnum wilfii,Wilf's sphagnum,169241,49.5,-119.6,Bryophytes

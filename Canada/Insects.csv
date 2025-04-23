@@ -1,7 +1,7 @@
 Name,Common_name,Taxon_id,Latitude,Longitude,Group
 Analetris eximia,,213511,50.8501,-109.1174,Mayflies
 Ameletus amador,,213349,49.5,-119.6,Mayflies
-Ameletus bellulus,,213351,55.0,-115.0,Mayflies
+Ameletus bellulus,,213351,55,-115,Mayflies
 Ameletus browni,,213352,46.5833,-70.6,Mayflies
 Ameletus cooki,,213354,49.5,-119.6,Mayflies
 Ameletus cryptostimulus,,213355,49.5,-119.6,Mayflies
@@ -10,15 +10,15 @@ Ameletus lineatus,,213363,49.5,-119.6,Mayflies
 Ameletus ludens,,213364,49.5,-119.6,Mayflies
 Ameletus oregonensis,,213367,49.5,-119.6,Mayflies
 Ameletus pritchardi,,213368,51.05,-112.033,Mayflies
-Ameletus similior,,213371,49.5,-119.6,Mayflies
+,,213371,49.5,-119.6,Mayflies
 Ameletus subnotatus,,213373,49.5,-119.6,Mayflies
 Ameletus suffusus,,213374,49.5,-119.6,Mayflies
 Ameletus tarteri,,213375,48.5833,-71.5333,Mayflies
 Ameletus tertius,,213376,46.6833,-70.45,Mayflies
-Ameletus validus,,213378,55.0,-115.0,Mayflies
+Ameletus validus,,213378,55,-115,Mayflies
 Ameletus velox,,213380,56.3457,-123.941,Mayflies
 Ameletus vernalis,,213381,54.642,-122.742,Mayflies
-Ameletus walleyi,,213382,52.0,-76.0,Mayflies
+Ameletus walleyi,,213382,52,-76,Mayflies
 Ametropus ammophilus,,213399,49.5,-119.6,Mayflies
 Arthroplea bipunctata,,214363,46.4881,-70.2022,Mayflies
 Acentrella insignificans,,212298,49.5,-119.6,Mayflies
@@ -132,7 +132,7 @@ Isonychia rufa,,222362,49.5,-119.6,Mayflies
 Isonychia sayi,,222363,49.5,-119.6,Mayflies
 Isonychia sicca,,222365,49.5,-119.6,Mayflies
 Homoleptohyphes dimorphus,,221451,48.7167,-64.4,Mayflies
-Tricorythodes allectus,,232931,52.0,-72.0,Mayflies
+Tricorythodes allectus,,232931,52,-72,Mayflies
 Tricorythodes cobbi,,232932,49.873333,-97.509722,Mayflies
 Tricorythodes explicatus,,232934,49.5,-119.6,Mayflies
 Tricorythodes mosegus,,232936,54.642,-122.742,Mayflies
@@ -275,7 +275,7 @@ Soyedina washingtoni,Vernal Forestfly,231242,49.5,-119.6,Stoneflies
 Visoka cataractae,Cataract Forestfly,233583,49.5,-119.6,Stoneflies
 Zapada cordillera,Cordilleran Forestfly,178558,49.5,-119.6,Stoneflies
 Zapada haysi,Intermountain Forestfly,178561,49.5,-119.6,Stoneflies
-Zapada katahdin,Katahdin Forestfly,178565,53.985541,-60.0,Stoneflies
+Zapada katahdin,Katahdin Forestfly,178565,53.985541,-60,Stoneflies
 Peltoperla arcuata,Appalachian Roachfly,227402,49.5,-119.6,Stoneflies
 Tallaperla maria,Common Roachfly,232283,49.5,-119.6,Stoneflies
 Yoraperla brevis,Least Roachfly,233906,49.5,-119.6,Stoneflies
@@ -359,19 +359,15 @@ Taeniopteryx metequi,Shortwing Willowfly,232264,49.5,-119.6,Stoneflies
 Taeniopteryx parvula,Hooked Willowfly,232267,49.5,-119.6,Stoneflies
 Parcoblatta caudelli,Caudell's wood cockroach,458949,49.5,-119.6,Grasshoppers and relatives
 Reticulitermes tibialis,Arid Land Subterranean Termite,296466,49.5,-119.6,Grasshoppers and relatives
-Litaneutria minor,Agile Ground Mantis,48109,49.18277,-119.551389,Grasshoppers and relatives
 Aulocara femoratum,White Cross Grasshopper,214639,52.2833,-117.469,Grasshoppers and relatives
 Booneacris variegata,,215307,45.57367,-78.50627,Grasshoppers and relatives
 Cordillacris crenulata,Crenulated Grasshopper,174213,49.5,-119.6,Grasshoppers and relatives
 Dendrotettix quercus,Post Oak Grasshopper,218233,49.5,-119.6,Grasshoppers and relatives
-Melanoplus eurycercus,Hebard's Green-legged Grasshopper,224659,43.5475,-79.99306,Grasshoppers and relatives
-Melanoplus spretus,Rocky Mountain Locust,224781,49.233333,-100.05,Grasshoppers and relatives
 Metator nevadensis,,224991,53.9998,-125.0032,Grasshoppers and relatives
 Psinidia fenestralis,Longhorn Band-wing Grasshopper,194233,49.5,-119.6,Grasshoppers and relatives
 Schistocerca alutacea,Leather-colored Bird Grasshopper,208044,43.21667,-81.9,Grasshoppers and relatives
 Schistocerca lineata,Spotted Bird Grasshopper,199581,49.5,-119.6,Grasshoppers and relatives
 Syrbula admirabilis,Admirable Grasshopper,129263,49.5,-119.6,Grasshoppers and relatives
-Trimerotropis cincta,Masked Grasshopper,232968,49.5,-119.6,Grasshoppers and relatives
 Trimerotropis sparsa,Badlands Grasshopper,232980,49.5,-119.6,Grasshoppers and relatives
 Xanthippus montanus,Sandhills Band-wing Grasshopper,233681,49.5,-119.6,Grasshoppers and relatives
 Camptonotus carolinensis,Carolina Leafroller Cricket,215979,41.98333,-82.54722,Grasshoppers and relatives
@@ -388,8 +384,6 @@ Orchelimum concinnum,Stripe-faced Meadow Katydid,226529,44.8125,-79.58333,Grassh
 Orchelimum delicatum,Delicate Meadow Katydid,226530,49.2501,-84.4998,Grasshoppers and relatives
 Orchelimum silvaticum,Long-spurred Meadow Katydid,226531,49.5,-119.6,Grasshoppers and relatives
 Orchelimum volantum,Nimble Meadow Katydid,458940,42.66089,-82.49639,Grasshoppers and relatives
-Ellipes gurneyi,,458941,42.58333,-80.38333,Grasshoppers and relatives
-Cyrtoxipha gundlachi,Gundlach's trig,963593,49.5,-119.6,Grasshoppers and relatives
 Cixidia brittoni,,841884,49.5,-119.6,True bugs
 Cixidia confusa,,841886,54.69,-124.94,True bugs
 Cixidia pallida,,841890,63.79,-119.97,True bugs
@@ -398,7 +392,7 @@ Pineus coloradensis,,,52.91,-118.1,True bugs
 Pineus engelmannii,,,49.5,-119.6,True bugs
 Pineus floccus,,228143,49.5,-119.6,True bugs
 Pineus sylvestris,,,49.5,-119.6,True bugs
-Aleuroplatus epigaeae,,,45.0,-62.9992,True bugs
+Aleuroplatus epigaeae,,,45,-62.9992,True bugs
 Trialeurodes abutiloneus,Bandedwinged Whitefly,243743,49.5,-119.6,True bugs
 Tollius setosus,,372642,48.433333,-123.366667,True bugs
 Acompocoris lepidus,,458929,49.5,-119.6,True bugs
@@ -431,7 +425,7 @@ Aphalara nigra,,454194,58.7553,-94.0789,True bugs
 Aphalara persicaria,,888048,49.5,-119.6,True bugs
 Aphalara rumicis,,454195,45.28611,-81.65972,True bugs
 Aphalara steironemicola,,888050,69.16245,-140.15523,True bugs
-Craspedolepta canadensis,,878177,49.0,-106.56,True bugs
+Craspedolepta canadensis,,878177,49,-106.56,True bugs
 Craspedolepta flavida,,454338,48.857,-64.376,True bugs
 Craspedolepta furcata,,454339,45.87021,-82.54186,True bugs
 Craspedolepta sonchi,,454342,45.87021,-82.54186,True bugs
@@ -450,7 +444,7 @@ Acyrthosiphon macrosiphum,Long-legged Serviceberry Aphid,1030751,49.5,-119.6,Tru
 Acyrthosiphon pseudodirhodum,,454175,49.5,-119.6,True bugs
 Acyrthosiphon scalare,,454176,50.08639,-97.21889,True bugs
 Allaphis cyperi,,,64.221,-140.305,True bugs
-Allaphis producta,Wax-fringed Sedge Aphid,1088964,53.0,-70.0,True bugs
+Allaphis producta,Wax-fringed Sedge Aphid,1088964,53,-70,True bugs
 Alphitoaphis lonicericola,,454178,50.02444,-96.88361,True bugs
 Amphorophora ampullata,Dark-tipped Fern Aphid,454183,46.74,-60.81,True bugs
 Amphorophora forbesi,,,49.04,-125.68,True bugs
@@ -640,18 +634,18 @@ Hyperomyzus rhinanthi,Currant-yellow Rattle Aphid,992978,49.5,-119.6,True bugs
 Hyperomyzus ribiellus,,454440,49.88333,-97.16667,True bugs
 Hyperomyzus sandilandicus,,454441,64.049,-138.903,True bugs
 Illinoia alni,,244620,49.5,-119.6,True bugs
-Illinoia azaleae,,390961,43.93,-60.0,True bugs
+Illinoia azaleae,,390961,43.93,-60,True bugs
 Illinoia brevitarsis,,,49.5,-119.6,True bugs
 Illinoia canadensis,,454446,62.45556,-114.35,True bugs
 Illinoia crystleae,Pale-streaked Honeysuckle Aphid,244618,51.44,-116.54,True bugs
-Illinoia davidsoni,,244619,50.0,-122.75,True bugs
+Illinoia davidsoni,,244619,50,-122.75,True bugs
 Illinoia goldmaryae,,1561554,53.2,-117.91,True bugs
 Illinoia grindeliae,,454448,49.88444,-97.14639,True bugs
 Illinoia lambersi,Rhododendron Aphid,244616,49.21,-123.06,True bugs
 Illinoia magna,,,49.5,-119.6,True bugs
 Illinoia maxima,Green-striped Thimbleberry Aphid,244621,49.15,-116.6,True bugs
 Illinoia menziesiae,Rusty Menziesia Aphid,244622,49.5,-119.6,True bugs
-Illinoia morrisoni,Sequoia Aphid,501849,49.0,-125.6,True bugs
+Illinoia morrisoni,Sequoia Aphid,501849,49,-125.6,True bugs
 Illinoia pallida,,1262575,49.5,-119.6,True bugs
 Illinoia paqueti,,244623,49.5,-119.6,True bugs
 Illinoia patriciae,,,49.31667,-123.06667,True bugs
@@ -664,7 +658,7 @@ Illinoia spiraeae,,,49.5,-119.6,True bugs
 Illinoia spiraecola,,454453,49.03,-125.55,True bugs
 Illinoia wahnaga,,454454,50.25722,-98.03611,True bugs
 Iziphya albipes,,,49.5,-119.6,True bugs
-Iziphya americana,,,53.0,-70.0,True bugs
+Iziphya americana,,,53,-70,True bugs
 Iziphya flabella,,501851,49.5,-119.6,True bugs
 Iziphya spenceri,,454455,49.86889,-99.35944,True bugs
 Iziphya vittata,,454457,49.5,-119.6,True bugs
@@ -688,7 +682,7 @@ Macrosiphum diervillae,,454494,48.97,-87.98,True bugs
 Macrosiphum fuscicornis,,,49.5,-119.6,True bugs
 Macrosiphum geranii,,454495,49.88444,-97.14639,True bugs
 Macrosiphum hamiltoni,,454496,49.675,-99.07194,True bugs
-Macrosiphum insularis,,,49.0,-125.6,True bugs
+Macrosiphum insularis,,,49,-125.6,True bugs
 Macrosiphum jeanae,,454497,49.5,-119.6,True bugs
 Macrosiphum lambi,,,49.5,-119.6,True bugs
 Macrosiphum mentzeliae,blazingstar aphid,1427833,49.5,-119.6,True bugs
@@ -760,7 +754,7 @@ Nearctaphis yohoensis,,454558,51.4,-116.48333,True bugs
 Neoamphorophora kalmiae,,,50.21,-63.79,True bugs
 Neosymydobius albasiphus,,1287551,49.5,-119.6,True bugs
 Neosymydobius mimicus,,454565,49.86889,-99.35944,True bugs
-Obtusicauda coweni,,548358,49.0,-106.55,True bugs
+Obtusicauda coweni,,548358,49,-106.55,True bugs
 Obtusicauda frigidae,,454569,51.48333,-112.76667,True bugs
 Pachypappa rosettei,,454578,58.739334,-93.82342,True bugs
 Paducia antennata,,,65.33194,-127.16528,True bugs
@@ -768,7 +762,7 @@ Pemphigus tartareus,,454589,53.55,-113.46667,True bugs
 Periphyllus americanus,,1021587,49.5,-119.6,True bugs
 Periphyllus brevispinosus,,,49.5,-119.6,True bugs
 Pleotrichophorus asterifoliae,,454602,50.80194,-96.99389,True bugs
-Pleotrichophorus brevinectarius,,,49.0,-106.55,True bugs
+Pleotrichophorus brevinectarius,,,49,-106.55,True bugs
 Pleotrichophorus elongatus,,,50.66,-120.5,True bugs
 Pleotrichophorus gnaphalodes,,454603,49.25,-123.11667,True bugs
 Pleotrichophorus hottesi,,454604,58.725,-94.11667,True bugs
@@ -790,7 +784,7 @@ Protaphis knowltoni,,,49.88444,-97.14639,True bugs
 Pseudacaudella rubida,,395815,49.5,-119.6,True bugs
 Pseudocercidis rosae,,454614,62.45556,-114.35,True bugs
 Pseudoepameibaphis glauca,,454616,49.5,-119.6,True bugs
-Pseudoepameibaphis tridentatae,,1028056,49.0,-106.55,True bugs
+Pseudoepameibaphis tridentatae,,1028056,49,-106.55,True bugs
 Pseudopterocomma canadensis,,454618,49.37694,-96.10861,True bugs
 Pterocallis alnifoliae,Speckled Alder Aphid,454624,49.5,-119.6,True bugs
 Pterocallis rhombifoliae,,,44.5608,-78.0447,True bugs
@@ -841,7 +835,7 @@ Uroleucon caligatum,Northern Green Goldenrod Aphid,454689,43.3717,-80.3728,True 
 Uroleucon canadense,,,49.174375,-123.157158,True bugs
 Uroleucon carberriense,,454690,49.174375,-123.157158,True bugs
 Uroleucon chani,,,49.174375,-123.157158,True bugs
-Uroleucon chrysanthemi,,454691,50.67556,-100.0,True bugs
+Uroleucon chrysanthemi,,454691,50.67556,-100,True bugs
 Uroleucon deltense,,454693,49.174375,-123.157158,True bugs
 Uroleucon eoessigi,,,49.5,-119.6,True bugs
 Uroleucon eupatorifoliae,Varicolored Snakeroot Aphid,1021591,45.29,-75.81,True bugs
@@ -1012,7 +1006,7 @@ Diplocolenus aquilonius,,458734,49.5,-119.6,True bugs
 Diplocolenus configuratus,,218520,60.724,-135.081,True bugs
 Doliotettix lunulatus,,914413,49.5,-119.6,True bugs
 Dorydiella kansana,,218679,42.2641,-83.075,True bugs
-Driotura robusta,,218740,49.0,-106.55,True bugs
+Driotura robusta,,218740,49,-106.55,True bugs
 Edwardsiana alcorni,,,49.5,-119.6,True bugs
 Edwardsiana ariadne,,914431,49.5,-119.6,True bugs
 Edwardsiana pseudocommissuralis,,,49.5,-119.6,True bugs
@@ -1344,7 +1338,7 @@ Polyamia weedi,,632973,49.5,-119.6,True bugs
 Ponana puncticollis,,228626,49.5,-119.6,True bugs
 Ponana scarlatina,,228629,44.34,-65.18,True bugs
 Prairiana angustens,,228684,49.2501,-84.4998,True bugs
-Prairiana cinerea,,228685,49.0,-106.55,True bugs
+Prairiana cinerea,,228685,49,-106.55,True bugs
 Prairiana kansana,,228686,49.5,-119.6,True bugs
 Psammotettix attenuens,,458762,54.69,-124.94,True bugs
 Psammotettix beirnei,,,53.9998,-125.0032,True bugs
@@ -1401,7 +1395,7 @@ Sorhoanus xanthoneurus,,231224,69.161,-140.15,True bugs
 Stenometopiellus cookei,,458766,49.5,-119.6,True bugs
 Streptanus confinis,,914813,44.62,-75.77,True bugs
 Streptanus marginatus,,914814,49.5,-119.6,True bugs
-Streptanus relativus,,,43.93,-60.0,True bugs
+Streptanus relativus,,,43.93,-60,True bugs
 Stroggylocephalus mixta,,,60.752512,-135.127877,True bugs
 Stroggylocephalus placidus,,231829,49.5,-119.6,True bugs
 Texananus arctostaphylae,,232429,49.5,-119.6,True bugs
@@ -1425,7 +1419,7 @@ Typhlocyba niobe,,233156,43.37,-80.35,True bugs
 Typhlocyba putmani,,233161,49.25,-123.133333,True bugs
 Unoka dramatica,,1311657,49.083737,-119.511106,True bugs
 Unoka gillettei,,458772,49.5,-119.6,True bugs
-Xerophloea viridis,,482576,49.0,-106.55,True bugs
+Xerophloea viridis,,482576,49,-106.55,True bugs
 Xestocephalus fulvifrons,,,43.44,-80.25,True bugs
 Xestocephalus nigrifrons,,233813,44.12778,-77.9825,True bugs
 Xyphon triguttatum,,458808,49.5,-119.6,True bugs
@@ -1763,7 +1757,7 @@ Fieberocapsus flaveolus,,453871,60.71,-137.43,True bugs
 Hadronema bispinosum,,1026424,49.5,-119.6,True bugs
 Hadronema militare,,453880,59.81,-111.98,True bugs
 Hadronema pictum,,868581,49.5,-119.6,True bugs
-Hadronema simplex,,453882,49.0,-106.55,True bugs
+Hadronema simplex,,453882,49,-106.55,True bugs
 Halticus intermedius,,453883,44.13,-77.98417,True bugs
 Henrylygus nubilus,,478861,49.07,-119.55,True bugs
 Henrylygus ultranubilus,,478862,49.5,-119.6,True bugs
@@ -1786,7 +1780,7 @@ Labopidea lenensis,,453903,49.5,-119.6,True bugs
 Labopidea nigrisetosa,,1021383,51.02,-118.15,True bugs
 Labopidea pallida,,,49.5,-119.6,True bugs
 Labopidea simplex,,453905,49.5,-119.6,True bugs
-Labops brooksi,,453906,49.0,-106.55,True bugs
+Labops brooksi,,453906,49,-106.55,True bugs
 Labops burmeisteri,,1492504,49.5,-119.6,True bugs
 Labops chelifer,,,49.5,-119.6,True bugs
 Labops tumidifrons,,1021384,49.5,-119.6,True bugs
@@ -2182,17 +2176,17 @@ Leptopharsa heidemanni,,1411795,42.2641,-83.075,True bugs
 Physatocheila brevirostris,,,49.5,-119.6,True bugs
 Physatocheila plexa,,454016,45.60639,-82.14083,True bugs
 Teleonemia nigrina,,844104,49.5,-119.6,True bugs
-Bactericera incerta,,887947,55.0,-125.0,True bugs
+Bactericera incerta,,887947,55,-125,True bugs
 Bactericera pletschi,,888069,61.125194,-135.315169,True bugs
 Bactericera varians,,887963,53.55,-113.5,True bugs
 Baeoalitriozus diospyri,Persimmon Psyllid,542517,43.703,-79.402,True bugs
 Neotriozella pyrifolii,,888110,45.79124,-82.74946,True bugs
-Phylloplecta occidentalis,,551027,55.0,-125.0,True bugs
+Phylloplecta occidentalis,,551027,55,-125,True bugs
 Trioza frontalis,,888143,45.87021,-82.54186,True bugs
-Trioza inversa,,888144,55.0,-125.0,True bugs
+Trioza inversa,,888144,55,-125,True bugs
 Trioza longicornis,,888146,49.25,-123.133,True bugs
 Trioza minuta,,,49.5,-119.6,True bugs
-Trioza quadripunctata,,888149,55.0,-125.0,True bugs
+Trioza quadripunctata,,888149,55,-125,True bugs
 Microvelia albonotata,,225151,49.139374,-122.598837,True bugs
 Microvelia hinei,,927201,44.997,-64.158,True bugs
 Steinovelia stagnalis,,510410,49.5,-119.6,True bugs
@@ -2207,7 +2201,7 @@ Coniopteryx westwoodii,,454956,44.12778,-77.9825,Lacewings
 Conwentzia californica,,307352,49.25,-123.116667,Lacewings
 Helicoconis californica,,454963,61.033,-138.545,Lacewings
 Helicoconis walshi,,454966,45.43,-73.94,Lacewings
-Semidalis angusta,,308445,53.0,-122.5,Lacewings
+Semidalis angusta,,308445,53,-122.5,Lacewings
 Semidalis vicina,,454982,49.5,-119.6,Lacewings
 Hemerobius discretus,,307643,49.5,-119.6,Lacewings
 Hemerobius dorsatus,Ridged Brown Lacewing,454970,60.883,-135.333,Lacewings
@@ -2492,7 +2486,7 @@ Amara kurnakowi,,213154,69.684,-128.924,Beetles
 Amara lacustris,Lake-loving Sun Beetle,213155,49.5,-119.6,Beetles
 Amara laevipennis,Smooth-winged Sun Beetle,213156,62.5107,-113.39479,Beetles
 Amara lindrothi,,213158,60.714,-137.432,Beetles
-Amara merula,,213161,50.0,-115.0,Beetles
+Amara merula,,213161,50,-115,Beetles
 Amara sanjuanensis,,213173,48.606,-123.442,Beetles
 Amara schwarzi,,213174,49.39027,-96.19022,Beetles
 Amara scitula,,213175,49.5,-119.6,Beetles
@@ -2744,7 +2738,7 @@ Pterostichus ventricosus,,229387,49.5,-119.6,Beetles
 Pterostichus vermiculosus,,229388,67.78157,-115.27824,Beetles
 Pterostichus woodi,,229389,65.069,-138.299,Beetles
 Rhadine lindrothi,,229862,50.765669,-103.790339,Beetles
-Scaphinotus elevatus,Large-thoraxed Snail-eating Beetle,230456,55.0,-97.0,Beetles
+Scaphinotus elevatus,Large-thoraxed Snail-eating Beetle,230456,55,-97,Beetles
 Scaphinotus johnsoni,Johnson's Snail-eating Beetle,230460,49.266,-124.583,Beetles
 Scaphinotus merkelii,Merkel's Snail-eating Beetle,230463,49.182,-116.55,Beetles
 Scaphinotus regularis,Measured Snail-eating Beetle,230465,49.5,-119.6,Beetles
@@ -2841,7 +2835,7 @@ Acanthoscelides pullus,,302983,49.5,-119.6,Beetles
 Acanthoscelides seminulum,,212225,49.5,-119.6,Beetles
 Acanthoscelides tenuis,,455479,49.5,-119.6,Beetles
 Altica betulae,,455480,54.333333,-104.583333,Beetles
-Altica browni,,213087,46.0,-72.916667,Beetles
+Altica browni,,213087,46,-72.916667,Beetles
 Altica canadensis,Prairie Flea Beetle,455481,50.1,-109.9,Beetles
 Altica carinata,Elm Flea Beetle,213089,49.5,-119.6,Beetles
 Altica caurina,,455482,51.1509,-115.561,Beetles
@@ -3096,7 +3090,7 @@ Hyperaspis dissoluta,,320479,49.5,-119.6,Beetles
 Hyperaspis fastidiosa,,320374,50.044,-110.675,Beetles
 Hyperaspis jasperensis,Jasper Lady Beetle,450455,53.72,-117.68,Beetles
 Hyperaspis moerens,,221991,51.6,-55.87,Beetles
-Hyperaspis oregona,,320387,49.0,-106.55,Beetles
+Hyperaspis oregona,,320387,49,-106.55,Beetles
 Hyperaspis pratensis,,455670,42.26278,-83.07139,Beetles
 Hyperaspis quadrivittata,Four-streaked Lady Beetle,221993,49.5,-119.6,Beetles
 Hyperaspis troglodytes,,455671,50.374972,-102.577258,Beetles
@@ -3174,7 +3168,7 @@ Cryptophagus confertus,,,69.094,-140.401,Beetles
 Cryptophagus corticinus,,217826,51.365,-116.528,Beetles
 Cryptophagus croceus,,,49.5,-119.6,Beetles
 Cryptophagus dentatus,,455712,43.903,-79.212,Beetles
-Cryptophagus difficilis,,455713,61.1974,-137.0,Beetles
+Cryptophagus difficilis,,455713,61.1974,-137,Beetles
 Cryptophagus hebes,,455716,54.0167,-132.15,Beetles
 Cryptophagus histricus,,455717,51.28,-115.94,Beetles
 Cryptophagus lapponicus,,455719,49.5,-119.6,Beetles
@@ -3313,7 +3307,7 @@ Hylocurus rudis,,455894,41.68333,-82.68333,Beetles
 Hylurgops reticulatus,,221944,49.5,-119.6,Beetles
 Hypera compta,,221977,49.5,-119.6,Beetles
 Hypera diversipunctata,,221978,49.5,-119.6,Beetles
-Hypera quadricollis,,455897,44.0,-77.25,Beetles
+Hypera quadricollis,,455897,44,-77.25,Beetles
 Hypera trivittata,,455898,50.68,-99.88,Beetles
 Hypothenemus dissimilis,,222074,49.5,-119.6,Beetles
 Hypothenemus eruditus,,222075,49.5,-119.6,Beetles
@@ -3332,7 +3326,7 @@ Isochnus flagellum,,455900,49.5,-119.6,Beetles
 Isochnus rufipes,,453673,47.8257,-66.0764,Beetles
 Lepidophorus inquinatus,,455906,49.5,-119.6,Beetles
 Lepidophorus pumilus,Dwarf Broad-nosed Weevil,455908,49.101,-119.611,Beetles
-Lepidophorus thulius,,455909,68.199997,-140.0,Beetles
+Lepidophorus thulius,,455909,68.199997,-140,Beetles
 Lepyrus capucinus,,416238,49.5,-119.6,Beetles
 Lepyrus stefanssoni,,455920,58.66,-93.83,Beetles
 Lignyodes ocularis,,223650,49.867053,-97.120554,Beetles
@@ -3412,7 +3406,7 @@ Pityophthorus intextus,,228215,50.041554,-110.677607,Beetles
 Pityophthorus lautus,,228216,44.37,-78.32,Beetles
 Pityophthorus nitidulus,,456016,54.016667,-132.15,Beetles
 Pityophthorus nitidus,,228218,46.95,-65.8833,Beetles
-Pityophthorus opaculus,,228219,61.197,-137.0,Beetles
+Pityophthorus opaculus,,228219,61.197,-137,Beetles
 Pityophthorus pseudotsugae,,228220,49.181,-122.115,Beetles
 Pityophthorus pulchellus,,228222,48.97,-78.67,Beetles
 Pityophthorus pulicarius,,228223,46.5001,-65.9988,Beetles
@@ -3576,7 +3570,7 @@ Hydroporus dichrous,,221659,49.017486,-122.656824,Beetles
 Hydroporus fortis,,221660,49.5,-119.6,Beetles
 Hydroporus fuscipennis,,221661,49.5,-119.6,Beetles
 Hydroporus geniculatus,,221662,49.5,-119.6,Beetles
-Hydroporus gossei,,221663,52.0,-56.0,Beetles
+Hydroporus gossei,,221663,52,-56,Beetles
 Hydroporus lapponum,,221665,49.5,-119.6,Beetles
 Hydroporus larsoni,,221666,60.691,-135.019,Beetles
 Hydroporus melsheimeri,,221669,44.563,-76.549,Beetles
@@ -4110,7 +4104,7 @@ Collops discretus,,456947,49.5,-119.6,Beetles
 Collops versatilis,,456948,49.5,-119.6,Beetles
 Listrus plenus,,456963,49.001,-106.557,Beetles
 Listrus quadricollis,,456965,50.643,-120.517,Beetles
-Listrus senilis,,456967,49.0,-106.55,Beetles
+Listrus senilis,,456967,49,-106.55,Beetles
 Trichochrous albertensis,Alberta Soft-winged Flower Beetle,456988,60.461,-134.859,Beetles
 Micromalthus debilis,Telephone-pole Beetle,367128,49.5,-119.6,Beetles
 Bactridium ephippigerum,,453687,41.75547,-82.63167,Beetles
@@ -4639,7 +4633,7 @@ Gyrophaena egena,,220795,43.6667,-79.4167,Beetles
 Gyrophaena involuta,,457824,43.51,-80.221,Beetles
 Gyrophaena laetula,,457825,44.563,-76.549,Beetles
 Gyrophaena lobata,,457826,53.567,-112.841,Beetles
-Gyrophaena nana,Dwarf Minute Rove Beetle,220800,61.197,-137.0,Beetles
+Gyrophaena nana,Dwarf Minute Rove Beetle,220800,61.197,-137,Beetles
 Gyrophaena pseudocriddlei,,457831,44.12417,-78.03917,Beetles
 Gyrophaena rugipennis,,,44.12417,-78.03917,Beetles
 Gyrophaena sculptipennis,,457832,46.300706,-72.532322,Beetles
@@ -4658,7 +4652,7 @@ Hydrosmecta pseudodiosica,,457854,49.5,-119.6,Beetles
 Hylota cryptica,,,46.8729,-71.589,Beetles
 Kalissus nitidus,,457861,49.5,-119.6,Beetles
 Lathrobium divisum,,457863,49.27554,-123.12509,Beetles
-Lathrobium leconteanum,,457865,47.5,-88.0,Beetles
+Lathrobium leconteanum,,457865,47.5,-88,Beetles
 Lathrobium shermani,,222744,49.5,-119.6,Beetles
 Lathrobium tenue,,222749,49.5,-119.6,Beetles
 Leptusa canonica,,457870,44.5634,-76.5526,Beetles
@@ -4823,7 +4817,7 @@ Philhygra manitobae,,458297,49.7086,-99.6028,Beetles
 Philhygra pseudolarsoni,,458302,62.2362,-140.6795,Beetles
 Philhygra pseudopolaris,,458303,58.72,-93.46,Beetles
 Philhygra pseudoterminalis,,458304,53.12,-117.77,Beetles
-Philhygra rostrifera,,458306,61.197,-137.0,Beetles
+Philhygra rostrifera,,458306,61.197,-137,Beetles
 Philhygra satanas,,458307,51.177053,-115.567525,Beetles
 Philhygra sinuipennis,,458308,62.2362,-140.6795,Beetles
 Philhygra subpolaris,,,62.499,-140.863,Beetles
@@ -4892,7 +4886,7 @@ Pycnoglypta heydeni,,458437,69.285,-140.405,Beetles
 Pycnoplectus congener,,458438,42.094622,-82.462969,Beetles
 Pycnoplectus interruptus,,458440,42.094622,-82.462969,Beetles
 Pycnoplectus linearis,,458441,42.262995,-82.4325,Beetles
-Quedius aenescens,,458443,57.0,-92.25,Beetles
+Quedius aenescens,,458443,57,-92.25,Beetles
 Quedius breviceps,,458445,57.9444,-128.833,Beetles
 Quedius brunnipennis,,229721,61.99,-140.556,Beetles
 Quedius campbelli,,229722,49.5,-119.6,Beetles
@@ -5052,7 +5046,7 @@ Tachinus edwardi,,458617,49.5,-119.6,Beetles
 Tachinus instabilis,,458618,64.715,-138.376,Beetles
 Tachinus jacuticus,,458619,49.5,-119.6,Beetles
 Tachinus nigricornis,,458623,56.77,-118.374,Beetles
-Tachinus thruppi,,232213,50.75,-100.0,Beetles
+Tachinus thruppi,,232213,50.75,-100,Beetles
 Tachinus vergatus,,232214,56.77,-118.374,Beetles
 Tachyporus canadensis,,153085,62.2362,-140.6795,Beetles
 Tachyporus inornatus,,232228,45.87021,-82.54186,Beetles
@@ -5108,8 +5102,8 @@ Isomira valida,,222352,41.93,-82.51,Beetles
 Melanastus acutus,,458169,49.5,-119.6,Beetles
 Metaclisa marginalis,,458171,49.5,-119.6,Beetles
 Mycetochara procera,,458174,50.64,-120.51,Beetles
-Paratenetus fuscus,Brownish Darkling Beetle,227107,46.77,-65.0,Beetles
-Paratenetus gibbipennis,,458256,46.77,-65.0,Beetles
+Paratenetus fuscus,Brownish Darkling Beetle,227107,46.77,-65,Beetles
+Paratenetus gibbipennis,,458256,46.77,-65,Beetles
 Pentaphyllus pallidus,,227427,49.5,-119.6,Beetles
 Platydema neglecta,,1160148,50.788644,-119.180463,Beetles
 Platydema ruficornis,Red-horned Darkling Beetle,1160151,42.7077,-80.34139,Beetles
@@ -5124,7 +5118,6 @@ Uloma impressa,,233235,42.983333,-79.25,Beetles
 Hallomenus debilis,,458146,49.5,-119.6,Beetles
 Pseudoholostrophus impressicollis,,458423,49.5,-119.6,Beetles
 Tetratoma canadensis,,458661,49.5,-119.6,Beetles
-Tetratoma tesselata,,,46.877297,-71.055599,Beetles
 Tetratoma variegata,,458663,49.5,-119.6,Beetles
 Trixagus sericeus,Silken Throscid Beetle,458698,50.1,-119.37,Beetles
 Omorgus scabrosus,,306924,49.5,-119.6,Beetles
@@ -5246,7 +5239,7 @@ Aphilodyctium fidum,,906416,51.1,-114.1,Sawflies
 Ardis atrata,,,49.5,-119.6,Sawflies
 Birka nordica,,,60.7884,-135.1875,Sawflies
 Blennogeneris coloradensis,,1187254,49.5,-119.6,Sawflies
-Brachythops wuestneii,Wuestnei’s Sedge-sawfly,454742,60.74,-137.51,Sawflies
+Brachythops wuestneii,Wuestnei���s Sedge-sawfly,454742,60.74,-137.51,Sawflies
 Caliroa distincta,,,51.28,-115.94,Sawflies
 Caliroa hyalina,,,49.5,-119.6,Sawflies
 Caliroa labrata,,,49.5,-119.6,Sawflies
@@ -5279,7 +5272,7 @@ Dolerus elderi,,454749,60.7884,-135.1875,Sawflies
 Dolerus eurybis,,,49.5,-119.6,Sawflies
 Dolerus frisoni,,,53.9,-106.02,Sawflies
 Dolerus fulgens,,,49.5,-119.6,Sawflies
-Dolerus gessneri,Gessner’s Weeper,962390,49.5,-119.6,Sawflies
+Dolerus gessneri,Gessner���s Weeper,962390,49.5,-119.6,Sawflies
 Dolerus gilvipes,Dull-foot Weeper,990801,49.5,-119.6,Sawflies
 Dolerus hebes,,495092,49.5,-119.6,Sawflies
 Dolerus illini,,1019623,49.5,-119.6,Sawflies
@@ -5485,7 +5478,7 @@ Pristiphora breadalbanensis,,,49.833333,-82.8,Sawflies
 Pristiphora cadma,,,49.5,-119.6,Sawflies
 Pristiphora chlorea,,495334,49.5,-119.6,Sawflies
 Pristiphora cincta,Banded Sawyer,454772,60.6603,-134.8919,Sawflies
-Pristiphora coactula,Bog-bilberry Sawyer,1006418,52.5,-114.0,Sawflies
+Pristiphora coactula,Bog-bilberry Sawyer,1006418,52.5,-114,Sawflies
 Pristiphora elaphita,,,49.5,-119.6,Sawflies
 Pristiphora frigida,,,49.5,-119.6,Sawflies
 Pristiphora hucksena,,,49.5,-119.6,Sawflies
@@ -5646,7 +5639,7 @@ Proceratium silaceum,Silaceum-clade Hairy Curltail Ants,1470620,49.5,-119.6,Ants
 Solenopsis texana,Texas Thief Ant,69548,49.5,-119.6,Ants
 Stenamma punctatoventre,,69563,49.5,-119.6,Ants
 Stenamma snellingi,,69559,49.91126,-119.53886,Ants
-Strumigenys pergandei,Pergande’s Mustache Ant,637715,49.5,-119.6,Ants
+Strumigenys pergandei,Pergande���s Mustache Ant,637715,49.5,-119.6,Ants
 Temnothorax fragosus,,1205051,49.5,-119.6,Ants
 Temnothorax nitens,,69589,49.05189,-119.52203,Ants
 Temnothorax pergandei,Pergande's Acorn Ant,232369,49.5,-119.6,Ants
@@ -5743,7 +5736,7 @@ Anthophora porterae,,213791,50.1721,-112.4403,Bees
 Anthophora walshii,,452927,49.462,-100.689,Bees
 Bombus bohemicus,Bohemian Cuckoo Bumble bee,125884,48.43496,-68.59015,Bees
 Bombus caliginosus,Fog-belt Bumble Bee,344228,48.55,-123.466667,Bees
-Bombus lapponicus,Lapland Bumble Bee,433295,71.283,-114.0,Bees
+Bombus lapponicus,Lapland Bumble Bee,433295,71.283,-114,Bees
 Bombus morrisoni,Morrison's Bumble Bee,324278,49.5,-119.6,Bees
 Ceratina neomexicana,,437533,49.5223,-108.8282,Bees
 Diadasia enavata,Sunflower Chimney Bee,135310,49.5,-119.6,Bees
@@ -5806,7 +5799,7 @@ Colletes mandibularis,Mandibular Cellophane Bee,217443,49.5,-119.6,Bees
 Colletes nigrifrons,,217444,49.5,-119.6,Bees
 Colletes petalostemonis,,217447,49.9,-109.5,Bees
 Colletes phaceliae,,179703,52.196,-124.083,Bees
-Colletes robertsonii,Robertson's plasterer bee,452953,49.88,-97.0,Bees
+Colletes robertsonii,Robertson's plasterer bee,452953,49.88,-97,Bees
 Colletes rufocinctus,,459062,49.9983,-96.8869,Bees
 Colletes slevini,Slevin's Cellophane Bee,179704,49.03,-119.493,Bees
 Colletes solidaginis,Goldenrod Cellophane Bee,452954,42.2814,-81.8421,Bees
@@ -5865,7 +5858,7 @@ Lasioglossum kincaidii,Kincaid's Sweat Bee,271509,49.1886,-119.767,Bees
 Lasioglossum lionotus,,,43.588372,-79.603728,Bees
 Lasioglossum lusorium,Western Evening Primrose Sweat Bee,453651,49.5,-119.6,Bees
 Lasioglossum lustrans,Two-celled Sweat Bee,452974,49.5,-119.6,Bees
-Lasioglossum macroprosopum,Long-faced Sweat Bee,459083,49.38,-123.0,Bees
+Lasioglossum macroprosopum,Long-faced Sweat Bee,459083,49.38,-123,Bees
 Lasioglossum mellipes,,309073,49.331936,-117.617535,Bees
 Lasioglossum nelumbonis,water-lily sweat bee,452972,49.5,-119.6,Bees
 Lasioglossum nigrum,Black Sweat Bee,459104,49.5,-119.6,Bees
@@ -5897,7 +5890,7 @@ Lasioglossum synthyridis,Figwort Sweat Bee,459102,49.5,-119.6,Bees
 Lasioglossum taylorae,Taylor's Sweat Bee,1426360,49.0881,-96.0868,Bees
 Lasioglossum tenax,Alpine Sweat Bee,459121,49.947,-99.228,Bees
 Lasioglossum testaceum,Pale-marked Sweat Bee,459122,49.09,-111.62,Bees
-Lasioglossum timothyi,Timothy's Sweat Bee,452970,50.0,-96.91,Bees
+Lasioglossum timothyi,Timothy's Sweat Bee,452970,50,-96.91,Bees
 Lasioglossum trizonatum,Three-zoned Sweat Bee,222684,50.6034,-102.6215,Bees
 Lasioglossum tuolumnense,,556539,49.07,-119.55,Bees
 Lasioglossum viridatum,Eastern Green Sweat Bee,1426202,49.5,-119.6,Bees
@@ -6126,7 +6119,7 @@ Cheumatopsyche sordida,,216699,49.5,-119.6,Caddisflies
 Cheumatopsyche wrighti,,216704,49.5,-119.6,Caddisflies
 Hydropsyche amblis,,221699,49.5,-119.6,Caddisflies
 Hydropsyche arinale,,221701,49.5,-119.6,Caddisflies
-Hydropsyche bidens,,221705,52.0,-76.0,Caddisflies
+Hydropsyche bidens,,221705,52,-76,Caddisflies
 Hydropsyche californica,,221709,49.5,-119.6,Caddisflies
 Hydropsyche centra,,221712,49.5,-119.6,Caddisflies
 Hydropsyche cockerelli,,221714,60.84,-135.2,Caddisflies
@@ -6198,8 +6191,8 @@ Orthotrichia baldufi,,226654,49.5,-119.6,Caddisflies
 Orthotrichia cristata,,226655,49.5,-119.6,Caddisflies
 Orthotrichia curta,Short Orthotrichian Microcaddisfly,226656,46.6507,-72.9698,Caddisflies
 Oxyethira aeola,,226724,54.1333,-72.7333,Caddisflies
-Oxyethira allagashensis,,226725,52.0,-76.0,Caddisflies
-Oxyethira anabola,,226726,52.0,-72.0,Caddisflies
+Oxyethira allagashensis,,226725,52,-76,Caddisflies
+Oxyethira anabola,,226726,52,-72,Caddisflies
 Oxyethira araya,,226727,67.566667,-139.766667,Caddisflies
 Oxyethira coercens,,226731,60.59,-134.897,Caddisflies
 Oxyethira dualis,,226732,49.5,-119.6,Caddisflies
@@ -6229,7 +6222,7 @@ Lepidostoma frosti,,223204,49.5,-119.6,Caddisflies
 Lepidostoma hoodi,,223207,49.5,-119.6,Caddisflies
 Lepidostoma jewetti,,223208,49.5,-119.6,Caddisflies
 Lepidostoma latipenne,,223211,49.5,-119.6,Caddisflies
-Lepidostoma lotor,,223216,52.0,-76.0,Caddisflies
+Lepidostoma lotor,,223216,52,-76,Caddisflies
 Lepidostoma lydia,,223217,48.85,-64.37,Caddisflies
 Lepidostoma modestum,,223220,49.5,-119.6,Caddisflies
 Lepidostoma ontario,,223223,46.65,-60.42,Caddisflies
@@ -6237,7 +6230,7 @@ Lepidostoma ormeum,,223224,49.5,-119.6,Caddisflies
 Lepidostoma pictile,,223226,46.6553,-60.4285,Caddisflies
 Lepidostoma podagrum,,223228,49.5,-119.6,Caddisflies
 Lepidostoma prominens,,223229,47.2875,-71.1333,Caddisflies
-Lepidostoma quercinum,,223230,52.0,-76.0,Caddisflies
+Lepidostoma quercinum,,223230,52,-76,Caddisflies
 Lepidostoma rayneri,,223231,49.5,-119.6,Caddisflies
 Lepidostoma reosa,,458072,49.5,-119.6,Caddisflies
 Lepidostoma roafi,,223234,60.7884,-135.1875,Caddisflies
@@ -6287,7 +6280,7 @@ Triaenodes schmidi,,458057,49.5,-119.6,Caddisflies
 Allocosmoecus partitus,,213013,49.284,-124.768,Caddisflies
 Amphicosmoecus canax,,213453,49.5,-119.6,Caddisflies
 Anabolia ozburni,,213489,50.65,-99.96,Caddisflies
-Anabolia sordida,,213490,52.0,-76.0,Caddisflies
+Anabolia sordida,,213490,52,-76,Caddisflies
 Arctopora trimaculata,,214101,67.7,-136.483333,Caddisflies
 Asynarchus aldinus,,173059,49.5,-119.6,Caddisflies
 Asynarchus cinnamoneus,,173057,52.983333,-122.483333,Caddisflies
@@ -6320,7 +6313,7 @@ Ironoquia parvula,,222296,49.5,-119.6,Caddisflies
 Ironoquia punctatissima,,222298,49.5,-119.6,Caddisflies
 Lenarchus brevipennis,,223166,49.113,-113.842,Caddisflies
 Lenarchus crassus,,223167,58.45,-62.79,Caddisflies
-Lenarchus expansus,,223168,69.583333,-139.0,Caddisflies
+Lenarchus expansus,,223168,69.583333,-139,Caddisflies
 Lenarchus fautini,,223169,58.739,-93.823,Caddisflies
 Lenarchus gravidus,,223170,49.5,-119.6,Caddisflies
 Lenarchus keratus,,223171,49.5,-119.6,Caddisflies
@@ -6354,7 +6347,7 @@ Limnephilus morrisoni,,223735,49.5,-119.6,Caddisflies
 Limnephilus nigriceps,,223736,58.73,-93.83,Caddisflies
 Limnephilus nimmoi,,223737,53.9,-106.03,Caddisflies
 Limnephilus occidentalis,,223739,49.5,-119.6,Caddisflies
-Limnephilus pallens,,223741,69.583333,-139.0,Caddisflies
+Limnephilus pallens,,223741,69.583333,-139,Caddisflies
 Limnephilus partitus,,223742,58.766,-93.962,Caddisflies
 Limnephilus parvulus,,223743,49.5,-119.6,Caddisflies
 Limnephilus perpusillus,,223746,49.5,-119.6,Caddisflies
@@ -6392,7 +6385,7 @@ Pycnopsyche luculenta,,229485,43.4025,-80.6686,Caddisflies
 Pycnopsyche subfasciata,,229489,45.953,-66.633,Caddisflies
 Sphagnophylax meiops,,231342,69.483333,-132.583333,Caddisflies
 Molanna albicans,,454882,60.266726,-133.955011,Caddisflies
-Molanna cinerea,,225193,52.0,-76.0,Caddisflies
+Molanna cinerea,,225193,52,-76,Caddisflies
 Molanna tryphena,,225195,49.5,-119.6,Caddisflies
 Molannodes tinctus,,225198,67.4166,-140.0833,Caddisflies
 Marilia flexuosa,,224443,43.59933,-81.50585,Caddisflies
@@ -6492,7 +6485,7 @@ Rhyacophila intermedia,,454884,49.5,-119.6,Caddisflies
 Rhyacophila invaria,,230074,49.5,-119.6,Caddisflies
 Rhyacophila jenniferae,,230076,49.5,-119.6,Caddisflies
 Rhyacophila kincaidi,,230081,49.5,-119.6,Caddisflies
-Rhyacophila ledra,,230084,52.0,-76.0,Caddisflies
+Rhyacophila ledra,,230084,52,-76,Caddisflies
 Rhyacophila lobifera,,230086,44.25252,-80.22931,Caddisflies
 Rhyacophila mainensis,,230088,47.11,-65.38,Caddisflies
 Rhyacophila malkini,,230089,49.5,-119.6,Caddisflies
@@ -6518,7 +6511,7 @@ Rhyacophila torva,,230129,53.4798,-60.6005,Caddisflies
 Rhyacophila tucula,,230132,53.567,-116.667,Caddisflies
 Rhyacophila vaccua,,230135,49.5,-119.6,Caddisflies
 Rhyacophila vaefes,,230136,49.5,-119.6,Caddisflies
-Rhyacophila vagrita,,230137,53.0,-118.067,Caddisflies
+Rhyacophila vagrita,,230137,53,-118.067,Caddisflies
 Rhyacophila valuma,,230138,49.08,-121.73,Caddisflies
 Rhyacophila vao,,230139,49.07,-113.88,Caddisflies
 Rhyacophila velora,,230141,49.5,-119.6,Caddisflies
@@ -6537,7 +6530,7 @@ Neophylax aniqua,,225694,45.58,-64.95,Caddisflies
 Neophylax consimilis,,225699,49.5,-119.6,Caddisflies
 Neophylax fuscus,,225702,49.5,-119.6,Caddisflies
 Neophylax mitchelli,,225704,49.5,-119.6,Caddisflies
-Neophylax nacatus,,225705,52.0,-76.0,Caddisflies
+Neophylax nacatus,,225705,52,-76,Caddisflies
 Neophylax occidentis,,225706,49.5,-119.6,Caddisflies
 Neophylax ornatus,,225708,49.5,-119.6,Caddisflies
 Neophylax ottawa,,225709,45.38681,-75.70644,Caddisflies
@@ -6593,7 +6586,7 @@ Coleophora detractella,,217332,43.226,-81.923,Moths and butterflies
 Coleophora dextrella,,217333,49.5,-119.6,Moths and butterflies
 Coleophora dissociella,,1292777,49.5,-119.6,Moths and butterflies
 Coleophora ericoides,,1128280,49.5,-119.6,Moths and butterflies
-Coleophora glissandella,,453226,61.0,-138.53,Moths and butterflies
+Coleophora glissandella,,453226,61,-138.53,Moths and butterflies
 Coleophora glitzella,,928885,58.739334,-93.82342,Moths and butterflies
 Coleophora granifera,,217339,49.5,-119.6,Moths and butterflies
 Coleophora heinrichella,,217340,46.088,-74.279,Moths and butterflies
@@ -6692,7 +6685,7 @@ Elachista perniva,,1029495,49.086,-119.523,Moths and butterflies
 Elachista pyrrha,,453535,69.162,-140.172,Moths and butterflies
 Elachista serra,,1108439,49.5,-119.6,Moths and butterflies
 Elachista sylvestris,,1108577,49.5,-119.6,Moths and butterflies
-Elachista symmorpha,,453280,49.0,-106.56,Moths and butterflies
+Elachista symmorpha,,453280,49,-106.56,Moths and butterflies
 Elachista tuorella,,935660,49.5,-119.6,Moths and butterflies
 Elachista vinlandica,,1108438,49.5,-119.6,Moths and butterflies
 Elachista virgatula,,453536,49.5,-119.6,Moths and butterflies
@@ -6745,7 +6738,7 @@ Chionodes sistrella,,362819,49.5,-119.6,Moths and butterflies
 Chionodes soter,,470544,48.188,-65.98,Moths and butterflies
 Chionodes theurgis,,974576,43.2314,-81.8903,Moths and butterflies
 Chionodes trico,,453019,49.5,-119.6,Moths and butterflies
-Chionodes whitmanella,,453022,49.0,-106.55,Moths and butterflies
+Chionodes whitmanella,,453022,49,-106.55,Moths and butterflies
 Coleotechnites biopes,,453024,49.5,-119.6,Moths and butterflies
 Coleotechnites carbonaria,,994484,49.5,-119.6,Moths and butterflies
 Coleotechnites ducharmei,,217377,49.5,-119.6,Moths and butterflies
@@ -6778,7 +6771,7 @@ Gnorimoschema tunicatum,,1486727,49.5,-119.6,Moths and butterflies
 Gnorimoschema vibei,,1507238,50.272,-63.679,Moths and butterflies
 Isophrictis actinopa,,1415371,49.5,-119.6,Moths and butterflies
 Keiferia glochinella,,458077,49.5,-119.6,Moths and butterflies
-Monochroa discriminata,,973396,45.0,-79.3,Moths and butterflies
+Monochroa discriminata,,973396,45,-79.3,Moths and butterflies
 Monochroa monactis,,973436,49.5,-119.6,Moths and butterflies
 Monochroa perterrita,,973439,49.5,-119.6,Moths and butterflies
 Pseudotelphusa ontariensis,,1265003,44.095,-78.07,Moths and butterflies
@@ -6811,7 +6804,7 @@ Metarranthis lateritiaria,Southern Metarranthis Moth,224986,49.5,-119.6,Moths an
 Phigalia denticulata,Toothed Phigalia Moth,204125,49.5,-119.6,Moths and butterflies
 Probole nepiasaria,Heath Probole,228734,49.5,-119.6,Moths and butterflies
 Scopula purata,Chalky Wave,230675,44.784088,-78.767905,Moths and butterflies
-Sphacelodes vulneraria,Hübner's Olive,324108,49.5,-119.6,Moths and butterflies
+Sphacelodes vulneraria,H��bner's Olive,324108,49.5,-119.6,Moths and butterflies
 Xanthorhoe reclivisata,,233745,51.42459,-116.20055,Moths and butterflies
 Glyphipterix chambersi,,1354202,49.5,-119.6,Moths and butterflies
 Glyphipterix juncivora,,453548,49.5,-119.6,Moths and butterflies
@@ -6912,7 +6905,7 @@ Ponometia sutrix,,228637,49.07,-110.5,Moths and butterflies
 Ponometia virginalis,Virgin Bird-Dropping Moth,228639,49.5,-119.6,Moths and butterflies
 Protogygia pallida,,228861,49.5,-119.6,Moths and butterflies
 Resapamea mammuthus,,1097820,62.9996,-135.004,Moths and butterflies
-Rhizagrotis cloanthoides,,211746,52.0,-113.267,Moths and butterflies
+Rhizagrotis cloanthoides,,211746,52,-113.267,Moths and butterflies
 Schinia mortua,,230546,49.5,-119.6,Moths and butterflies
 Schinia sexata,,452641,49.708611,-99.602778,Moths and butterflies
 Setagrotis radiola,,230860,50.76,-111.51,Moths and butterflies
@@ -6930,7 +6923,7 @@ Xestia lorezi,,1294599,64.5696,-138.2467,Moths and butterflies
 Xestia lyngei,,452520,49.5,-119.6,Moths and butterflies
 Xestia thula,,452648,49.5,-119.6,Moths and butterflies
 Xestia woodi,,452521,49.5,-119.6,Moths and butterflies
-Heterocampa umbrata,White-blotched Prominent,210609,47.0,-73.89,Moths and butterflies
+Heterocampa umbrata,White-blotched Prominent,210609,47,-73.89,Moths and butterflies
 Boloria selene,Eurasian Silver-bordered Fritillary,54068,45.954665,-74.141881,Moths and butterflies
 Denisia yukonella,,1072281,64.083333,-139.083333,Moths and butterflies
 Pseudopostega albogaleriella,,416828,43.81,-79.16,Moths and butterflies
@@ -7189,7 +7182,7 @@ Nearctopsylla genalis,,,48.48,-81.34,Fleas
 Nearctopsylla grahami,,,49.663532,-110.263488,Fleas
 Nearctopsylla hyrtaci,,,49.5,-119.6,Fleas
 Nearctopsylla jordani,,,49.5,-119.6,Fleas
-Nearctopsylla traubi,,,49.0,-122.15,Fleas
+Nearctopsylla traubi,,,49,-122.15,Fleas
 Neopsylla inopina,,,49.5,-119.6,Fleas
 Phalacropsylla allos,,,49.5,-119.6,Fleas
 Rhadinopsylla difficilis,,,49.5,-119.6,Fleas
@@ -7347,7 +7340,7 @@ Eutrichota texana,,1399133,51.396,-121.872,Selected flies
 Eutrichota triticiperda,,,49.5,-119.6,Selected flies
 Eutrichota tunicata,,1225364,58.737305,-93.82078,Selected flies
 Eutrichota woodi,,,51.396,-121.872,Selected flies
-Hydrophoria cinerascens,,,45.55,-74.0,Selected flies
+Hydrophoria cinerascens,,,45.55,-74,Selected flies
 Lasiomma atricaudum,,1398748,49.5,-119.6,Selected flies
 Lasiomma collini,,1398745,58.737305,-93.82078,Selected flies
 Lasiomma consobrinum,,,49.21,-121.06,Selected flies
@@ -7544,7 +7537,7 @@ Toxophora maxima,,259490,49.5,-119.6,Selected flies
 Villa vestita,,460138,45.593928,-64.95087,Selected flies
 Calliphora alaskensis,,,49.5,-119.6,Selected flies
 Calliphora aldrichia,,,49.5,-119.6,Selected flies
-Calliphora coloradensis,,477385,49.0,-106.55,Selected flies
+Calliphora coloradensis,,477385,49,-106.55,Selected flies
 Calliphora genarum,,1151666,49.5,-119.6,Selected flies
 Calliphora loewi,,,49.5,-119.6,Selected flies
 Calliphora montana,,,58.739334,-93.82342,Selected flies
@@ -7681,7 +7674,7 @@ Monohelea magnitheca,,,49.5,-119.6,Selected flies
 Nilobezzia mallochi,,,49.5,-119.6,Selected flies
 Palpomyia subaspera,,259342,49.5,-119.6,Selected flies
 Palpomyia tibialis,,1004836,49.5,-119.6,Selected flies
-Parabezzia downesi,,,45.5,-78.0,Selected flies
+Parabezzia downesi,,,45.5,-78,Selected flies
 Phaenobezzia fulvithorax,,294387,49.5,-119.6,Selected flies
 Phaenobezzia opaca,,1572152,49.5,-119.6,Selected flies
 Probezzia atriventris,,,49.5,-119.6,Selected flies
@@ -8222,14 +8215,14 @@ Gaurax pallidipes,,1066416,49.5,-119.6,Selected flies
 Gaurax pilosulus,,,50.84167,-111.60833,Selected flies
 Gaurax pseudostigma,,1247067,49.5,-119.6,Selected flies
 Gaurax shannoni,,1610417,45.59,-64.98,Selected flies
-Gaurax splendidus,,1524088,45.55,-74.0,Selected flies
+Gaurax splendidus,,1524088,45.55,-74,Selected flies
 Gaurax varihalteratus,,,43.703,-79.402,Selected flies
 Hapleginella conicola,,1292312,42.77,-80.99,Selected flies
 Hippelates plebejus,,,49.5,-119.6,Selected flies
 Incertella bispina,,,49.5,-119.6,Selected flies
 Incertella incerta,,,49.5,-119.6,Selected flies
 Incertella minor,,,42.135513,-82.61418,Selected flies
-Incertella ovalis,,,45.55,-74.0,Selected flies
+Incertella ovalis,,,45.55,-74,Selected flies
 Incertella zuercheri,,635055,49.5,-119.6,Selected flies
 Lasiopleura itascae,,,49.5,-119.6,Selected flies
 Lasiopleura shewelli,,,49.5,-119.6,Selected flies
@@ -8270,7 +8263,7 @@ Pseudopachychaeta ruficeps,,1437450,64.161,-139.836,Selected flies
 Rhopalopterum carbonarium,,,49.5,-119.6,Selected flies
 Rhopalopterum criddlei,,,49.6361,-99.6094,Selected flies
 Rhopalopterum luteiceps,,,45.43,-73.94,Selected flies
-Rhopalopterum nudiusculum,,,45.55,-74.0,Selected flies
+Rhopalopterum nudiusculum,,,45.55,-74,Selected flies
 Rhopalopterum painteri,,,46.74778,-70.995,Selected flies
 Rhopalopterum soror,,,49.5,-119.6,Selected flies
 Rhopalopterum umbrosum,,,47.76056,-69.52861,Selected flies
@@ -8283,7 +8276,7 @@ Thaumatomyia parviceps,,,45.45,-74.15,Selected flies
 Thaumatomyia pulla,,972073,65.808,-137.759,Selected flies
 Thaumatomyia pullipes,,,60.16667,-134.63333,Selected flies
 Thaumatomyia trifasciata,,1018751,58.737305,-93.82078,Selected flies
-Tricimba brunnicollis,,1610418,45.55,-74.0,Selected flies
+Tricimba brunnicollis,,1610418,45.55,-74,Selected flies
 Tricimba cincta,,1018981,61.88333,-136.11667,Selected flies
 Tricimba lineella,,1087135,49.5,-119.6,Selected flies
 Tricimba melancholica,,567217,49.5,-119.6,Selected flies
@@ -8296,7 +8289,7 @@ Clusiodes orbitalis,,,49.5,-119.6,Selected flies
 Clusiodes terminalis,,,49.5,-119.6,Selected flies
 Heteromeringia nitida,,481470,42.2641,-83.075,Selected flies
 Sobarocephala atricornis,,,49.5,-119.6,Selected flies
-Sobarocephala flava,,504073,45.55,-74.0,Selected flies
+Sobarocephala flava,,504073,45.55,-74,Selected flies
 Sobarocephala latifacies,,1502973,49.5,-119.6,Selected flies
 Sobarocephala setipes,,1442670,45.55,-73.56,Selected flies
 Coelopa nebularum,,1097537,48.98,-125.61,Selected flies
@@ -8343,7 +8336,7 @@ Allotrichoma simplex,,494890,49.5,-119.6,Selected flies
 Atissa litoralis,,,50.17333,-97.13167,Selected flies
 Atissa pygmaea,,1087448,49.51667,-105.26667,Selected flies
 Axysta americana,,,69.132,-105.063,Selected flies
-Axysta cesta,,1101184,45.55,-65.0,Selected flies
+Axysta cesta,,1101184,45.55,-65,Selected flies
 Axysta extera,,,45.747,-81.812,Selected flies
 Axysta nigrifacies,,,49.5,-119.6,Selected flies
 Callinapaea laurentiana,,1348594,47.76056,-69.52861,Selected flies
@@ -8383,7 +8376,7 @@ Hydrellia tibialis,,494919,49.5,-119.6,Selected flies
 Hydrellia valida,,,49.5,-119.6,Selected flies
 Hydrochasma buccatum,,,45.18333,-81.58333,Selected flies
 Hydrochasma incisum,,,52.11611,-114.16083,Selected flies
-Lamproscatella aklavik,,,68.2167,-135.0,Selected flies
+Lamproscatella aklavik,,,68.2167,-135,Selected flies
 Lamproscatella arichaeta,,,55.92361,-118.59444,Selected flies
 Lamproscatella bimaculata,,,53.22,-114.97,Selected flies
 Lamproscatella brunnipennis,,,69.11989,-105.0381,Selected flies
@@ -8444,7 +8437,7 @@ Philygria vittipennis,,1087429,49.5,-119.6,Selected flies
 Platygymnopa helicis,,,45.43,-73.94,Selected flies
 Polytrichophora orbitalis,,494930,44.453,-75.865,Selected flies
 Psilopa compta,,447855,53.66,-112.86,Selected flies
-Psilopa girschneri,,329873,52.0,-106.98,Selected flies
+Psilopa girschneri,,329873,52,-106.98,Selected flies
 Psilopa leucostoma,,993395,50.33,-102.27,Selected flies
 Psilopa nigritella,,1087430,41.94,-82.52,Selected flies
 Rhinonapaea metallica,,1348599,67.81,-115.219,Selected flies
@@ -8583,7 +8576,7 @@ Homoneura lamellata,,914239,49.5,-119.6,Selected flies
 Homoneura melanderi,,,49.5,-119.6,Selected flies
 Homoneura occidentalis,,118990,49.9133,-116.911,Selected flies
 Homoneura ornatipes,,,48.585,-70.83333,Selected flies
-Homoneura pernotata,,1408829,45.55,-74.0,Selected flies
+Homoneura pernotata,,1408829,45.55,-74,Selected flies
 Homoneura sheldoni,,,47.96639,-69.43028,Selected flies
 Homoneura shewelli,,1303172,41.93333,-82.51528,Selected flies
 Homoneura wheeleri,,1110368,41.95833,-82.5125,Selected flies
@@ -8593,7 +8586,7 @@ Lauxania nigrimana,,1281161,60.714,-137.432,Selected flies
 Mallochomyza citreifrons,,,45.21667,-81.48333,Selected flies
 Meiosimyza rorida,,604945,53.257,-132.089,Selected flies
 Melanomyza gracilipes,,886090,44.44,-65.25,Selected flies
-Minettia americanella,,1610578,45.55,-74.0,Selected flies
+Minettia americanella,,1610578,45.55,-74,Selected flies
 Minettia cana,,,46.74778,-70.995,Selected flies
 Minettia glauca,,1556132,47.96639,-69.43028,Selected flies
 Minettia lobata,,1570507,45.4932,-73.06444,Selected flies
@@ -8603,7 +8596,7 @@ Poecilolycia annulata,,,48.81667,-64.86667,Selected flies
 Poecilolycia aspinosa,,,49.5,-119.6,Selected flies
 Poecilolycia browni,,1610582,47.96639,-69.43028,Selected flies
 Poecilolycia spatulata,,,55.92361,-118.59444,Selected flies
-Sapromyza hyalinata,,1015936,45.55,-74.0,Selected flies
+Sapromyza hyalinata,,1015936,45.55,-74,Selected flies
 Lonchoptera barberi,,,49.5,-119.6,Selected flies
 Lonchoptera impicta,,321891,48.81667,-64.86667,Selected flies
 Lonchoptera longiphallus,,,49.5,-119.6,Selected flies
@@ -8624,7 +8617,7 @@ Neophyllomyza quadricornis,,,60.7884,-135.1875,Selected flies
 Paramyia nitens,,944816,64.161,-139.836,Selected flies
 Paramyia pseudonitens,,,44.5645,-76.5516,Selected flies
 Phyllomyza securicornis,,1200518,47.96639,-69.43028,Selected flies
-Stomosis flava,,,45.55,-74.0,Selected flies
+Stomosis flava,,,45.55,-74,Selected flies
 Azelia gibbera,,,49.5,-119.6,Selected flies
 Azelia triquetra,,988143,64.161,-139.836,Selected flies
 Coenosia alaskensis,,,49.5,-119.6,Selected flies
@@ -8692,7 +8685,7 @@ Drymeia cantabrigensis,,1226511,73.23,-119.59,Selected flies
 Drymeia chillcotti,,1226512,68.545,-89.767,Selected flies
 Drymeia flavinervis,,1226514,44.62857,-78.8614,Selected flies
 Drymeia groenlandica,,452784,69.120186,-105.04283,Selected flies
-Drymeia minor,,1226518,49.0,-106.55,Selected flies
+Drymeia minor,,1226518,49,-106.55,Selected flies
 Drymeia neoborealis,,1226519,68.668,-95.921,Selected flies
 Drymeia pribilofensis,,452786,72.81,-79.32,Selected flies
 Drymeia quadrisetosa,,452787,49.5,-119.6,Selected flies
@@ -8701,7 +8694,7 @@ Drymeia setibasis,,1226522,49.5,-119.6,Selected flies
 Drymeia similis,,1226523,60.852,-135.471,Selected flies
 Eudasyphora canadiana,,1235299,51.02,-118.2,Selected flies
 Graphomya americana,,1030131,43.703,-79.402,Selected flies
-Graphomya idessa,,452789,58.76,-94.0,Selected flies
+Graphomya idessa,,452789,58.76,-94,Selected flies
 Graphomya minor,,70142,47.26028,-53.41778,Selected flies
 Graphomya minuta,,452790,60.7884,-135.1875,Selected flies
 Graphomya transitionis,,452791,49.5,-119.6,Selected flies
@@ -8737,7 +8730,7 @@ Helina squalens,,452809,49.5,-119.6,Selected flies
 Helina subvittata,,452810,64.161,-139.836,Selected flies
 Helina troene,,567231,58.739,-93.823,Selected flies
 Hydrotaea aenescens,,329898,44.1162,-81.147,Selected flies
-Hydrotaea anxia,,452811,58.75,-94.0,Selected flies
+Hydrotaea anxia,,452811,58.75,-94,Selected flies
 Hydrotaea armipes,,1200532,58.45,-62.79,Selected flies
 Hydrotaea basdeni,,,44.3758,-64.3103,Selected flies
 Hydrotaea cressoni,,,53.12,-117.77,Selected flies
@@ -8758,7 +8751,7 @@ Hydrotaea tuberculata,,1236472,50.623,-99.97,Selected flies
 Hydrotaea unispinosa,,,49.5,-119.6,Selected flies
 Limnophora discreta,,452817,58.13,-92.86,Selected flies
 Limnophora groenlandica,,,69.528,-93.495,Selected flies
-Limnophora narona,,494948,49.0,-106.55,Selected flies
+Limnophora narona,,494948,49,-106.55,Selected flies
 Limnophora rotundata,,452818,60.724,-135.081,Selected flies
 Limnophora uniseta,,452819,49.5,-119.6,Selected flies
 Limnospila albifrons,,452820,69.163,-140.151,Selected flies
@@ -9002,7 +8995,7 @@ Allopiophila atrifrons,,,51.277,-80.648,Selected flies
 Allopiophila baechlii,,,64.097,-140.883,Selected flies
 Allopiophila fulviceps,,1499097,69.13184,-105.06277,Selected flies
 Allopiophila pectiniventris,,1394994,58.739334,-93.82342,Selected flies
-Allopiophila penicillata,,,68.2167,-135.0,Selected flies
+Allopiophila penicillata,,,68.2167,-135,Selected flies
 Allopiophila pseudovulgaris,,,67.52,-136.502,Selected flies
 Allopiophila tomentosa,,1435184,69.162,-140.172,Selected flies
 Lasiopiophila pilosa,,1394124,69.12237,-105.024864,Selected flies
@@ -9017,7 +9010,7 @@ Allomethus mysticus,,,49.5,-119.6,Selected flies
 Cephalops furnaceus,,,49.5,-119.6,Selected flies
 Cephalops grootaerti,,,58.63,-93.8,Selected flies
 Cephalops hardyi,,,49.5,-119.6,Selected flies
-Cephalops mainensis,,,49.0,-106.55,Selected flies
+Cephalops mainensis,,,49,-106.55,Selected flies
 Cephalops pallidivittipes,,,49.5,-119.6,Selected flies
 Cephalops varius,,,44.62,-75.77,Selected flies
 Cephalosphaera appendiculata,,,49.5686,-57.8302,Selected flies
@@ -9067,9 +9060,9 @@ Nephrocerus slossonae,,,45.47,-74.33,Selected flies
 Nephrocerus woodi,,,45.47,-74.33,Selected flies
 Pipunculus basilicus,,,42.26278,-83.07246,Selected flies
 Pipunculus campestris,,625939,60.788,-135.187,Selected flies
-Pipunculus cingulatus,,,45.55,-74.0,Selected flies
+Pipunculus cingulatus,,,45.55,-74,Selected flies
 Pipunculus elegantulus,,1404461,42.26278,-83.07246,Selected flies
-Pipunculus fuscus,,,45.55,-74.0,Selected flies
+Pipunculus fuscus,,,45.55,-74,Selected flies
 Pipunculus hertzogi,,,69.162,-140.172,Selected flies
 Pipunculus horvathi,,,51.28,-115.94,Selected flies
 Pipunculus houghi,,,49.5,-119.6,Selected flies
@@ -9210,7 +9203,7 @@ Microprosopa flavinervis,,,45.31528,-81.74444,Selected flies
 Microprosopa haemorrhoidalis,,,49.5,-119.6,Selected flies
 Microprosopa pallidicauda,,,49.5,-119.6,Selected flies
 Nanna leucostoma,,,49.5,-119.6,Selected flies
-Nanna pallidipes,,,45.55,-74.0,Selected flies
+Nanna pallidipes,,,45.55,-74,Selected flies
 Nanna tibiella,,1466906,45.04,-74.46722,Selected flies
 Norellisoma spinimanum,,356340,49.5,-119.6,Selected flies
 Orthacheta hirtipes,,,45.04,-74.46722,Selected flies
@@ -9220,7 +9213,7 @@ Pogonota immunda,,,69.12793,-105.08573,Selected flies
 Pogonota sahlbergi,,,49.5,-119.6,Selected flies
 Scathophaga apicalis,,1049162,74.05,-93.824,Selected flies
 Scathophaga grisea,,,49.5,-119.6,Selected flies
-Scathophaga hiemalis,,1556422,45.55,-74.0,Selected flies
+Scathophaga hiemalis,,1556422,45.55,-74,Selected flies
 Scathophaga islandica,,,49.5,-119.6,Selected flies
 Scathophaga mollis,,,49.5,-119.6,Selected flies
 Scathophaga nigripalpis,,,49.5,-119.6,Selected flies
@@ -9257,11 +9250,11 @@ Limnia severa,,,49.5,-119.6,Selected flies
 Pherbecta limenitis,,1111860,44.3258,-80.89,Selected flies
 Pherbellia albocostata,,356336,49.5,-119.6,Selected flies
 Pherbellia albovaria,,884406,45.31528,-81.74444,Selected flies
-Pherbellia anubis,,,45.0,-75.2,Selected flies
+Pherbellia anubis,,,45,-75.2,Selected flies
 Pherbellia argyra,,1072377,49.5,-119.6,Selected flies
-Pherbellia borea,,,68.2167,-135.0,Selected flies
-Pherbellia bryanti,,,68.2167,-135.0,Selected flies
-Pherbellia fisheri,,,68.2167,-135.0,Selected flies
+Pherbellia borea,,,68.2167,-135,Selected flies
+Pherbellia bryanti,,,68.2167,-135,Selected flies
+Pherbellia fisheri,,,68.2167,-135,Selected flies
 Pherbellia inflexa,,,49.3344,-117.691,Selected flies
 Pherbellia luctifera,,,45.19583,-81.5625,Selected flies
 Pherbellia marthae,,,58.7667,-94.1667,Selected flies
@@ -9601,7 +9594,7 @@ Pipiza macrofemoralis,Large-legged Pithead,1197609,48.80111,-86.78444,Selected f
 Pipiza nigripilosa,Pale-haired Pithead,1197610,49.5,-119.6,Selected flies
 Pipiza subinflatifrons,Swollen-headed Pithead,1197613,51.28,-115.94,Selected flies
 Platycheirus aeratus,Coquillett's Sedgesitter,1197628,60.6603,-134.8919,Selected flies
-Platycheirus amplus,Northern Broadhand Sedgesitter,486672,58.75,-94.0,Selected flies
+Platycheirus amplus,Northern Broadhand Sedgesitter,486672,58.75,-94,Selected flies
 Platycheirus angustatus,Slender Sedgesitter,486664,49.5,-119.6,Selected flies
 Platycheirus chilosia,Platycheirus chilosia Group,1304237,65.07,-138.3,Selected flies
 Platycheirus ciliatus,Pacific Sedgesitter,1197830,49.5,-119.6,Selected flies
@@ -9627,7 +9620,7 @@ Platycheirus parmatus,Shieldhand Sedgesitter,1088462,69.162,-140.172,Selected fl
 Platycheirus peltatoides,Keeled Sedgesitter,1198250,49.5,-119.6,Selected flies
 Platycheirus perpallidus,Yellowcomb Sedgesitter,486681,53.65,-131.93,Selected flies
 Platycheirus pictipes,Platycheirus pictipes Group,1304236,62.5246,-136.7757,Selected flies
-Platycheirus pilatus,Speartip Sedgesitter,1198254,58.75,-94.0,Selected flies
+Platycheirus pilatus,Speartip Sedgesitter,1198254,58.75,-94,Selected flies
 Platycheirus podagratus,Variable Sedgesitter,486676,58.739334,-93.82342,Selected flies
 Platycheirus pullatus,Northwest Sedgesitter,1198256,65.07,-138.3,Selected flies
 Platycheirus sabulicola,Yukon Sand Dune Sedgesitter,1198257,49.5,-119.6,Selected flies
@@ -9665,7 +9658,7 @@ Sphegina rufa,Barb-legged Pufftail,1198560,49.5,-119.6,Selected flies
 Syrphus intricatus,Yellow-faced Flower Fly,977196,49.5,-119.6,Selected flies
 Trichopsomyia apisaon,Black-haired Psyllid-killer,901752,49.5,-119.6,Selected flies
 Trichopsomyia litoralis,Coastal Psyllid-killer,1198595,46.878289,-60.429056,Selected flies
-Trichopsomyia pubescens,Wide-eyed Psyllid-killer,1198598,45.55,-74.0,Selected flies
+Trichopsomyia pubescens,Wide-eyed Psyllid-killer,1198598,45.55,-74,Selected flies
 Tropidia calcarata,,1118031,49.5,-119.6,Selected flies
 Tropidia mamillata,Shiny Thickleg,1198633,49.5,-119.6,Selected flies
 Xylota analis,Yellow-legged Leafwalker,1198653,49.85,-82.783333,Selected flies
@@ -9691,7 +9684,7 @@ Cydistomyia alternata,,635175,42.062353,-82.895225,Selected flies
 Haematopota rara,Lace-winged Horse Fly,220846,49.5,-119.6,Selected flies
 Hybomitra aasa,,221525,49.091,-119.523,Selected flies
 Hybomitra agora,,221528,50.02,-110.675,Selected flies
-Hybomitra atrobasis,,221531,54.0,-127.48155,Selected flies
+Hybomitra atrobasis,,221531,54,-127.48155,Selected flies
 Hybomitra brennani,Brennan's Horse Fly,221533,50.116667,-96.033333,Selected flies
 Hybomitra fulvilateralis,,221541,49.108,-116.527,Selected flies
 Hybomitra hearlei,,221542,51.244667,-80.677667,Selected flies
@@ -9700,7 +9693,7 @@ Hybomitra melanorhina,,221551,49.333,-117.69,Selected flies
 Hybomitra opaca,,221555,56.48753,-109.39824,Selected flies
 Hybomitra pediontis,,221558,49.03333,-111.41667,Selected flies
 Hybomitra procyon,,221560,49.5,-119.6,Selected flies
-Hybomitra sonomensis,,221565,54.0,-127.48155,Selected flies
+Hybomitra sonomensis,,221565,54,-127.48155,Selected flies
 Hybomitra zygota,,221570,49.333,-117.69,Selected flies
 Stonemyia californica,,231773,49.5,-119.6,Selected flies
 Stonemyia fera,,231774,49.5,-119.6,Selected flies

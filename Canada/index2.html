@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canada Map Overlay</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <style>
+      #map {
+        height: 100vh;
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    // Create the map
+    var map = L.map('map').setView([56.1304, -106.3468], 3); // Centered roughly on Canada
+
+    // Add a simple background tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Load the GeoJSON
+    fetch('mmap_overlapping_canada.geojson?231s')
+      .then(response => response.json())
+      .then(data => {
+          L.geoJSON(data, {
+              style: function (feature) {
+                  return {
+                      color: "black",
+                      weight: 0.5,
+                      fillColor: feature.properties.color || "#FFEDA0",
+                      fillOpacity: 0.3
+                  };
+              }
+          }).addTo(map);
+      })
+      .catch(err => console.error('Failed to load GeoJSON:', err));
+</script>
+
+</body>
+</html>

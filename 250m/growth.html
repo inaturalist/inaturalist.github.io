@@ -102,7 +102,7 @@ $(document).ready(function() {
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json("growth_data.json", function(error, data) {
+  d3.json("growth_data.json?1", function(error, data) {
   
     if (error) throw error;
 
@@ -167,13 +167,7 @@ $(document).ready(function() {
         .attr("x", 0)
         .attr("dy", ".71em")
         .style("text-anchor", "start")
-        .text("7,000,000");
-      svg.append("text")
-        .attr("y", y(8000000)-10)
-        .attr("x", 0)
-        .attr("dy", ".71em")
-        .style("text-anchor", "start")
-        .text("8,000,000 observations per month");
+        .text("7,000,000 observations per month");
     svg.append("svg:line")
         .attr("class", "axisline")
         .style("stroke-dasharray", ("1, 1")) 
@@ -198,6 +192,10 @@ $(document).ready(function() {
         .attr("class", "axisline")
         .style("stroke-dasharray", ("1, 1")) 
         .attr({ x1: 0, y1: y(6000000), x2: width, y2: y(6000000) });    
+    svg.append("svg:line")
+        .attr("class", "axisline")
+        .style("stroke-dasharray", ("1, 1")) 
+        .attr({ x1: 0, y1: y(7000000), x2: width, y2: y(7000000) });    
     svg.append("path")
         .datum(data)
         .attr("class", "line")

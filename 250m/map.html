@@ -142,7 +142,7 @@ $(document).ready(function() {
       .attr("c", function(d){ return d.id; });
   
     var rad_scale = d3.scale.linear()
-      .domain( [0,Math.pow(26580735 / Math.PI, 0.5)] )
+      .domain( [0,Math.pow(107641675 / Math.PI, 0.5)] )
       .range( [lus,uus] );
   
     var nodes = users.map(function(d) {
@@ -179,7 +179,7 @@ $(document).ready(function() {
       .data(nodes)
       .enter()
       .append("text")
-      .filter(function(d) {return d.observations_count > 2000000})
+      .filter(function(d) {return d.observation_count > 2000000})
       .attr("y", function(d) {return d.y-3})
       .attr("x", function(d) {return d.x})
       .attr("dy", ".71em")
@@ -210,13 +210,13 @@ $(document).ready(function() {
       .text("100,000")
       .style("text-anchor", "end");
     svg.append("circle")
-      .attr("r", rad_scale(Math.pow(10000 / Math.PI, 0.5) ))
+      .attr("r", rad_scale(Math.pow(100000 / Math.PI, 0.5) ))
       .attr("cy", height*0.9)
       .attr("cx", width*0.11)
       .style("stroke", "#76AB20")
       .attr("class", "circle");
     svg.append("circle")
-      .attr("r", rad_scale(Math.pow(1000000 / Math.PI, 0.5) ))
+      .attr("r", rad_scale(Math.pow(10000000 / Math.PI, 0.5) ))
       .attr("cy", height*0.9)
       .attr("cx", width*0.14)
       .style("stroke", "#76AB20")
@@ -262,8 +262,7 @@ $(document).ready(function() {
           <div class='g-tooltip-title'><b>" + d.name + "</b></div>";
         html += "</div>\
           <div style='clear: both;'></div>\
-          <div class='g-tooltip-obs'><b>" + formatValue(d.observations_count) + "</b> observations</div>";
-        
+          <div class='g-tooltip-obs'><b>" + formatValue(d.observation_count) + "</b> observations</div>";
 
         tooltip
           .style("left", position[0] + "px")

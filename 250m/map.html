@@ -154,7 +154,7 @@ $(document).ready(function() {
         name: d.place_name,
         observation_count: d.observations_count,
         place_id: d.place_id,
-        r: rad_scale(d.observation_count == 0 ? 0 : Math.pow(d.observation_count / Math.PI, 0.5) )
+        r: rad_scale(d.observations_count == 0 ? 0 : Math.pow(d.observations_count / Math.PI, 0.5) )
       };
     });
   
@@ -179,7 +179,7 @@ $(document).ready(function() {
       .data(nodes)
       .enter()
       .append("text")
-      .filter(function(d) {return d.observation_count > 2000000})
+      .filter(function(d) {return d.observations_count > 2000000})
       .attr("y", function(d) {return d.y-3})
       .attr("x", function(d) {return d.x})
       .attr("dy", ".71em")
@@ -262,7 +262,7 @@ $(document).ready(function() {
           <div class='g-tooltip-title'><b>" + d.name + "</b></div>";
         html += "</div>\
           <div style='clear: both;'></div>\
-          <div class='g-tooltip-obs'><b>" + formatValue(d.observation_count) + "</b> observations</div>";
+          <div class='g-tooltip-obs'><b>" + formatValue(d.observations_count) + "</b> observations</div>";
         
 
         tooltip

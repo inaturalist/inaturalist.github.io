@@ -1,810 +1,810 @@
 [
   {
     "month": "2008-08-01",
-    "month_total": 48672
+    "month_total": 301
   },
   {
     "month": "2008-09-01",
-    "month_total": 33096
+    "month_total": 161
   },
   {
     "month": "2008-10-01",
-    "month_total": 27565
+    "month_total": 279
   },
   {
     "month": "2008-11-01",
-    "month_total": 24222
+    "month_total": 240
   },
   {
     "month": "2008-12-01",
-    "month_total": 23326
+    "month_total": 396
   },
   {
     "month": "2009-01-01",
-    "month_total": 26970
+    "month_total": 315
   },
   {
     "month": "2009-02-01",
-    "month_total": 23016
+    "month_total": 353
   },
   {
     "month": "2009-03-01",
-    "month_total": 30469
+    "month_total": 874
   },
   {
     "month": "2009-04-01",
-    "month_total": 47131
+    "month_total": 757
   },
   {
     "month": "2009-05-01",
-    "month_total": 60216
+    "month_total": 454
   },
   {
     "month": "2009-06-01",
-    "month_total": 64172
+    "month_total": 328
   },
   {
     "month": "2009-07-01",
-    "month_total": 74194
+    "month_total": 5587
   },
   {
     "month": "2009-08-01",
-    "month_total": 61163
+    "month_total": 430
   },
   {
     "month": "2009-09-01",
-    "month_total": 41515
+    "month_total": 136
   },
   {
     "month": "2009-10-01",
-    "month_total": 33909
+    "month_total": 51
   },
   {
     "month": "2009-11-01",
-    "month_total": 28842
+    "month_total": 544
   },
   {
     "month": "2009-12-01",
-    "month_total": 25752
+    "month_total": 500
   },
   {
     "month": "2010-01-01",
-    "month_total": 32092
+    "month_total": 557
   },
   {
     "month": "2010-02-01",
-    "month_total": 27522
+    "month_total": 2683
   },
   {
     "month": "2010-03-01",
-    "month_total": 39275
+    "month_total": 766
   },
   {
     "month": "2010-04-01",
-    "month_total": 53666
+    "month_total": 497
   },
   {
     "month": "2010-05-01",
-    "month_total": 72456
+    "month_total": 598
   },
   {
     "month": "2010-06-01",
-    "month_total": 79085
+    "month_total": 350
   },
   {
     "month": "2010-07-01",
-    "month_total": 81631
+    "month_total": 727
   },
   {
     "month": "2010-08-01",
-    "month_total": 68876
+    "month_total": 1521
   },
   {
     "month": "2010-09-01",
-    "month_total": 50410
+    "month_total": 1783
   },
   {
     "month": "2010-10-01",
-    "month_total": 45063
+    "month_total": 1060
   },
   {
     "month": "2010-11-01",
-    "month_total": 35967
+    "month_total": 582
   },
   {
     "month": "2010-12-01",
-    "month_total": 33193
+    "month_total": 295
   },
   {
     "month": "2011-01-01",
-    "month_total": 41023
+    "month_total": 1189
   },
   {
     "month": "2011-02-01",
-    "month_total": 38662
+    "month_total": 1025
   },
   {
     "month": "2011-03-01",
-    "month_total": 49075
+    "month_total": 1816
   },
   {
     "month": "2011-04-01",
-    "month_total": 71849
+    "month_total": 2279
   },
   {
     "month": "2011-05-01",
-    "month_total": 81222
+    "month_total": 4452
   },
   {
     "month": "2011-06-01",
-    "month_total": 86933
+    "month_total": 4034
   },
   {
     "month": "2011-07-01",
-    "month_total": 92945
+    "month_total": 3234
   },
   {
     "month": "2011-08-01",
-    "month_total": 80954
+    "month_total": 3232
   },
   {
     "month": "2011-09-01",
-    "month_total": 63194
+    "month_total": 4328
   },
   {
     "month": "2011-10-01",
-    "month_total": 54569
+    "month_total": 5398
   },
   {
     "month": "2011-11-01",
-    "month_total": 44132
+    "month_total": 3471
   },
   {
     "month": "2011-12-01",
-    "month_total": 39102
+    "month_total": 4437
   },
   {
     "month": "2012-01-01",
-    "month_total": 52304
+    "month_total": 5191
   },
   {
     "month": "2012-02-01",
-    "month_total": 45227
+    "month_total": 5142
   },
   {
     "month": "2012-03-01",
-    "month_total": 64889
+    "month_total": 7675
   },
   {
     "month": "2012-04-01",
-    "month_total": 90641
+    "month_total": 11929
   },
   {
     "month": "2012-05-01",
-    "month_total": 110280
+    "month_total": 13685
   },
   {
     "month": "2012-06-01",
-    "month_total": 109291
+    "month_total": 13018
   },
   {
     "month": "2012-07-01",
-    "month_total": 116075
+    "month_total": 12603
   },
   {
     "month": "2012-08-01",
-    "month_total": 98925
+    "month_total": 13146
   },
   {
     "month": "2012-09-01",
-    "month_total": 84211
+    "month_total": 14244
   },
   {
     "month": "2012-10-01",
-    "month_total": 69555
+    "month_total": 16850
   },
   {
     "month": "2012-11-01",
-    "month_total": 59628
+    "month_total": 16427
   },
   {
     "month": "2012-12-01",
-    "month_total": 54440
+    "month_total": 17955
   },
   {
     "month": "2013-01-01",
-    "month_total": 61521
+    "month_total": 21031
   },
   {
     "month": "2013-02-01",
-    "month_total": 57075
+    "month_total": 22191
   },
   {
     "month": "2013-03-01",
-    "month_total": 82791
+    "month_total": 23873
   },
   {
     "month": "2013-04-01",
-    "month_total": 110200
+    "month_total": 29314
   },
   {
     "month": "2013-05-01",
-    "month_total": 142584
+    "month_total": 35759
   },
   {
     "month": "2013-06-01",
-    "month_total": 147991
+    "month_total": 34553
   },
   {
     "month": "2013-07-01",
-    "month_total": 151719
+    "month_total": 38141
   },
   {
     "month": "2013-08-01",
-    "month_total": 141088
+    "month_total": 33690
   },
   {
     "month": "2013-09-01",
-    "month_total": 114288
+    "month_total": 33033
   },
   {
     "month": "2013-10-01",
-    "month_total": 96895
+    "month_total": 36814
   },
   {
     "month": "2013-11-01",
-    "month_total": 82151
+    "month_total": 31087
   },
   {
     "month": "2013-12-01",
-    "month_total": 69099
+    "month_total": 25590
   },
   {
     "month": "2014-01-01",
-    "month_total": 85862
+    "month_total": 32002
   },
   {
     "month": "2014-02-01",
-    "month_total": 74726
+    "month_total": 34192
   },
   {
     "month": "2014-03-01",
-    "month_total": 124508
+    "month_total": 59674
   },
   {
     "month": "2014-04-01",
-    "month_total": 147744
+    "month_total": 55482
   },
   {
     "month": "2014-05-01",
-    "month_total": 193038
+    "month_total": 62394
   },
   {
     "month": "2014-06-01",
-    "month_total": 186866
+    "month_total": 57223
   },
   {
     "month": "2014-07-01",
-    "month_total": 196290
+    "month_total": 51374
   },
   {
     "month": "2014-08-01",
-    "month_total": 170262
+    "month_total": 48913
   },
   {
     "month": "2014-09-01",
-    "month_total": 144993
+    "month_total": 51284
   },
   {
     "month": "2014-10-01",
-    "month_total": 134766
+    "month_total": 53800
   },
   {
     "month": "2014-11-01",
-    "month_total": 112099
+    "month_total": 56355
   },
   {
     "month": "2014-12-01",
-    "month_total": 95437
+    "month_total": 48011
   },
   {
     "month": "2015-01-01",
-    "month_total": 114766
+    "month_total": 51271
   },
   {
     "month": "2015-02-01",
-    "month_total": 103650
+    "month_total": 48621
   },
   {
     "month": "2015-03-01",
-    "month_total": 156521
+    "month_total": 71435
   },
   {
     "month": "2015-04-01",
-    "month_total": 195947
+    "month_total": 86119
   },
   {
     "month": "2015-05-01",
-    "month_total": 265526
+    "month_total": 125703
   },
   {
     "month": "2015-06-01",
-    "month_total": 250593
+    "month_total": 102186
   },
   {
     "month": "2015-07-01",
-    "month_total": 267093
+    "month_total": 100263
   },
   {
     "month": "2015-08-01",
-    "month_total": 217934
+    "month_total": 89075
   },
   {
     "month": "2015-09-01",
-    "month_total": 200637
+    "month_total": 93602
   },
   {
     "month": "2015-10-01",
-    "month_total": 180056
+    "month_total": 102143
   },
   {
     "month": "2015-11-01",
-    "month_total": 144197
+    "month_total": 104132
   },
   {
     "month": "2015-12-01",
-    "month_total": 132614
+    "month_total": 76824
   },
   {
     "month": "2016-01-01",
-    "month_total": 148185
+    "month_total": 84588
   },
   {
     "month": "2016-02-01",
-    "month_total": 155098
+    "month_total": 93390
   },
   {
     "month": "2016-03-01",
-    "month_total": 225351
+    "month_total": 121425
   },
   {
     "month": "2016-04-01",
-    "month_total": 335026
+    "month_total": 196659
   },
   {
     "month": "2016-05-01",
-    "month_total": 422094
+    "month_total": 255437
   },
   {
     "month": "2016-06-01",
-    "month_total": 384703
+    "month_total": 199476
   },
   {
     "month": "2016-07-01",
-    "month_total": 377881
+    "month_total": 177600
   },
   {
     "month": "2016-08-01",
-    "month_total": 347650
+    "month_total": 213540
   },
   {
     "month": "2016-09-01",
-    "month_total": 324606
+    "month_total": 222750
   },
   {
     "month": "2016-10-01",
-    "month_total": 293670
+    "month_total": 210670
   },
   {
     "month": "2016-11-01",
-    "month_total": 216254
+    "month_total": 187820
   },
   {
     "month": "2016-12-01",
-    "month_total": 183771
+    "month_total": 176646
   },
   {
     "month": "2017-01-01",
-    "month_total": 207056
+    "month_total": 157440
   },
   {
     "month": "2017-02-01",
-    "month_total": 231323
+    "month_total": 160566
   },
   {
     "month": "2017-03-01",
-    "month_total": 350124
+    "month_total": 281721
   },
   {
     "month": "2017-04-01",
-    "month_total": 637817
+    "month_total": 489169
   },
   {
     "month": "2017-05-01",
-    "month_total": 577275
+    "month_total": 380729
   },
   {
     "month": "2017-06-01",
-    "month_total": 595256
+    "month_total": 387878
   },
   {
     "month": "2017-07-01",
-    "month_total": 649059
+    "month_total": 415638
   },
   {
     "month": "2017-08-01",
-    "month_total": 589416
+    "month_total": 414973
   },
   {
     "month": "2017-09-01",
-    "month_total": 544080
+    "month_total": 433474
   },
   {
     "month": "2017-10-01",
-    "month_total": 467198
+    "month_total": 412221
   },
   {
     "month": "2017-11-01",
-    "month_total": 360555
+    "month_total": 342220
   },
   {
     "month": "2017-12-01",
-    "month_total": 305186
+    "month_total": 304960
   },
   {
     "month": "2018-01-01",
-    "month_total": 325549
+    "month_total": 341630
   },
   {
     "month": "2018-02-01",
-    "month_total": 341649
+    "month_total": 332035
   },
   {
     "month": "2018-03-01",
-    "month_total": 565633
+    "month_total": 471432
   },
   {
     "month": "2018-04-01",
-    "month_total": 1252520
+    "month_total": 1056582
   },
   {
     "month": "2018-05-01",
-    "month_total": 1102125
+    "month_total": 983094
   },
   {
     "month": "2018-06-01",
-    "month_total": 1075879
+    "month_total": 870164
   },
   {
     "month": "2018-07-01",
-    "month_total": 1109427
+    "month_total": 997639
   },
   {
     "month": "2018-08-01",
-    "month_total": 990920
+    "month_total": 1017856
   },
   {
     "month": "2018-09-01",
-    "month_total": 995725
+    "month_total": 910160
   },
   {
     "month": "2018-10-01",
-    "month_total": 845893
+    "month_total": 839779
   },
   {
     "month": "2018-11-01",
-    "month_total": 656444
+    "month_total": 703660
   },
   {
     "month": "2018-12-01",
-    "month_total": 503597
+    "month_total": 571818
   },
   {
     "month": "2019-01-01",
-    "month_total": 552948
+    "month_total": 625142
   },
   {
     "month": "2019-02-01",
-    "month_total": 665169
+    "month_total": 765032
   },
   {
     "month": "2019-03-01",
-    "month_total": 1001520
+    "month_total": 953361
   },
   {
     "month": "2019-04-01",
-    "month_total": 2426888
+    "month_total": 2270889
   },
   {
     "month": "2019-05-01",
-    "month_total": 1786967
+    "month_total": 1826939
   },
   {
     "month": "2019-06-01",
-    "month_total": 1903284
+    "month_total": 1737085
   },
   {
     "month": "2019-07-01",
-    "month_total": 2047947
+    "month_total": 1892690
   },
   {
     "month": "2019-08-01",
-    "month_total": 1910701
+    "month_total": 1855818
   },
   {
     "month": "2019-09-01",
-    "month_total": 1669882
+    "month_total": 1710371
   },
   {
     "month": "2019-10-01",
-    "month_total": 1361289
+    "month_total": 1403932
   },
   {
     "month": "2019-11-01",
-    "month_total": 917967
+    "month_total": 1035079
   },
   {
     "month": "2019-12-01",
-    "month_total": 752177
+    "month_total": 871823
   },
   {
     "month": "2020-01-01",
-    "month_total": 844269
+    "month_total": 973916
   },
   {
     "month": "2020-02-01",
-    "month_total": 934572
+    "month_total": 1172130
   },
   {
     "month": "2020-03-01",
-    "month_total": 1426512
+    "month_total": 1679049
   },
   {
     "month": "2020-04-01",
-    "month_total": 2915238
+    "month_total": 3141650
   },
   {
     "month": "2020-05-01",
-    "month_total": 3359169
+    "month_total": 3471931
   },
   {
     "month": "2020-06-01",
-    "month_total": 3298646
+    "month_total": 3309919
   },
   {
     "month": "2020-07-01",
-    "month_total": 3369231
+    "month_total": 3297512
   },
   {
     "month": "2020-08-01",
-    "month_total": 3015612
+    "month_total": 3078882
   },
   {
     "month": "2020-09-01",
-    "month_total": 2908151
+    "month_total": 3012399
   },
   {
     "month": "2020-10-01",
-    "month_total": 2227445
+    "month_total": 2461194
   },
   {
     "month": "2020-11-01",
-    "month_total": 1561859
+    "month_total": 1899292
   },
   {
     "month": "2020-12-01",
-    "month_total": 1096151
+    "month_total": 1407103
   },
   {
     "month": "2021-01-01",
-    "month_total": 1159424
+    "month_total": 1450677
   },
   {
     "month": "2021-02-01",
-    "month_total": 1164719
+    "month_total": 1407173
   },
   {
     "month": "2021-03-01",
-    "month_total": 1929651
+    "month_total": 2114301
   },
   {
     "month": "2021-04-01",
-    "month_total": 3319935
+    "month_total": 3255159
   },
   {
     "month": "2021-05-01",
-    "month_total": 4883769
+    "month_total": 4946598
   },
   {
     "month": "2021-06-01",
-    "month_total": 4000307
+    "month_total": 3877337
   },
   {
     "month": "2021-07-01",
-    "month_total": 4226256
+    "month_total": 4097570
   },
   {
     "month": "2021-08-01",
-    "month_total": 3619462
+    "month_total": 3664608
   },
   {
     "month": "2021-09-01",
-    "month_total": 3296690
+    "month_total": 3394152
   },
   {
     "month": "2021-10-01",
-    "month_total": 2881942
+    "month_total": 3063453
   },
   {
     "month": "2021-11-01",
-    "month_total": 1811391
+    "month_total": 2244653
   },
   {
     "month": "2021-12-01",
-    "month_total": 1400385
+    "month_total": 1718127
   },
   {
     "month": "2022-01-01",
-    "month_total": 1437211
+    "month_total": 1786816
   },
   {
     "month": "2022-02-01",
-    "month_total": 1424970
+    "month_total": 1664173
   },
   {
     "month": "2022-03-01",
-    "month_total": 2179153
+    "month_total": 2290253
   },
   {
     "month": "2022-04-01",
-    "month_total": 4155078
+    "month_total": 3831089
   },
   {
     "month": "2022-05-01",
-    "month_total": 5154806
+    "month_total": 5447014
   },
   {
     "month": "2022-06-01",
-    "month_total": 4546753
+    "month_total": 4356529
   },
   {
     "month": "2022-07-01",
-    "month_total": 4798527
+    "month_total": 4565806
   },
   {
     "month": "2022-08-01",
-    "month_total": 4008001
+    "month_total": 4095586
   },
   {
     "month": "2022-09-01",
-    "month_total": 3616611
+    "month_total": 3807818
   },
   {
     "month": "2022-10-01",
-    "month_total": 3317862
+    "month_total": 3495636
   },
   {
     "month": "2022-11-01",
-    "month_total": 2092414
+    "month_total": 2565172
   },
   {
     "month": "2022-12-01",
-    "month_total": 1620647
+    "month_total": 2073674
   },
   {
     "month": "2023-01-01",
-    "month_total": 1806065
+    "month_total": 2182224
   },
   {
     "month": "2023-02-01",
-    "month_total": 1791375
+    "month_total": 2070523
   },
   {
     "month": "2023-03-01",
-    "month_total": 2734046
+    "month_total": 2938446
   },
   {
     "month": "2023-04-01",
-    "month_total": 5660941
+    "month_total": 5221591
   },
   {
     "month": "2023-05-01",
-    "month_total": 5934123
+    "month_total": 6296497
   },
   {
     "month": "2023-06-01",
-    "month_total": 5416460
+    "month_total": 5284284
   },
   {
     "month": "2023-07-01",
-    "month_total": 5653117
+    "month_total": 5503009
   },
   {
     "month": "2023-08-01",
-    "month_total": 4877115
+    "month_total": 4956403
   },
   {
     "month": "2023-09-01",
-    "month_total": 4248807
+    "month_total": 4380359
   },
   {
     "month": "2023-10-01",
-    "month_total": 3475225
+    "month_total": 3837113
   },
   {
     "month": "2023-11-01",
-    "month_total": 2563399
+    "month_total": 2969233
   },
   {
     "month": "2023-12-01",
-    "month_total": 2099832
+    "month_total": 2659887
   },
   {
     "month": "2024-01-01",
-    "month_total": 2087165
+    "month_total": 2592555
   },
   {
     "month": "2024-02-01",
-    "month_total": 2333985
+    "month_total": 2682887
   },
   {
     "month": "2024-03-01",
-    "month_total": 3644319
+    "month_total": 3860054
   },
   {
     "month": "2024-04-01",
-    "month_total": 7452068
+    "month_total": 7362967
   },
   {
     "month": "2024-05-01",
-    "month_total": 6612787
+    "month_total": 6999779
   },
   {
     "month": "2024-06-01",
-    "month_total": 6529908
+    "month_total": 6510864
   },
   {
     "month": "2024-07-01",
-    "month_total": 6450590
+    "month_total": 6507595
   },
   {
     "month": "2024-08-01",
-    "month_total": 5742923
+    "month_total": 5923205
   },
   {
     "month": "2024-09-01",
-    "month_total": 5295538
+    "month_total": 5753370
   },
   {
     "month": "2024-10-01",
-    "month_total": 4270009
+    "month_total": 4802657
   },
   {
     "month": "2024-11-01",
-    "month_total": 3000780
+    "month_total": 3635198
   },
   {
     "month": "2024-12-01",
-    "month_total": 2396634
+    "month_total": 3179060
   },
   {
     "month": "2025-01-01",
-    "month_total": 2409215
+    "month_total": 3171129
   },
   {
     "month": "2025-02-01",
-    "month_total": 2387783
+    "month_total": 3148417
   },
   {
     "month": "2025-03-01",
-    "month_total": 3835942
+    "month_total": 4442494
   },
   {
     "month": "2025-04-01",
-    "month_total": 8804690
+    "month_total": 8991458
   },
   {
     "month": "2025-05-01",
-    "month_total": 7359079
+    "month_total": 8421951
   }
 ]

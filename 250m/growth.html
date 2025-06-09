@@ -161,7 +161,19 @@ $(document).ready(function() {
         .attr("x", 0)
         .attr("dy", ".71em")
         .style("text-anchor", "start")
-        .text("6,000,000 observations per month");
+        .text("6,000,00");
+      svg.append("text")
+        .attr("y", y(7000000)-10)
+        .attr("x", 0)
+        .attr("dy", ".71em")
+        .style("text-anchor", "start")
+        .text("7,000,000");
+      svg.append("text")
+        .attr("y", y(8000000)-10)
+        .attr("x", 0)
+        .attr("dy", ".71em")
+        .style("text-anchor", "start")
+        .text("8,000,000 observations per month");
     svg.append("svg:line")
         .attr("class", "axisline")
         .style("stroke-dasharray", ("1, 1")) 

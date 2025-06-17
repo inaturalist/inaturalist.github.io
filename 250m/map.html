@@ -121,7 +121,7 @@ $(document).ready(function() {
   };
 
   queue()
-  	.defer(d3.json, "map_data.json")
+  	.defer(d3.json, "map_data.json?1")
     .await(renderGraph);
 
   function renderGraph(error, users) {

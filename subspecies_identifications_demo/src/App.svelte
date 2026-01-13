@@ -34,18 +34,13 @@
   // Function to update URL with current demo state
   function updateURL() {
     if (!observation || (observation.id !== 0 && observation.id !== -1)) return;
-    if (demoIdentifications.length === 0 && demoVotes.length === 0 && mode === 'current' && (observation.id !== -1 || observation.user.login === 'Person0')) return;
+    if (demoIdentifications.length === 0 && demoVotes.length === 0 && mode === 'current') return;
 
     const params = new URLSearchParams();
     params.set('obs', observation.id.toString());
 
     if (mode !== 'current') {
       params.set('mode', mode);
-    }
-
-    // For obs=-1, include observer if not Person0
-    if (observation.id === -1 && observation.user.login !== 'Person0') {
-      params.set('observer', observation.user.login);
     }
 
     // Encode demo identifications: taxonId:userLetter:emoji:disagreement
@@ -162,41 +157,6 @@
 
         // Small delay to ensure unique timestamps
         await new Promise(resolve => setTimeout(resolve, 10));
-      }
-    }
-
-    // Apply observer parameter if obs=-1 (after identifications are loaded so availableObservers is populated)
-    const observerParam = params.get('observer');
-    if (observerParam && observation && observation.id === -1) {
-      // Compute available observers now that identifications are loaded
-      const person0 = {
-        id: -1,
-        login: 'Person0',
-        icon: null,
-        emoji: observation.user.emoji || getRandomEmoji(),
-        preferences: {
-          prefers_community_taxa: false,
-          prefers_community_taxon: false
-        }
-      };
-      const observers = [person0];
-
-      // Add any PersonX from demo identifications
-      demoIdentifications.forEach(id => {
-        if (id.user.login.startsWith('Person') && id.user.login !== 'Person0' && !observers.find(o => o.login === id.user.login)) {
-          observers.push(id.user);
-        }
-      });
-
-      const matchingObserver = observers.find(o => o.login === observerParam);
-      if (matchingObserver) {
-        observation.user = {
-          ...matchingObserver,
-          preferences: {
-            prefers_community_taxa: false,
-            prefers_community_taxon: false
-          }
-        };
       }
     }
   }
@@ -332,7 +292,7 @@
           },
           observation_photos: [{
             photo: {
-              url: 'https://inaturalist-open-data.s3.amazonaws.com/photos/606633309/medium.jpg'
+              url: 'https://inaturalist-open-data.s3.amazonaws.com/photos/77105/medium.jpg'
             }
           }],
           sounds: [],
@@ -380,7 +340,7 @@
           },
           observation_photos: [{
             photo: {
-              url: 'https://inaturalist-open-data.s3.amazonaws.com/photos/606633309/medium.jpg'
+              url: 'https://inaturalist-open-data.s3.amazonaws.com/photos/77105/medium.jpg'
             }
           }],
           sounds: [],
@@ -731,8 +691,6 @@
     showObserverDropdown = false;
     // Trigger recalculation of observation taxon and quality grade
     observation = observation; // Force reactivity
-    // Update URL with new observer
-    updateURL();
   }
 
   // Update observation taxon and quality grade when identifications or votes change
@@ -801,14 +759,18 @@
 
     // If there's only one identification, set observation taxon to that identification's taxon
     if (currentIdentifications.length === 1) {
-      // If only ID is finer than species, use species ancestor instead
-      const singleIdTaxon = currentIdentifications[0].taxon;
-      if (singleIdTaxon && singleIdTaxon.rank_level && singleIdTaxon.rank_level < 10) {
-        // Find species ancestor (rank_level = 10)
-        const speciesAncestor = singleIdTaxon.ancestors?.find(a => a.rank_level === 10);
-        observation.taxon = speciesAncestor || singleIdTaxon;
+      // Alternative mode: if only ID is finer than species, use species ancestor instead
+      if (mode === 'alternative') {
+        const singleIdTaxon = currentIdentifications[0].taxon;
+        if (singleIdTaxon && singleIdTaxon.rank_level && singleIdTaxon.rank_level < 10) {
+          // Find species ancestor (rank_level = 10)
+          const speciesAncestor = singleIdTaxon.ancestors?.find(a => a.rank_level === 10);
+          observation.taxon = speciesAncestor || singleIdTaxon;
+        } else {
+          observation.taxon = singleIdTaxon;
+        }
       } else {
-        observation.taxon = singleIdTaxon;
+        observation.taxon = currentIdentifications[0].taxon;
       }
       return;
     }
@@ -844,17 +806,76 @@
 
             const probTaxon = finestDownstream.taxon;
 
-            // observation.taxon can only be finer than species if community taxon is finer than species
-            // If prob_taxon is finer than species (infraspecies) but community taxon is not
-            if (probTaxon && probTaxon.rank_level && probTaxon.rank_level < 10 &&
-                communityTaxon.rank_level && communityTaxon.rank_level >= 10) {
-              // Community taxon is at species or coarser - observation bottoms out at species level
-              // Find species ancestor of prob_taxon
-              const speciesAncestor = probTaxon.ancestors?.find(a => a.rank_level === 10);
-              observation.taxon = speciesAncestor || communityTaxon;
+            // Alternative mode: observation.taxon can only be finer than species if community taxon is finer than species
+            if (mode === 'alternative') {
+              // If prob_taxon is finer than species (infraspecies) but community taxon is not
+              if (probTaxon && probTaxon.rank_level && probTaxon.rank_level < 10 &&
+                  communityTaxon.rank_level && communityTaxon.rank_level >= 10) {
+                // Community taxon is at species or coarser - observation bottoms out at species level
+                // Find species ancestor of prob_taxon
+                const speciesAncestor = probTaxon.ancestors?.find(a => a.rank_level === 10);
+                observation.taxon = speciesAncestor || communityTaxon;
+              } else {
+                // Community taxon is already infraspecies, or prob_taxon is not infraspecies - use prob_taxon
+                observation.taxon = probTaxon;
+              }
             } else {
-              // Community taxon is already infraspecies, or prob_taxon is not infraspecies - use prob_taxon
-              observation.taxon = probTaxon;
+              // Current mode: Edge case handling for infraspecies
+              // If prob_taxon is finer than species (rank_level < 10) and is a descendant of community taxon
+              if (probTaxon && probTaxon.rank_level && probTaxon.rank_level < 10 &&
+                  probTaxon.ancestor_ids && probTaxon.ancestor_ids.includes(communityTaxon.id)) {
+
+                // Find the first ID of prob_taxon (sorted by created_at, then by id for demo IDs)
+                const probTaxonIds = currentIdentifications.filter(id => id.taxon?.id === probTaxon.id)
+                  .sort((a, b) => {
+                    const timeA = new Date(a.created_at).getTime();
+                    const timeB = new Date(b.created_at).getTime();
+                    if (timeA !== timeB) return timeA - timeB;
+                    // For demo IDs with same timestamp, compare ID strings
+                    return (a.id || '').localeCompare(b.id || '');
+                  });
+                const firstIdOfProbTaxon = probTaxonIds[0];
+
+                // Find the first ID of community taxon
+                const communityTaxonIds = currentIdentifications.filter(id => id.taxon?.id === communityTaxon.id)
+                  .sort((a, b) => {
+                    const timeA = new Date(a.created_at).getTime();
+                    const timeB = new Date(b.created_at).getTime();
+                    if (timeA !== timeB) return timeA - timeB;
+                    return (a.id || '').localeCompare(b.id || '');
+                  });
+                const firstIdOfCommunityTaxon = communityTaxonIds[0];
+
+                if (firstIdOfProbTaxon && firstIdOfCommunityTaxon) {
+                  // Compare which came first
+                  const probTaxonTime = new Date(firstIdOfProbTaxon.created_at).getTime();
+                  const communityTaxonTime = new Date(firstIdOfCommunityTaxon.created_at).getTime();
+
+                  if (probTaxonTime < communityTaxonTime) {
+                    // prob_taxon was subspecific but first - use it
+                    observation.taxon = probTaxon;
+                  } else if (probTaxonTime > communityTaxonTime) {
+                    // prob_taxon was added later - find its species ancestor
+                    // Species rank level is 10
+                    const speciesAncestor = probTaxon.ancestors?.find(a => a.rank_level === 10);
+                    if (speciesAncestor) {
+                      observation.taxon = speciesAncestor;
+                    } else {
+                      // No species ancestor found, use community taxon
+                      observation.taxon = communityTaxon;
+                    }
+                  } else {
+                    // Same timestamp, use community taxon
+                    observation.taxon = communityTaxon;
+                  }
+                } else {
+                  // Couldn't determine order, use prob_taxon as default
+                  observation.taxon = probTaxon;
+                }
+              } else {
+                // Normal case: use the finest downstream taxon
+                observation.taxon = probTaxon;
+              }
             }
             return;
           }
@@ -936,18 +957,6 @@
         if (observation.taxon.rank_level && observation.taxon.rank_level < 30) {
           observation.quality_grade = 'research';
         } else {
-          observation.quality_grade = 'casual';
-        }
-      } else if (mode === 'alternative' && userOptedOutOfCommunityTaxon && observation.taxon && communityTaxon) {
-        // Alternative mode special case: when opted out, if observation taxon is ancestor of community taxon
-        // and observation taxon is finer than family, make it research grade
-        const observationIsAncestor = communityTaxon.ancestor_ids &&
-          communityTaxon.ancestor_ids.includes(observation.taxon.id);
-
-        if (observationIsAncestor && observation.taxon.rank_level && observation.taxon.rank_level < 30) {
-          observation.quality_grade = 'research';
-        } else {
-          // Taxa don't match in required way
           observation.quality_grade = 'casual';
         }
       } else {
@@ -1147,7 +1156,7 @@
   <div class="header-container">
     <h1 class="clickable-title" on:click={resetApp}>
       <img src="https://static.inaturalist.org/wiki_page_attachments/3154-original.png" alt="iNaturalist logo" class="title-logo" />
-      iNaturalist Community Taxon Opt-out Demo
+      iNaturalist Subspecies Identifications Demo
     </h1>
     <div class="header-disclaimer">
       <div class="disclaimer-line">This demo does not write anything back to iNat.</div>
@@ -1176,12 +1185,12 @@
 
   {#if !observation}
     <div class="demo-intro">
-      <p>This demo compares how iNaturalist currently handles opting out of the Community Taxon versus a proposed alternative approach. Click an example below or enter an observation ID to explore the differences. Click "Tutorial" in the header for detailed instructions. <a href="https://www.inaturalist.org/blog/122781" target="_blank" rel="noopener noreferrer">Read more on our blog</a>.</p>
+      <p>This demo compares how iNaturalist currently handles subspecies identifications versus a proposed alternative approach. Click an example below or enter an observation ID to explore the differences. Click "Tutorial" in the header for detailed instructions. <a href="https://www.inaturalist.org/blog/122781" target="_blank" rel="noopener noreferrer">Read more on our blog</a>.</p>
       <div class="demo-links">
-        <a href="/subspecies_identifications_demo/?obs=-1&observer=PersonA&ids=155108%3AA%3A%25F0%259F%2598%2580%3A0%7C308801%3AB%3A%25F0%259F%25A4%2597%3A0%7C308801%3AC%3A%25F0%259F%2599%2582%3A0&votes=0%3AB%3A%25F0%259F%25A4%2593" class="demo-link">
+        <a href="/subspecies_identifications_demo/?obs=0&ids=120135%3AA%3A%25F0%259F%2598%2583%3A0%7C27250%3AB%3A%25F0%259F%2599%2583%3A0" class="demo-link">
           <img src="/subspecies_identifications_demo/current.jpg" alt="Current" />
         </a>
-        <a href="/subspecies_identifications_demo/?obs=-1&mode=alternative&observer=PersonA&ids=155108%3AA%3A%25F0%259F%2598%2580%3A0%7C308801%3AB%3A%25F0%259F%25A4%2597%3A0%7C308801%3AC%3A%25F0%259F%2599%2582%3A0&votes=0%3AB%3A%25F0%259F%25A4%2593" class="demo-link">
+        <a href="/subspecies_identifications_demo/?obs=0&mode=alternative&ids=120135%3AA%3A%25F0%259F%2598%2583%3A0%7C27250%3AB%3A%25F0%259F%2599%2583%3A0" class="demo-link">
           <img src="/subspecies_identifications_demo/alternative.jpg" alt="Alternative" />
         </a>
       </div>
@@ -1213,7 +1222,7 @@
   {#if observation}
     {#if mode === 'alternative'}
       <div class="alternative-explanation">
-        This mode simulates changing the label and behavior of voting an observation out of Needs ID when the observer has opted out of the Community Taxon.
+        This mode simulates a proposed alternative for handling infraspecies on iNaturalist, where observations do not advance to infraspecies until the community taxon itself reaches the infraspecies rank.
       </div>
     {/if}
 
@@ -1445,17 +1454,13 @@
 
         <div class="needs-id-votes-section" class:disabled={votesDisabled}>
           <div class="needs-id-votes-label">
-            {#if mode === 'alternative' && userOptedOutOfCommunityTaxon}
-              Is the observer opting-out of the Community Taxon responsive?
+            Based on the evidence, can the Community Taxon be improved?<br/>
+            {#if communityTaxon}
+              Current Community Taxon: {communityTaxon.preferred_common_name
+                ? `${communityTaxon.preferred_common_name} (${communityTaxon.name})`
+                : communityTaxon.name}
             {:else}
-              Based on the evidence, can the Community Taxon be improved?<br/>
-              {#if communityTaxon}
-                Current Community Taxon: {communityTaxon.preferred_common_name
-                  ? `${communityTaxon.preferred_common_name} (${communityTaxon.name})`
-                  : communityTaxon.name}
-              {:else}
-                Current Community Taxon: None
-              {/if}
+              Current Community Taxon: None
             {/if}
           </div>
             <div class="needs-id-votes-row">
@@ -1482,7 +1487,7 @@
                   title="Vote No"
                   disabled={votesDisabled}
                 >✓</button>
-                <span class="vote-label">{mode === 'alternative' ? 'No, remove from Needs ID' : "No, it's as good as it can be"}</span>
+                <span class="vote-label">No, it's as good as it can be</span>
                 {#if noVotes.length > 0}
                   <button class="vote-count" on:click={() => openVotesModal('no')}>
                     ({noVotes.length})
@@ -1684,9 +1689,9 @@
               </ul>
             </li>
             <li><strong>View the algorithm</strong> by clicking "what's this?" next to "Community Taxon" to see how the community taxon is calculated</li>
-            <li><strong>Add votes</strong> on whether the Community Taxon can be improved by clicking the checkmarks next to "Yes" or "No, remove from Needs ID" (in Alternative mode) / "No, it's as good as it can be" (in Current mode)</li>
+            <li><strong>Add votes</strong> on whether the Community Taxon can be improved by clicking the checkmarks next to "Yes" or "No, it's as good as it can be"</li>
             <li><strong>Vote on your preference</strong> between Current and Alternative modes by clicking the "Vote on your preference" button in the upper right</li>
-            <li><strong>Reset the demo</strong> at any time by clicking on the title "iNaturalist Community Taxon Opt-out Demo"</li>
+            <li><strong>Reset the demo</strong> at any time by clicking on the title "iNaturalist Subspecies Identifications Demo"</li>
           </ol>
 
           <h3>Understanding the Display</h3>

@@ -1709,7 +1709,7 @@
   <footer class="demo-footer">
     <p>This is a temporary demo built quickly using <a href="https://code.claude.com/docs/en/overview" target="_blank" rel="noopener noreferrer">Claude Code</a>, it does not adhere to the engineering standards of the iNaturalist <a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">platform</a> or <a href="https://github.com/inaturalist" target="_blank" rel="noopener noreferrer">codebase</a>. The demo will be live only for as long as it takes to come to a path forward. Once we deploy and QA an update to the main site, we will retire this demo.</p>
     <p class="footer-links">
-      <a href="https://github.com/inaturalist/inaturalist.github.io/tree/main/subspecies_identifications_demo" target="_blank" rel="noopener noreferrer">Source</a>
+      <a href="https://github.com/inaturalist/inaturalist.github.io/blob/main/subspecies_identifications_demo/README.md" target="_blank" rel="noopener noreferrer">Source</a>
       <span class="separator">•</span>
       <span>Last updated: January 8, 2026</span>
     </p>

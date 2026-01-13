@@ -2,7 +2,7 @@
 
 This is a lightweight demo app for exploring how **iNaturalist** handles **subspecies identifications** and how they affect an observation's **community taxon**, **observation taxon**, and **quality grade**.
 
-The app pulls in real iNaturalist observations and lets you **simulate** different identification sequences. Nothing is written back to iNaturalist — this is strictly a read-only demo. [Try it here](https://loarie.github.io/subspecies_identifications_demo/)
+The app pulls in real iNaturalist observations and lets you **simulate** different identification sequences. Nothing is written back to iNaturalist — this is strictly a read-only demo. [Try it here](https://inaturalist.github.io/subspecies_identifications_demo/)
 
 ## What this is for
 

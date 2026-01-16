@@ -1110,13 +1110,32 @@
         return true;
       });
 
-      // Ancestor disagreements: IDs marked as disagreements that are ancestors of this taxon
-      // These are IDs where disagreement=true AND the ID's taxon is an ancestor of this taxon
-      // (but NOT the taxon itself - only apply to downstream/more specific taxa)
+      // Ancestor disagreements: IDs where someone disagreed "up the tree" (to a broader taxon)
+      // and this taxon is in the range that was disagreed with.
+      // This only applies when:
+      // 1. The ID has disagreement=true AND previous_observation_taxon
+      // 2. The ID's taxon is an ancestor of the previous_observation_taxon (disagreeing "up")
+      // 3. This taxon is either the previous_observation_taxon or shares ancestry with taxa
+      //    that were implicitly disagreed with (between the ID's taxon and previous_observation_taxon)
       const ancestorDisagreements = identifications.filter(id => {
-        if (!id.taxon || !id.disagreement) return false;
-        // Check if the ID's taxon is an ancestor of this taxon (not the same taxon)
-        return id.taxon.id !== taxon.id && taxon.ancestor_ids && taxon.ancestor_ids.includes(id.taxon.id);
+        if (!id.taxon || !id.disagreement || !id.previous_observation_taxon) return false;
+
+        // The ID's taxon must be an ancestor of the previous_observation_taxon
+        // (i.e., the disagreement is "going up the tree")
+        const prevTaxon = id.previous_observation_taxon;
+        if (!prevTaxon.ancestor_ids || !prevTaxon.ancestor_ids.includes(id.taxon.id)) {
+          return false;
+        }
+
+        // Calculate which taxon IDs were disagreed with:
+        // These are ancestors of previous_observation_taxon that are NOT ancestors of (or equal to) the ID's taxon
+        const taxonIDsDisagreedWith = prevTaxon.ancestor_ids.filter(
+          ancestorId => !(id.taxon.ancestor_ids || []).includes(ancestorId) && ancestorId !== id.taxon.id
+        );
+
+        // This taxon is affected if it or any of its ancestors is in the disagreed-with set
+        const taxonAndAncestors = [taxon.id, ...(taxon.ancestor_ids || [])];
+        return taxonAndAncestors.some(tid => taxonIDsDisagreedWith.includes(tid));
       });
 
       const score = cumulativeIds.length / (cumulativeIds.length + disagreements.length + ancestorDisagreements.length);
